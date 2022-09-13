@@ -6,3 +6,18 @@ body{
   background-attachment: scroll;
 
 }
+
+#wrapper{
+
+  text-align: center;
+  margin-top: 210px;
+  margin-left: 400px;
+  background-color: white;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-top: 7px;
+  padding-right: 65px;
+  border-radius: 20px;
+  width: 600px;
+
+}
