@@ -1,0 +1,24 @@
+body{
+  background-image: url(../images/vegetable2.jpg);
+  background-repeat: no-repeat;
+  background-size: 1540px 1500px;
+  background-attachment: scroll;
+}
+
+#email_login{
+  margin-top: 210px;
+  text-align: center;
+}
+
+#input_email{
+  margin-left: 20px;
+  height: 19px;
+  width: 240px;
+  font-size:15px;
+}
+
+#input_password{
+  margin-left: 5px;
+  height: 18px;
+  width: 220px;
+}
