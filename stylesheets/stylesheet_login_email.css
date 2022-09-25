@@ -6,7 +6,7 @@ body{
 }
 
 #email_login{
-  margin-top: 210px;
+  margin-top: 170px;
   text-align: center;
 }
 
@@ -18,7 +18,61 @@ body{
 }
 
 #input_password{
-  margin-left: 5px;
-  height: 18px;
-  width: 220px;
+  margin-right: 10px;
+  height: 19px;
+  width: 240px;
+  font-size:15px;
+}
+
+h1{
+  font-family: 'Inter Tight', sans-serif;
+  margin-left: 70px;
+  font-size: 40px;
+}
+
+#label_email{
+    font-size: 20px;
+
+}
+
+#label_password{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#back_to_index{
+  font-size: 14px;
+  margin-right: 160px;
+  font-weight: bold;
+  background-color: #00ff99;
+  border-radius: 20px;
+  padding: 4px 7px 3px 7px;
+  font-family: 'Josefin Sans', sans-serif;
+  border-width: thin;
+  display: inline-block;
+}
+
+#back_to_index:hover{
+  background-color: #00cc7a;
+}
+
+#confirm_email_and_password{
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #00ff99;
+  border-radius: 20px;
+  padding: 4px 7px 3px 7px;
+  font-family: 'Josefin Sans', sans-serif;
+  border-width: thin;
+  display: inline-block;
+}
+
+#confirm_email_and_password:hover{
+    background-color: #00cc7a;
+}
+
+#not_a_user{
+  font-size: 20px;
+  font-style: bolder;
+  font-weight: bolder;
 }
