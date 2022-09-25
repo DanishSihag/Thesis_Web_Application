@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Make a New Account</title>
+    <link rel="stylesheet" href="../stylesheets/stylesheet_new_account.css">
+  </head>
+  <body>
+    <form id="form_new_account">
+      <h1>Register a New Account</h1>
+      <label id="label_new_acc">First Name </label> <input id="input_new_acc" type="text" required>
+      <label id="label_new_acc">Last Name </label> <input id="input_new_acc" type="text" required><br><br>
+      <label id="label_new_acc">E-mail </label> <input id="input_new_acc" type="email" required>
+      <label id="label_new_acc">Date of Birth </label> <input id="input_new_acc" type="date" required><br><br>
+      <label id="label_new_acc">Mobile Number </label> <input id="input_new_acc" type="tel" pattern="[+][0-9]{2}[0-9]{9}" required><br><br>
+      <label id="label_new_acc">Address Line 1 </label> <input id="input_new_acc" type="text" required>
+      <label id="label_new_acc">Address Line 2 </label> <input id="input_new_acc" type="text" required><br><br>
+      <label id="label_new_acc">Type of address: </label> <input name="add_type" id="input_new_acc" type="radio">Home <input name="add_type" id="input_new_acc" type="radio">Office <input name="add_type" id="input_new_acc" type="radio">Work <br><br>
+      <label id="label_new_acc">Postal Code </label> <input id="input_new_acc" type="number" required>
+      <label id="label_new_acc">City </label> <input id="input_new_acc" type="text" required><br><br>
+      <label id="label_new_acc">Password </label> <input id="input_new_acc" type="password" required>
+      <label id="label_new_acc">Confirm Password </label> <input id="input_new_acc" type="password" required><br><br>
+      <button id="submit_details" type="submit">Register Account</button>
+    </form>
+  </body>
+</html>

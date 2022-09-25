@@ -18,10 +18,11 @@ body{
 }
 
 #input_password{
-  margin-right: 10px;
+
   height: 19px;
   width: 240px;
   font-size:15px;
+
 }
 
 h1{
@@ -38,6 +39,7 @@ h1{
 #label_password{
   font-size: 20px;
   margin-right: 10px;
+  margin-left: 135px;
 }
 
 #back_to_index{
@@ -75,4 +77,8 @@ h1{
   font-size: 20px;
   font-style: bolder;
   font-weight: bolder;
+}
+
+#dont_remember_pswrd{
+  margin-left: 30px;
 }
