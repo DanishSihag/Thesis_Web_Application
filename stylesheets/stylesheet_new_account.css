@@ -1,0 +1,93 @@
+body{
+  background-image: url(../images/fern.jpg);
+  background-size: 420px 800px;
+  background-repeat: no-repeat;
+  background-color: #e6e6e6
+}
+
+form{
+  margin-left: 620px;
+  text-align: left;
+  margin-top: 150px;
+}
+
+h1{
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  text-decoration: underline;
+  margin-left: 75px;
+}
+
+label{
+  font-size: 18px;
+}
+
+input{
+  height: 19px;
+  width: 200px;
+  font-size:15px;
+}
+
+#label_fname{
+margin-right: 35px;
+
+}
+
+#input_fname{
+  margin-right: 100px;
+}
+
+#input_lname{
+  margin-left: 50px;
+}
+
+#label_email{
+
+  margin-right: 66px;
+
+}
+
+#input_email{
+  margin-right: 100px;
+}
+
+#input_dob{
+  margin-left: 35px;
+}
+
+
+#label_add1{
+  margin-right: 4px;
+}
+
+#input_add1{
+  margin-right: 100px;
+}
+
+#input_add2{
+  margin-left: 23px;
+}
+
+#input_home{
+  margin-left: -80px;
+}
+
+#label_pcode{
+  margin-right: 29px;
+}
+
+#input_pcode{
+  margin-right: 100px;
+}
+
+#input_city{
+  margin-left: 102px;
+}
+
+#label_pswrd{
+  margin-right: 46px;
+}
+
+#input_pswrd{
+  margin-right: 100px;
+}
