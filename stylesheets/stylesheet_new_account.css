@@ -6,16 +6,18 @@ body{
 }
 
 form{
-  margin-left: 620px;
+  margin-left: 555px;
   text-align: left;
   margin-top: 150px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 h1{
   font-size: 40px;
   font-family: 'Playfair Display', serif;
   text-decoration: underline;
-  margin-left: 75px;
+  margin-left: 210px;
+
 }
 
 label{
@@ -29,7 +31,7 @@ input{
 }
 
 #label_fname{
-margin-right: 35px;
+margin-right: 45px;
 
 }
 
@@ -38,12 +40,12 @@ margin-right: 35px;
 }
 
 #input_lname{
-  margin-left: 50px;
+  margin-left: 79px;
 }
 
 #label_email{
 
-  margin-right: 66px;
+  margin-right: 89px;
 
 }
 
@@ -53,6 +55,10 @@ margin-right: 35px;
 
 #input_dob{
   margin-left: 35px;
+}
+
+#label_mobno{
+  margin-right: 14px;
 }
 
 
@@ -72,8 +78,16 @@ margin-right: 35px;
   margin-left: -80px;
 }
 
+#input_office{
+  margin-right: 1px;
+}
+
+#input_permanent{
+  margin-left: 1px;
+}
+
 #label_pcode{
-  margin-right: 29px;
+  margin-right: 37px;
 }
 
 #input_pcode{
@@ -81,13 +95,31 @@ margin-right: 35px;
 }
 
 #input_city{
-  margin-left: 102px;
+  margin-left: 130px;
 }
 
 #label_pswrd{
-  margin-right: 46px;
+  margin-right: 69px;
 }
 
 #input_pswrd{
   margin-right: 100px;
+}
+
+button{
+  font-size: 17px;
+  background-color: #99ccff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 4px 7px 3px 7px;
+  border-width: thin;
+  display: inline-block;
+  margin-left: 365px;
+
+}
+
+button:hover{
+  transition: 0.6s;
+  background-color: #4da6ff;
+  box-shadow: 3px 3px grey;
 }
