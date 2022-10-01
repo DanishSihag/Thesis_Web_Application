@@ -74,16 +74,22 @@ margin-right: 45px;
   margin-left: 23px;
 }
 
+#label_add_type{
+  margin-right: -80px;
+}
+
 #input_home{
-  margin-left: -80px;
+    margin-right: -80px;
 }
 
 #input_office{
-  margin-right: 1px;
+  margin-right: -80px;
+  margin-left: -60px;
 }
 
 #input_permanent{
-  margin-left: 1px;
+    margin-right: -80px;
+    margin-left: -65px;
 }
 
 #label_pcode{
