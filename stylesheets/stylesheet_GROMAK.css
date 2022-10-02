@@ -22,6 +22,13 @@ span{
 
 #GROMAK_logo{
   margin-left: 65px;
+  color: black;
+  text-decoration: none;
+}
+
+#elite_club{
+  color: black;
+  text-decoration: none;
 }
 
 #main_search{
@@ -29,4 +36,43 @@ span{
   height: 19px;
   width: 230px;
   font-size:15px;
+  border-radius: 4px;
+}
+
+#collapsible_options{
+  margin-left: 1335px;
+  margin-top: -36px;
+  transition: .7s;
+  background-color: grey;
+  overflow: hidden;
+  width: 0;
+
+}
+
+#option{
+  color: black;
+}
+
+#collapsible_sidebar{
+  margin-left: 1150px;
+  margin-top: -25px;
+  transition: .7s;
+}
+
+#collapsible_button{
+  font-size: 17px;
+  border-radius: 8px;
+  margin-left: 120px;
+}
+
+#collapsible_button:hover{
+  background-color: red;
+}
+
+#cross_button{
+  margin-left: 100px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
 }

@@ -7,9 +7,22 @@
   </head>
   <body>
     <div id="search-top">
-      <label id="GROMAK_logo">GROMAK</label><span>&#47;</span>
-      <label id="elite_club">GROMAK EliteClub</label><span>&#47;</span>
+      <a id="GROMAK_logo" href="(INSERT LINK HERE)" target="_blank">GROMAK</a><span>&#47;</span>
+      <a id="elite_club" href="(INSERT LINK HERE)" target="_blank">GROMAK EliteClub</a><span>&#47;</span>
       Search in GROMAK<input type="text" id="main_search"><span>&#47;</span>
+      <div id="collapsible_sidebar">
+        <button type="button" id="collapsible_button" onclick="expand_sidebar()">Options ≡</button>
+      </div>
+      <div id="collapsible_options">
+        <a id="cross_button" href="javascript:void(0)" onclick="collapse_sidebar()">×</a><br><br>
+        <a id="option" href="#">Favorites</a><br><br>
+        <a id="option" href="#">Previous Orders</a><br><br>
+        <a id="option" href="#">Feedback</a><br><br>
+        <a id="option" href="#">FAQs</a><br><br><br><br>
+        <a id="option" href="#">Settings</a><br><br>
+        <a id="option" href="#">Logout</a>
+      </div>
     </div>
+    <script src="../scripts/myscript.js"></script>
   </body>
 </html>
