@@ -60,5 +60,8 @@ h2{
   margin-top: 27px;
   width: 290px;
   height: 260px;
-  border-radius: 15px;
+  -moz-border-radius:80px;
+  -webkit-border-radius:80px;
+  border-radius:80px;
+  overflow:hidden;
 }
