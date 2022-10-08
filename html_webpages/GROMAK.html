@@ -12,9 +12,9 @@
   </head>
   <body>
     <div id="search-top">
-      <a id="GROMAK_logo" href="(INSERT LINK HERE)" target="_blank">GROMAK</a><span>&#47;</span>
-      <a id="elite_club" href="(INSERT LINK HERE)" target="_blank">GROMAK EliteClub</a><span>&#47;</span>
-      Search in GROMAK<input type="text" id="main_search"><span>&#47;</span>
+      <a id="GROMAK_logo" href="(INSERT LINK HERE)" target="_blank">GROMAK</a><span id="span_search">&#47;</span>
+      <a id="elite_club" href="(INSERT LINK HERE)" target="_blank">GROMAK EliteClub</a><span id="span_search">&#47;</span>
+      Search in GROMAK<input type="text" id="main_search"><span id="span_search">&#47;</span>
       <div id="collapsible_sidebar">
         <button type="button" id="collapsible_button" onclick="expand_sidebar()">Options ≡</button>
       </div>
@@ -28,12 +28,26 @@
         <a id="option" href="#">Logout</a>
       </div>
     </div>
-    <div id="offers1">
-      <button id="offers_fruits"type="button"><label id="fruits_text">New Exotic Fruits Assortment</label></button>
-    </div>
-    <div id="offers2">
-      <button id="offers_baby"type="button"><label id="baby_text">Latest Baby-Care Products <br> now at GROMAK</label></button>
-    </div>
+    <div class="offers">
+      <div class="sliding_offers">
+        <button id="offers_fruits"type="button"><span id="fruits_text">New Exotic Fruits Assortment</span></button>
+      </div>
+      <div class="sliding_offers">
+        <button id="offers_baby"type="button"><span id="baby_text">Latest Baby-Care Products <br> now at GROMAK</span></button>
+      </div>
+      <div class="sliding_offers">
+        <button id="offers_cola"type="button"><span id="cola_text">Buy 2 Get 1 Free <br> on Select Coca-Cola Products</span></button>
+      </div>
+      <div class="sliding_offers">
+        <button id="offers_club"type="button"><span id="cola_text">Join the GROMAK EliteClub <br> and Avail the Best Prices Available </span></button>
+      </div>
+      <div class="sliding_offers">
+        <button id="offers_info"type="button"><span id="baby_text">About GROMAK <br> A Class of its Own</span></button>
+      </div>
+      <div class="sliding_offers">
+        <button id="offers_thursday"type="button"><span id="baby_text">GROMAK Thursday Discounts <br> 10%off on All Dairy Prodducts on Thursdays</span></button>
+      </div>
+     </div>
     <script src="../scripts/myscript.js"></script>
   </body>
 </html>
