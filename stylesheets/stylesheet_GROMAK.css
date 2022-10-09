@@ -52,6 +52,8 @@ body{
   font-size: 22px;
   font-family: 'Alkalami', serif;
   width: 0;
+  position: absolute;
+  z-index: +1;
 }
 
 #option{
@@ -111,77 +113,156 @@ hr{
 }
 
 .offers{
-
+  /*overflow: hidden;*/
 }
 
 .sliding_offers{
     position: relative;
     width: 15%;
     float: left;
-    animation: 50s sliding_offers infinite;
+    /*animation: 30s sliding_offers infinite;*/
 }
 
 #offers_fruits{
+  background-image: url(../images/sliding_fruits.jpg);
+  background-size: cover;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-top: 40px;
   margin-left: 40px;
   border-radius: 10px;
+}
 
+#fruits_text{
+  margin-top: 130px;
+  width: 520px;
+  height: 50px;
+  background: rgba(106,204,82,0.35);
+  color: black;
+  border-radius: 15px;
+  font-family: 'Dancing Script', cursive;
 }
 
 #offers_baby{
+  background-image: url(../images/sliding_baby.jpg);
+  background-size: cover;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-left: 560px;
   margin-top: 40px;
   border-radius: 10px;
 }
 
+#baby_text{
+  margin-top: 100px;
+  width: 495px;
+  height: 90px;
+  background: rgba(231,199,179,0.68);
+  color: black;
+  border-radius: 15px;
+  font-family: 'Dancing Script', cursive;
+}
+
 #offers_cola{
+  background-image: url(../images/sliding_cola.jpg);
+  background-size: cover;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-top: 40px;
-  margin-left: 1200px;
+  margin-left: 1100px;
   border-radius: 10px;
+}
+
+#cola_text{
+  margin-top: 100px;
+  margin-left: -15px;
+  width: 520px;
+  height: 90px;
+  background: rgba(228,220,220,0.54);
+  color: black;
+  border-radius: 15px;
+  padding: 0px 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
 #offers_club{
+  background-image: url(../images/sliding_elite.jpg);
+  background-size: cover;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-top: 40px;
-  margin-left: 2000px;
+  margin-left: 1623px;
   border-radius: 10px;
+}
+
+#club_text{
+  margin-top: 100px;
+  margin-left: -58px;
+  width: 590px;
+  height: 90px;
+  background: rgba(180,136,94,0.6);
+  color: black;
+  border-radius: 15px;
+  padding: 0px 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
 #offers_info{
+  background-image: url(../images/sliding_logo.png);
+  background-size: 380px 373px;
+  background-repeat: no-repeat;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-top: 40px;
-  margin-left: 3000px;
+  margin-left: 2175px;
   border-radius: 10px;
+  background-color: #ffb3e6;
+}
+
+#info_text{
+  margin-top: -30px;
+  margin-left: 275px;
+  width: 310px;
+  height: 100px;
+  color: black;
+  border-radius: 15px;
+  padding: 0px 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
 #offers_thursday{
+  background-image: url(../images/sliding_thursday.jpg);
+  background-size: cover;
   width: 700px;
   height: 375px;
   padding: 165px 100px;
-  font-size: 37px;
+  font-size: 41px;
   margin-top: 40px;
-  margin-left: 4000px;
+  margin-left: 2710px;
   border-radius: 10px;
+  font-family: 'Dancing Script', cursive;
 }
 
+#thursday_text{
+  margin-top: 60px;
+  margin-left: -15px;
+  width: 520px;
+  height: 142px;
+  background: rgba(228,220,220,0.55);
+  color: black;
+  border-radius: 15px;
+  padding: 0px 10px;
+}
 
 @keyframes sliding_offers{
     0%{
@@ -191,39 +272,30 @@ hr{
         left:0;
     }
     20%{
-        left:-87%;
+        left:0;
     }
     30%{
-        left:-87%;
+        left:-100%;
     }
     40%{
-        left:-187%;
+        left:-100%;
     }
     50%{
-        left:-187%;
-    }
-    55%{
-        left:-287%;
-    }
-    65%{
-        left:-287%;
-    }
-    66%{
-        left:-200%;
-    }
-    74%{
-        left:-200%;
-    }
-    75%{
         left:-100%;
     }
-    85%{
-        left:-100%;
+    60%{
+      left:-201%;
+    }
+    70%{
+      left:-201%;
+    }
+    80%{
+      left:-201%;
     }
     90%{
         left:0;
     }
-    1000%{
+    100%{
         left:0;
     }
 }
