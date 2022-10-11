@@ -1,8 +1,7 @@
 .products{
   margin-top: 40px;
   margin-left: 30px;
-  height: 1000px;
-  background-color: grey;
+  height: 1150px;
   width: 1515px;
 }
 
@@ -14,6 +13,12 @@
 
 .prod_button{
   border-radius: 10px;
+  transition: all .24s linear;
+}
+
+.prod_button:hover{
+  transform: scale(1.065);
+  cursor: pointer;
 }
 
 .prod_text{
@@ -21,21 +26,101 @@
   margin-top: 60px;
 }
 
-#prod_vegetables{
+#prod_vegetables{/*use image 200*145*/
   padding: 40px 35px 10px 35px;
 }
 
 #prod_juices{
   position: relative;
   margin-left: -10px;
-  padding: 30px 0px 0px 0px;
+  padding: 28px 0px 0px 0px;
 }
 
 #prod_household{
   margin-left: -28px;
-  padding: 50px 35px 10px 35px;
+  padding: 50px 35px 6px 35px;
 }
 
 #prod_fruits{
   padding: 40px 63px 10px 63px;
+}
+
+#prod_snacks{
+  margin-left: -10px;
+  padding: 25px 15px 2px 15px;
+}
+
+#prod_self{
+  margin-left: -30px;
+  padding: 48px 40px 8px 45px;
+}
+
+#prod_alcohol{
+  padding: 40px 54px 10px 55px;
+}
+
+#prod_frozen{
+  margin-left: -12px;
+  padding: 40px 37px 10px 37px;
+}
+
+#prod_coffee{
+  margin-left: -30px;
+  padding: 40px 34px 10px 34px;
+}
+
+#prod_dairy{
+  padding: 25px 14px 2px 14px;
+}
+
+#prod_breakfast{
+  margin-left: -15px;
+  padding: 28px 11px 0px 11px;
+}
+
+#prod_sweets{
+  margin-left: -29px;
+  padding: 28px 32px 0px 32px;
+}
+
+#prod_dry_fruits{
+  padding: 40px 43px 10px 43px;
+}
+
+#prod_everyday{
+  margin-left: -16px;
+  padding: 28px 7px 0px 7px;
+}
+
+#prod_sauces{
+  margin-left: -30px;
+  padding: 28px 8px 0px 8px;
+}
+
+#prod_ready{
+  padding: 40px 25px 10px 25px;
+}
+
+#prod_fresh{
+  margin-left: -23px;
+  padding: 40px 0px 10px 0px;
+}
+
+#prod_meat{
+  margin-left: -35px;
+  padding: 28px 20px 0px 20px;
+}
+
+#prod_pet{
+  padding: 40px 47px 10px 47px;
+}
+
+#prod_vegan{
+  margin-left: -19px;
+  padding: 40px 26px 10px 26px;
+}
+
+#prod_baby{
+  margin-left: -33px;
+  padding: 48px 38px 8px 38px;
 }
