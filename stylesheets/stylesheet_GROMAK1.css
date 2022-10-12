@@ -126,7 +126,7 @@ hr{
 }
 
 #offers_fruits{
-  background-image: url(../images/sliding_fruits.jpg);
+  background-image: url(../images/sliding/sliding_fruits.jpg);
   background-size: cover;
   width: 700px;
   height: 375px;
@@ -156,7 +156,7 @@ hr{
 }
 
 #offers_baby{
-  background-image: url(../images/sliding_baby.jpg);
+  background-image: url(../images/sliding/sliding_baby.jpg);
   background-size: cover;
   width: 700px;
   height: 375px;
@@ -186,7 +186,7 @@ hr{
 }
 
 #offers_cola{
-  background-image: url(../images/sliding_cola.jpg);
+  background-image: url(../images/sliding/sliding_cola.jpg);
   background-size: cover;
   width: 700px;
   height: 375px;
@@ -218,7 +218,7 @@ hr{
 }
 
 #offers_club{
-  background-image: url(../images/sliding_elite.jpg);
+  background-image: url(../images/sliding/sliding_elite.jpg);
   background-size: cover;
   width: 700px;
   height: 375px;
@@ -250,7 +250,7 @@ hr{
 }
 
 #offers_info{
-  background-image: url(../images/sliding_logo.png);
+  background-image: url(../images/sliding/sliding_logo.png);
   background-size: 380px 373px;
   background-repeat: no-repeat;
   width: 700px;
@@ -283,7 +283,7 @@ hr{
 }
 
 #offers_thursday{
-  background-image: url(../images/sliding_thursday.jpg);
+  background-image: url(../images/sliding/sliding_thursday.jpg);
   background-size: cover;
   width: 700px;
   height: 375px;
