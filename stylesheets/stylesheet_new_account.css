@@ -1,140 +1,22 @@
 body{
-  background-image: url(../images/fern.jpg);
-  background-size: 26.25rem 50rem;
-  background-repeat: no-repeat;
   background-color: #e6e6e6;
 }
 
-form{
-  margin-left: 34.688rem;
-  text-align: left;
-  margin-top: 7.5rem;
-  font-family: 'Source Code Pro', monospace;
-}
-
-h1{
-  font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
-  text-decoration: underline;
-  margin-left: 13.125rem;
-}
-
 label{
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
-input{
-  height: 1.188rem;
-  width: 12.5rem;
-  font-size: 0.938rem;
+h3{
+  text-align: center;
+  font-size: 2.1rem;
 }
 
-#label_fname{
-margin-right: 2.813rem;
-
+/*.registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
 }
-
-#input_fname{
-  margin-right: 6.25rem;
-}
-
-#input_lname{
-  margin-left: 4.938rem;
-}
-
-#label_email{
-
-  margin-right: 5.563rem;
-
-}
-
-#input_email{
-  margin-right: 6.25rem;
-}
-
-#input_dob{
-  margin-left: 2.188rem;
-}
-
-#label_mobno{
-  margin-right: 0.875rem;
-}
-
-#label_add1{
-  margin-right: 0.25rem;
-}
-
-#input_add1{
-  margin-right: 6.25rem;
-}
-
-#input_add2{
-  margin-left: 1.438rem;
-}
-
-#label_add_type{
-  margin-right: -5rem;
-}
-
-#input_home{
-    margin-right: -5rem;
-}
-
-#input_office{
-  margin-right: -5rem;
-  margin-left: -3.75rem;
-}
-
-#input_permanent{
-    margin-right: -5rem;
-    margin-left: -4.063rem;
-}
-
-#label_pcode{
-  margin-right: 2.313rem;
-}
-
-#input_pcode{
-  margin-right: 6.25rem;
-}
-
-#input_city{
-  margin-left: 8.125rem;
-}
-
-#label_pswrd{
-  margin-right: 4.313rem;
-}
-
-#input_pswrd{
-  margin-right: 6.25rem;
-}
-
-button{
-  font-size: 1.063rem;
-  background-color: #99ccff;
-  font-weight: bold;
-  border-radius: 0.313rem;
-  padding: 0.25rem 0.438rem 0.188rem 0.438rem;
-  border-width: thin;
-  display: inline-block;
-  margin-left: 22.813rem;
-}
-
-button:hover{
-  transition: 0.6s;
-  background-color: #4da6ff;
-  box-shadow: 0.188rem 0.188rem grey;
-}
-
-@media(min-width: 576px){
-  form{
-    max-width: 1000px;
-  }
-}
-
-@media(min-width: 768px){
-  form{
-    max-width: 1000px;
-  }
-}
+.registration .select-arrow {
+top: 13px;
+}*/
