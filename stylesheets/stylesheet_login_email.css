@@ -1,54 +1,56 @@
 body{
   background-image: url(../images/vegetable1.jpg);
   background-repeat: no-repeat;
-  background-size: 1540px 1500px;
-  background-attachment: scroll;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #email_login{
-  margin-top: 170px;
+  margin-top: 10.625rem;
   text-align: center;
+
 }
 
 #input_email{
-  margin-left: 20px;
-  height: 19px;
-  width: 240px;
-  font-size:15px;
+  margin-left: 1.25rem;
+  height: 1.188rem;
+  width: 15rem;
+  font-size:0.938rem;
 }
 
 #input_password{
 
-  height: 19px;
-  width: 240px;
-  font-size:15px;
-
+  height: 1.188rem;
+  width: 15rem;
+  font-size:0.938rem;
 }
 
 h1{
   font-family: 'Inter Tight', sans-serif;
-  margin-left: 70px;
-  font-size: 40px;
+  margin-left: 4.375rem;
+  font-size: 2.5rem;
 }
 
 #label_email{
-    font-size: 20px;
+    font-size: 1.25rem;
 
 }
 
 #label_password{
-  font-size: 20px;
-  margin-right: 10px;
-  margin-left: 135px;
+  font-size: 1.25rem;
+  margin-right: 0.625rem;
+  margin-left: 8.438rem;
 }
 
 #back_to_index{
-  font-size: 14px;
-  margin-right: 160px;
+  font-size: 0.875rem;
+  margin-right: 10rem;
   font-weight: bold;
   background-color: #00ff99;
-  border-radius: 20px;
-  padding: 4px 7px 3px 7px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.438rem 0.188rem 0.438rem;
   font-family: 'Josefin Sans', sans-serif;
   border-width: thin;
   display: inline-block;
@@ -59,11 +61,11 @@ h1{
 }
 
 #confirm_email_and_password{
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   background-color: #00ff99;
-  border-radius: 20px;
-  padding: 4px 7px 3px 7px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.438rem 0.188rem 0.438rem;
   font-family: 'Josefin Sans', sans-serif;
   border-width: thin;
   display: inline-block;
@@ -74,11 +76,11 @@ h1{
 }
 
 #not_a_user{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: bolder;
   font-weight: bolder;
 }
 
 #dont_remember_pswrd{
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }

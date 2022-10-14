@@ -4,26 +4,26 @@ body{
 }
 
 #search-top{
-  font-size: 19px;
-  margin-top: -8px;
-  width: 1536px;
-  height: 47px;
+  font-size: 1.188rem;
+  margin-top: -0.5rem;
+  width: 96rem;
+  height: 2.938rem;
   background: linear-gradient(to left, #800080, #ffc0cb);
-  margin-left: -8px;
+  margin-left: -0.5rem;
   font-family: 'Playfair Display', serif;
 }
 
 #span_search{
-  margin-right: 80px;
-  margin-left: 80px;
-  font-size: 30px;
+  margin-right: 5rem;
+  margin-left: 5rem;
+  font-size: 1.875rem;
   font-weight: bolder;
   color: red;
-  text-shadow: 1px 2px #008000;
+  text-shadow: 0.063rem 0.125rem #008000;
 }
 
 #GROMAK_logo{
-  margin-left: 65px;
+  margin-left: 4.063rem;
   color: black;
   text-decoration: none;
 }
@@ -34,23 +34,23 @@ body{
 }
 
 #main_search{
-  margin-left: 20px;
-  height: 19px;
-  width: 230px;
-  font-size:16px;
-  border-radius: 4px;
+  margin-left: 1.25rem;
+  height: 1.188rem;
+  width: 14.375rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
 }
 
 #collapsible_options{
-  margin-left: 1335px;
-  margin-top: -43px;
+  margin-left: 83.438rem;
+  margin-top: -2.688rem;
   transition: .64s;
   background: linear-gradient(to left, #f0ddf0 5%, #ab63ab 100%);
   overflow: hidden;
   text-align: center;
-  border-radius: 15px;
-  height: 612px;
-  font-size: 22px;
+  border-radius: 0.938rem;
+  height: 38.25rem;
+  font-size: 1.375rem;
   font-family: 'Alkalami', serif;
   width: 0;
   position: absolute;
@@ -65,7 +65,7 @@ body{
 }
 
 #option:hover{
-text-shadow: 5px 5px 8px #b300b3;
+text-shadow: 5px 5px 0.5rem #b300b3;
 }
 
 #collapsible_sidebar{
@@ -75,7 +75,7 @@ text-shadow: 5px 5px 8px #b300b3;
 }
 
 #collapsible_button{
-  font-size: 19px;
+  font-size: 1.188rem;
   border-radius: 9px;
   margin-left: 145px;
   margin-top: -7px;
@@ -103,7 +103,7 @@ text-shadow: 5px 5px 8px #b300b3;
 
 #cross_button{
   margin-left: 135px;
-  font-size: 30px;
+  font-size: 1.875rem;
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -122,7 +122,7 @@ hr{
 .sliding_offers{
     position: relative;
     float: left;
-    /*animation: 50s sliding_offers infinite;*/
+    /*animation: 45s sliding_offers infinite;*/
 }
 
 #offers_fruits{
@@ -151,7 +151,7 @@ hr{
   height: 50px;
   background: rgba(106,204,82,0.35);
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -181,7 +181,7 @@ hr{
   height: 90px;
   background: rgba(231,199,179,0.68);
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   font-family: 'Dancing Script', cursive;
 }
 
@@ -207,12 +207,12 @@ hr{
 
 #cola_text{
   margin-top: 100px;
-  margin-left: -15px;
+  margin-left: -0.938rem;
   width: 520px;
   height: 90px;
   background: rgba(228,220,220,0.54);
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   padding: 0px 10px;
   font-family: 'Dancing Script', cursive;
 }
@@ -244,7 +244,7 @@ hr{
   height: 90px;
   background: rgba(180,136,94,0.6);
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   padding: 0px 10px;
   font-family: 'Dancing Script', cursive;
 }
@@ -272,12 +272,12 @@ hr{
 }
 
 #info_text{
-  margin-top: -30px;
+  margin-top: -1.875rem;
   margin-left: 275px;
   width: 310px;
   height: 100px;
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   padding: 0px 10px;
   font-family: 'Dancing Script', cursive;
 }
@@ -305,12 +305,12 @@ hr{
 
 #thursday_text{
   margin-top: 60px;
-  margin-left: -15px;
+  margin-left: -0.938rem;
   width: 520px;
   height: 142px;
   background: rgba(228,220,220,0.55);
   color: black;
-  border-radius: 15px;
+  border-radius: 0.938rem;
   padding: 0px 10px;
 }
 

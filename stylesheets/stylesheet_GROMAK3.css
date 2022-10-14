@@ -1,0 +1,32 @@
+.elite_membership{
+  margin-top: 70px;
+  height: 600px;
+  width: 1525px;
+  background-color: grey;
+  text-align: center;
+}
+
+h1{
+  font-size: 40px;
+}
+
+#elite_points{
+  height: 400px;
+  width: 800px;
+  margin-left: 335px;
+  border-radius: 10px;
+  text-align: left;
+  font-size: 20px;
+  background-color: green;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+.gg{
+  position: relative;
+  left: 3rem;
+  bottom: 1.8rem;
+}

@@ -3,11 +3,11 @@ function open_login(){
 }
 
 function expand_sidebar() {
-  document.getElementById("collapsible_options").style.width = "210px";
-  document.getElementById("collapsible_sidebar").style.marginLeft = "1075px";
+  document.getElementById("collapsible_options").style.width = "13.125rem";
+  document.getElementById("collapsible_sidebar").style.marginLeft = "67.188rem";
 }
 
 function collapse_sidebar() {
-  document.getElementById("collapsible_options").style.width = "0px";
-  document.getElementById("collapsible_sidebar").style.marginLeft= "1150px";
+  document.getElementById("collapsible_options").style.width = "0rem";
+  document.getElementById("collapsible_sidebar").style.marginLeft= "71.875rem";
 }

@@ -1,7 +1,7 @@
 .products{
   margin-top: 40px;
   margin-left: 40px;
-  height: 1150px;
+  height: 1300px;
   width: 1515px;
 }
 
@@ -24,6 +24,7 @@
 .prod_text{
   font-size: 22px;
   margin-top: 60px;
+  font-family: 'Raleway', sans-serif;
 }
 
 #prod_vegetables{
@@ -35,7 +36,7 @@
 
 #div_vegetables{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -49,7 +50,7 @@
 
 #div_juices{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -63,7 +64,7 @@
 
 #div_household{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -76,7 +77,7 @@
 
 #div_fruits{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -84,13 +85,13 @@
   background-image: url(../images/main_products/main_snacks.jpg);
   background-position: bottom;
   background-size: cover;
-  margin-left: -10px;
+  margin-left: -5px;
   padding: 25px 15px 2px 15px;
 }
 
 #div_snacks{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -98,13 +99,13 @@
   background-image: url(../images/main_products/main_self.jpg);
   background-position:center;
   background-size: cover;
-  margin-left: -30px;
+  margin-left: -25px;
   padding: 48px 40px 8px 45px;
 }
 
 #div_self{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -117,7 +118,7 @@
 
 #div_alcohol{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -131,7 +132,7 @@
 
 #div_frozen{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -145,7 +146,7 @@
 
 #div_coffee{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -158,7 +159,7 @@
 
 #div_dairy{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -172,7 +173,7 @@
 
 #div_breakfast{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -186,7 +187,7 @@
 
 #div_sweets{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -199,7 +200,7 @@
 
 #div_dry_fruits{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -207,13 +208,13 @@
   background-image: url(../images/main_products/main_everyday.jpg);
   background-position: bottom;
   background-size: cover;
-  margin-left: -11px;
+  margin-left: -9px;
   padding: 28px 7px 0px 7px;
 }
 
 #div_everyday{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -227,7 +228,7 @@
 
 #div_sauces{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -235,12 +236,12 @@
   background-image: url(../images/main_products/main_ready.jpg);
   background-position: bottom;
   background-size: cover;
-  padding: 40px 25px 10px 25px;
+  padding: 40px 22px 10px 22px;
 }
 
 #div_ready{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -254,7 +255,7 @@
 
 #div_fresh{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -262,13 +263,13 @@
   background-image: url(../images/main_products/main_meat.jpg);
   background-position: bottom;
   background-size: cover;
-  margin-left: -34px;
+  margin-left: -30px;
   padding: 28px 20px 0px 20px;
 }
 
 #div_meat{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -281,13 +282,13 @@
 
 #div_pet{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
 #prod_vegan{
   background-image: url(../images/main_products/main_vegan.jpg);
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
   margin-left: -14px;
   padding: 40px 26px 10px 26px;
@@ -295,7 +296,7 @@
 
 #div_vegan{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
 
@@ -309,6 +310,6 @@
 
 #div_baby{
   background-color: #e6e6e6;
-  opacity: 0.78;
+  opacity: 0.81;
   border-radius: 7px;
 }
