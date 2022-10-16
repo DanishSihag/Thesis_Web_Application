@@ -1,6 +1,6 @@
 body{
   background-color: #e6e6e6;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -18,6 +18,8 @@ body{
   color: black;
   font-size: 1.25rem;
 }
+
+.nav-link:focus{color:black;}
 
 .nav-link:hover{
   color: black;
@@ -80,268 +82,35 @@ hr{
   background-color: black;
 }
 
-.offers{
-  width: 307.813rem;
-  height: 28.125rem;
-}
-
 .sliding_offers{
-    position: relative;
-    float: left;
-    /*animation: 45s sliding_offers infinite;*/
+  margin-top: 4.5rem;
+  height: 35rem;
 }
 
-#offers_fruits{
-  background-image: url(../images/sliding/sliding_fruits.jpg);
-  background-size: cover;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-top: 2.5rem;
-  margin-left: 2.5rem;
-  border-radius: 0.625rem;
-  transition: all .3s linear;
+.sliding_img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.78);
 }
 
-#offers_fruits:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #009900;
-}
-
-#fruits_text{
-  margin-top: 8.125rem;
-  width: 32.5rem;
-  height: 3.125rem;
-  background: rgba(106,204,82,0.35);
-  color: black;
-  border-radius: 0.938rem;
+#sliding_caption{
+  font-size: 3.2rem;
+  font-weight: bold;
   font-family: 'Dancing Script', cursive;
 }
 
-#offers_baby{
-  background-image: url(../images/sliding/sliding_baby.jpg);
-  background-size: cover;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-left: 2.563rem;
-  margin-top: 2.5rem;
-  border-radius: 0.625rem;
-  transition: all .3s linear;
-}
-
-#offers_baby:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #ffb366;
-}
-
-#baby_text{
-  margin-top: 6.25rem;
-  width: 30.938rem;
-  height: 5.625rem;
-  background: rgba(231,199,179,0.68);
+#carousel_btn{
   color: black;
-  border-radius: 0.938rem;
-  font-family: 'Dancing Script', cursive;
 }
 
-#offers_cola{
-  background-image: url(../images/sliding/sliding_cola.jpg);
-  background-size: cover;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-top: 2.5rem;
-  margin-left: 3rem;
-  border-radius: 0.625rem;
-  transition: all .3s linear;
+#img_logo{
+  margin-top: 3rem;
+  height: 55%;
+  object-fit: contain;
+  filter: brightness(0.92);
+  border-radius: 3rem;
 }
 
-#offers_cola:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #4da6ff;
-}
-
-#cola_text{
-  margin-top: 6.25rem;
-  margin-left: -0.938rem;
-  width: 32.5rem;
-  height: 5.625rem;
-  background: rgba(228,220,220,0.54);
+.txt_logo{
   color: black;
-  border-radius: 0.938rem;
-  padding: 0px 0.625rem;
-  font-family: 'Dancing Script', cursive;
-}
-
-#offers_club{
-  background-image: url(../images/sliding/sliding_elite.jpg);
-  background-size: cover;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-top: 2.5rem;
-  margin-left: 2.875rem;
-  border-radius: 0.625rem;
-  transition: all .3s linear;
-}
-
-#offers_club:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #cc8800;
-}
-
-#club_text{
-  margin-top: 6.25rem;
-  margin-left: -3.625rem;
-  width: 36.875rem;
-  height: 5.625rem;
-  background: rgba(180,136,94,0.6);
-  color: black;
-  border-radius: 0.938rem;
-  padding: 0rem 0.625rem;
-  font-family: 'Dancing Script', cursive;
-}
-
-#offers_info{
-  background-image: url(../images/sliding/sliding_logo.png);
-  background-size: 23.75rem 23.313rem;
-  background-repeat: no-repeat;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-top: 2.5rem;
-  margin-left: 3.188rem;
-  border-radius: 0.625rem;
-  background-color: #ffb3e6;
-  transition: all .3s linear;
-}
-
-#offers_info:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #ff4dd2;
-}
-
-#info_text{
-  margin-top: -1.875rem;
-  margin-left: 17.188rem;
-  width: 19.375rem;
-  height: 6.25rem;
-  color: black;
-  border-radius: 0.938rem;
-  padding: 0rem 0.625rem;
-  font-family: 'Dancing Script', cursive;
-}
-
-#offers_thursday{
-  background-image: url(../images/sliding/sliding_thursday.jpg);
-  background-size: cover;
-  width: 43.75rem;
-  height: 23.438rem;
-  padding: 10.313rem 6.25rem;
-  font-size: 2.563rem;
-  margin-top: 2.5rem;
-  margin-left: 2.813rem;
-  border-radius: 0.625rem;
-  font-family: 'Dancing Script', cursive;
-  transition: all .3s linear;
-}
-
-#offers_thursday:hover{
-  transform: scale(1.07);
-  cursor: pointer;
-  transition: .65s;
-  box-shadow: 0.006rem 0.006rem 0.438rem 0.438rem #b3b3ff;
-}
-
-#thursday_text{
-  margin-top: 3.75rem;
-  margin-left: -0.938rem;
-  width: 32.5rem;
-  height: 8.875rem;
-  background: rgba(228,220,220,0.55);
-  color: black;
-  border-radius: 0.938rem;
-  padding: 0rem 0.625rem;
-}
-
-@keyframes sliding_offers{
-    0%{
-        left:0;
-    }
-    5%{
-        left:0;
-    }
-    10%{
-        left:0;
-    }
-    15%{
-        left:0;
-    }
-    20%{
-        left:-15.3%;
-    }
-    25%{
-        left:-15.3%;
-    }
-    30%{
-        left:-15.3%;
-    }
-    35%{
-        left:-15.3%;
-    }
-    40%{
-        left:-30.5%;
-    }
-    45%{
-        left:-30.5%;
-    }
-    50%{
-        left:-30.5%;
-    }
-    55%{
-        left:-30.5%;
-    }
-    60%{
-      left:-45.7%;
-    }
-    65%{
-      left:-45.7%;
-    }
-    70%{
-      left:-45.7%;
-    }
-    75%{
-      left:-45.7%;
-    }
-    80%{
-      left:-61%;
-    }
-    85%{
-      left:-61%;;
-    }
-    90%{
-        left:-61%;
-    }
-    95%{
-      left:-61%;
-    }
-    100%{
-      left:0;
-    }
 }
