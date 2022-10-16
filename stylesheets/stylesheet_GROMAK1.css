@@ -5,20 +5,18 @@ body{
 
 .navbar{
   background: linear-gradient(to left, #800080, #ffc0cb);
+  font-family: 'Playfair Display', serif;
 }
 
-.offcanvas-body{
-  background: linear-gradient(to left, #f0ddf0 5%, #ab63ab 100%);
-}
-
-#offcanvasLightNavbar{
-  width: 15rem;
-  border-radius: 0.85rem;
+.navbar-brand{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 1.31rem;
 }
 
 .nav-link{
   color: black;
-
+  font-size: 1.25rem;
 }
 
 .nav-link:hover{
@@ -26,127 +24,62 @@ body{
 }
 
 .nav > li{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.navbar-brand{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-/*
-#search-top{
-  font-size: 1.188rem;
-  margin-top: -0.5rem;
-  width: 96rem;
-  height: 2.938rem;
-  background: linear-gradient(to left, #800080, #ffc0cb);
-  margin-left: -0.5rem;
-  font-family: 'Playfair Display', serif;
-}
-
-#span_search{
-  margin-right: 5rem;
-  margin-left: 5rem;
-  font-size: 1.875rem;
-  font-weight: bolder;
-  color: red;
-  text-shadow: 0.063rem 0.125rem #008000;
-}
-
-#GROMAK_logo{
-  margin-left: 4.063rem;
-  color: black;
-  text-decoration: none;
-}
-
-#elite_club{
-  color: black;
-  text-decoration: none;
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
 }
 
 #main_search{
-  margin-left: 1.25rem;
-  height: 1.188rem;
-  width: 14.375rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
+  width: 17rem;
+  font-family:sans-serif;
 }
 
-#collapsible_options{
-  margin-left: 83.438rem;
-  margin-top: -2.688rem;
-  transition: .64s;
+#search_btn{
+  width: 6rem;
+  color: black;
+  background-color: #ff794d;
+  font-size: 1.15rem;
+}
+
+.navbar-toggler-icon{
+  transition: all 0.4s;
+}
+
+.navbar-toggler-icon:hover{
+  transform: scale(1.285);
+}
+
+#offcanvasLightNavbar{
+  width: 15rem;
+  border-radius: 0.85rem;
   background: linear-gradient(to left, #f0ddf0 5%, #ab63ab 100%);
-  overflow: hidden;
-  text-align: center;
-  border-radius: 0.938rem;
-  height: 38.25rem;
-  font-size: 1.375rem;
+  font-size: 1.3rem;
   font-family: 'Alkalami', serif;
-  width: 0;
-  position: absolute;
-  z-index: +1;
+  overflow: hidden;
+  transition: .55s all;
+  text-align: center;
   opacity: 0.97;
 }
 
-#option{
+.offcanvas-title{
   color: black;
-  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'Alkalami', serif;
+}
+
+#menu_txt{
+  font-size: 1.40rem;
   font-style: italic;
 }
 
-#option:hover{
+#menu_txt:hover{
 text-shadow: 0.313rem 0.313rem 0.5rem #b300b3;
 }
 
-#collapsible_sidebar{
-  margin-left: 71.875rem;
-  margin-top: -2rem;
-  transition: .64s;
-}
-
-#collapsible_button{
-  font-size: 1.188rem;
-  border-radius: 0.563rem;
-  margin-left: 9.063rem;
-  margin-top: -0.438rem;
-  box-shadow: 0rem 0.625rem 0.875rem -0.438rem #822d82;
-	background: linear-gradient(to bottom, #f0ddf0 5%, #ab63ab 100%);
-	background-color: #f0ddf0;
-	display: inline-block;
-	cursor: pointer;
-	color: black;
-	font-family: 'Source Sans Pro', sans-serif;
-	padding: 0.375rem 0.688rem;
-	text-decoration: none;
-	text-shadow: 0rem 0.063rem 0rem #a679ad;
-}
-
-#collapsible_button:hover{
-  background:linear-gradient(to bottom, #ab63ab 5%, #f0ddf0 100%);
-	background-color:#ab63ab;
-}
-
-#collapsible_button:active{
-  position:relative;
-	top:0.063rem;
-}
-
-#cross_button{
-  margin-left: 8.438rem;
-  font-size: 1.875rem;
-  text-decoration: none;
-  color: black;
-  font-weight: bolder;
-}
-
 hr{
-  height: 0.125rem;
+  height: 0.14rem;
   background-color: black;
 }
-*/
+
 .offers{
   width: 307.813rem;
   height: 28.125rem;
