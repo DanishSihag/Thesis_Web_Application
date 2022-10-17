@@ -1,32 +1,24 @@
 .elite_membership{
-  margin-top: 70px;
-  height: 600px;
-  width: 1525px;
-  background-color: grey;
+  background: radial-gradient(circle, rgba(76,156,251,1) 0%, rgba(252,70,107,0.8690826672465861) 92%);
+  border-radius: 1.3rem;
+  width: 77vw;
+  height: 55vh;
+}
+
+#premium_heading_main{
+  font-size: 2.6vw;
   text-align: center;
+  font-family: 'Playfair Display', serif;
 }
 
-h1{
-  font-size: 40px;
-}
-
-#elite_points{
-  height: 400px;
-  width: 800px;
-  margin-left: 335px;
-  border-radius: 10px;
-  text-align: left;
-  font-size: 20px;
-  background-color: green;
-}
-
-h2{
+#premium_heading_secondary{
+  font-size: 2.1vw;
   text-align: center;
-  font-size: 30px;
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
 }
 
-.gg{
-  position: relative;
-  left: 3rem;
-  bottom: 1.8rem;
+#membership_txt{
+  font-size: 1.51vw;
+  font-family: 'Poppins', sans-serif;
 }
