@@ -22,3 +22,49 @@
   height: 70%;
   overflow: hidden;
 }
+
+.elite_membership{
+  background: radial-gradient(circle, rgba(76,156,251,1) 0%, rgba(252,70,107,0.8690826672465861) 92%);
+  border-radius: 1.3rem;
+  width: 77vw;
+  height: 55vh;
+}
+
+#premium_heading_main{
+  font-size: 2.6vw;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#premium_heading_secondary{
+  font-size: 2.1vw;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
+}
+
+#membership_txt{
+  font-size: 1.51vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#benefits_heading{
+  font-size: 2.3vw;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#separator{
+  text-align: center;
+  margin: auto;
+  width: 60rem;
+}
+
+.card{
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1.4vw;
+  width: 18vw;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  font-family: 'Merriweather', serif;
+}
