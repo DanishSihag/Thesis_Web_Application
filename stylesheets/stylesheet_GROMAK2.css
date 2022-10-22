@@ -27,7 +27,7 @@
   background: radial-gradient(circle, rgba(76,156,251,1) 0%, rgba(252,70,107,0.8690826672465861) 92%);
   border-radius: 1.3rem;
   width: 77vw;
-  height: 55vh;
+  height: 100%;
 }
 
 #premium_heading_main{

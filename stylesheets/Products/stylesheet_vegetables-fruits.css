@@ -5,7 +5,14 @@ body{
 .navbar{
   background: linear-gradient(to left, #800080, #ffc0cb);
   font-family: 'Playfair Display', serif;
+  position: relative;
 }
+
+/*#separator{
+  text-align: center;
+  margin: auto;
+  width: 60rem;
+}*/
 
 .navbar-brand{
   padding-left: 5rem;
@@ -81,36 +88,38 @@ hr{
   background-color: black;
 }
 
-.sliding_offers{
+#right_sidebar{
   position: relative;
-  margin-top: 2rem;
-  height: 35rem;
+  width: 38vh;
+  background-color: grey;
 }
 
-.sliding_img{
-  height: 100%;
+.heading{
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card{
+  width: 13rem;
+}
+
+.card-body{
+  text-align: center;
+}
+
+.btn_addtocart{
+  color: white;
+  background-color: black;
+}
+
+.btn_addtocart:hover{
+  color: white;
+  background-color: black;
+}
+
+.card-img-top{
+  width: 11.5rem;
+  height: 9rem;
   object-fit: cover;
-  filter: brightness(0.82);
-}
-
-#sliding_caption{
-  font-size: 3.2rem;
-  font-weight: bold;
-  font-family: 'Dancing Script', cursive;
-}
-
-#carousel_btn{
-  color: black;
-}
-
-#img_logo{
-  margin-top: 3rem;
-  height: 55%;
-  object-fit: contain;
-  filter: brightness(0.92);
-  border-radius: 3rem;
-}
-
-.txt_logo{
-  color: black;
 }
