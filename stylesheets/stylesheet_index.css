@@ -38,6 +38,7 @@ h2{
 }
 
 .login_email:hover{
+  color: black;
   background-color: #009568;
   transform: scale(1.085);
 }
@@ -56,6 +57,7 @@ h2{
 }
 
 .login_guest:hover{
+  color: black;
   background-color: #009568;
   transform: scale(1.085);
 }

@@ -8,12 +8,6 @@ body{
   position: relative;
 }
 
-/*#separator{
-  text-align: center;
-  margin: auto;
-  width: 60rem;
-}*/
-
 .navbar-brand{
   padding-left: 5rem;
   padding-right: 5rem;
@@ -88,13 +82,8 @@ hr{
   background-color: black;
 }
 
-#right_sidebar{
-  position: relative;
-  width: 38vh;
-  background-color: grey;
-}
-
 .heading{
+  text-decoration: underline;
   font-family: 'Merriweather', serif;
   font-weight: 500;
   text-align: center;
@@ -108,12 +97,12 @@ hr{
   text-align: center;
 }
 
-.btn_addtocart{
+.btn_addToCart{
   color: white;
   background-color: black;
 }
 
-.btn_addtocart:hover{
+.btn_addToCart:hover{
   color: white;
   background-color: black;
 }
@@ -122,4 +111,35 @@ hr{
   width: 11.5rem;
   height: 9rem;
   object-fit: cover;
+}
+
+.cartImg{
+  width: 35rem;
+}
+
+.cart{
+  font-size: 1.25rem;
+  position: absolute;
+  right: 6.5rem;
+  background-color: #c2fbd7;
+  border-radius: 6.25rem;
+  box-shadow: rgba(44, 187, 99, .2) 0 -1.563rem 1.125rem -0.875rem inset,rgba(44, 187, 99, .15) 0rem 0.063rem 0.125rem,rgba(44, 187, 99, .15) 0 0.125rem 0.25rem,rgba(44, 187, 99, .15) 0rem 0.25rem 0.5rem;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,system-ui,Roboto,sans-serif;
+  padding: 9px 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.54s;
+  border-color: lightgreen;
+}
+
+.cart:hover{
+  box-shadow: rgba(44,187,99,.5) 0 -1.563rem 1.125rem -0.875rem inset,rgba(44,187,99,.30) 0rem 0.063rem 0.125rem,rgba(44,187,99,.30) 0 0.125rem 0.25rem,rgba(44,187,99,.30) 0rem 0.25rem 0.5rem,rgba(44,187,99,.30) 0rem 0.5rem 1rem;
+  transform: scale(1.06);
+}
+
+#main-container{
+  right: 8rem;
 }
