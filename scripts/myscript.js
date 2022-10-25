@@ -2,49 +2,49 @@ let individualItems = [
   {
     name: "Oranges",
     tag: "oranges",
-    price: 100,
+    price: 175,
     inCart: 0
   },
   {
     name: "Bananas",
     tag: "bananas",
-    price: 75,
+    price: 100,
     inCart: 0
   },
   {
     name: "Strawberries",
     tag: "strawberries",
-    price: 150,
+    price: 200,
     inCart: 0
   },
   {
     name: "Grapes",
     tag: "grapes",
-    price: 200,
+    price: 350,
     inCart: 0
   },
   {
     name: "Apples",
     tag: "apples",
-    price: 185,
+    price: 80,
     inCart: 0
   },
   {
     name: "Watermelon",
     tag: "watermelon",
-    price: 250,
+    price: 1100,
     inCart: 0
   },
   {
     name: "Blueberries",
     tag: "blueberries",
-    price: 500,
+    price: 1500,
     inCart: 0
   },
   {
     name: "Lemons",
     tag: "lemons",
-    price: 75,
+    price: 200,
     inCart: 0
   },
   {
@@ -56,19 +56,19 @@ let individualItems = [
   {
     name: "Pineapple",
     tag: "pineapple",
-    price: 200,
+    price: 1000,
     inCart: 0
   },
   {
     name: "Cherries",
     tag: "cherries",
-    price: 185,
+    price: 500,
     inCart: 0
   },
   {
     name: "Raspberries",
     tag: "raspberries",
-    price: 250,
+    price: 1600,
     inCart: 0
   },
   {
@@ -80,211 +80,211 @@ let individualItems = [
   {
     name: "Mango",
     tag: "mango",
-    price: 75,
+    price: 450,
     inCart: 0
   },
   {
     name: "Plums",
     tag: "plums",
-    price: 150,
+    price: 80,
     inCart: 0
   },
   {
     name: "Guava",
     tag: "guava",
-    price: 200,
+    price: 80,
     inCart: 0
   },
   {
     name: "Apricot",
     tag: "apricot",
-    price: 185,
+    price: 200,
     inCart: 0
   },
   {
     name: "Papaya",
     tag: "papaya",
-    price: 250,
+    price: 600,
     inCart: 0
   },
   {
     name: "Dragonfruit",
     tag: "dragonfruit",
-    price: 100,
+    price: 1800,
     inCart: 0
   },
   {
     name: "Kiwi",
     tag: "kiwi",
-    price: 75,
+    price: 250,
     inCart: 0
   },
   {
     name: "PassionFruit",
     tag: "passionfruit",
-    price: 150,
+    price: 200,
     inCart: 0
   },
   {
     name: "Lychee",
     tag: "lychee",
-    price: 200,
+    price: 500,
     inCart: 0
   },
   {
     name: "Durian",
     tag: "durian",
-    price: 185,
+    price: 800,
     inCart: 0
   },
   {
     name: "Jackfruit",
     tag: "jackfruit",
-    price: 250,
+    price: 1200,
     inCart: 0
   },
   {
     name: "Potatoes",
     tag: "potatoes",
-    price: 100,
+    price: 70,
     inCart: 0
   },
   {
     name: "Tomatoes",
     tag: "tomatoes",
-    price: 75,
+    price: 150,
     inCart: 0
   },
   {
     name: "Onions",
     tag: "onions",
-    price: 150,
+    price: 60,
     inCart: 0
   },
   {
     name: "Carrot",
     tag: "carrot",
-    price: 200,
+    price: 55,
     inCart: 0
   },
   {
     name: "Bell Pepper",
     tag: "bellpepper",
-    price: 185,
+    price: 275,
     inCart: 0
   },
   {
     name: "Broccoli",
     tag: "broccoli",
-    price: 250,
+    price: 400,
     inCart: 0
   },
   {
     name: "Cucumber",
     tag: "cucumber",
-    price: 100,
+    price: 80,
     inCart: 0
   },
   {
     name: "Lettuce",
     tag: "lettuce",
-    price: 75,
+    price: 600,
     inCart: 0
   },
   {
     name: "Mushrooms",
     tag: "mushrooms",
-    price: 150,
+    price: 550,
     inCart: 0
   },
   {
     name: "Corn",
     tag: "corn",
-    price: 200,
+    price: 150,
     inCart: 0
   },
   {
     name: "Garlic",
     tag: "garlic",
-    price: 185,
+    price: 80,
     inCart: 0
   },
   {
     name: "Spinach",
     tag: "spinach",
-    price: 250,
+    price: 750,
     inCart: 0
   },
   {
     name: "Green Beans",
     tag: "greenbeans",
-    price: 100,
+    price: 750,
     inCart: 0
   },
   {
     name: "Cabbage",
     tag: "cabbage",
-    price: 75,
+    price: 400,
     inCart: 0
   },
   {
     name: "Sweet Potatoes",
     tag: "sweetpotatoes",
-    price: 150,
+    price: 120,
     inCart: 0
   },
   {
     name: "Cauliflower",
     tag: "cauliflower",
-    price: 200,
+    price: 375,
     inCart: 0
   },
   {
     name: "Eggplant",
     tag: "eggplant",
-    price: 185,
+    price: 300,
     inCart: 0
   },
   {
     name: "Pumpkin",
     tag: "pumpkin",
-    price: 250,
+    price: 500,
     inCart: 0
   },
   {
     name: "Peas",
     tag: "peas",
-    price: 100,
+    price: 300,
     inCart: 0
   },
   {
     name: "Lady Finger",
     tag: "ladyfinger",
-    price: 75,
+    price: 300,
     inCart: 0
   },
   {
     name: "Coriander",
     tag: "coriander",
-    price: 150,
+    price: 850,
     inCart: 0
   },
   {
     name: "Parsley",
     tag: "parsley",
-    price: 200,
+    price: 300,
     inCart: 0
   },
   {
     name: "Ginger",
     tag: "ginger",
-    price: 185,
+    price: 300,
     inCart: 0
   },
   {
     name: "Green Chilli",
     tag: "greenchilli",
-    price: 250,
+    price: 65,
     inCart: 0
   },
 ]
@@ -378,7 +378,7 @@ function pageDisplay(){
       itemDiv.innerHTML += `
       <div class="product" style="display: inline-block; border-bottom: 0.1rem solid lightgrey;">
         <i class="fa fa-close" style="font-size:2rem; color:green; cursor:pointer;"></i>
-        <img class="img-fluid" src="../images/inside_main/${item.tag}.jpg" width="210rem" height="210rem" style="object-fit:cover;padding:2rem;">
+        <img class="img-fluid" src="../images/inside_main/vegetables_fruits/${item.tag}.jpg" width="180rem" height="180rem" style="object-fit:cover;padding:2rem;">
         <span>${item.name}</span>
       </div>
       <div class="price" style="display: inline-block; font-size:1.18rem; border-bottom: 0.1rem solid lightgrey;">
