@@ -8,7 +8,7 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1rem solid lightgrey;
+  border-bottom: 0.9rem solid #a6a6a6;
 }
 
 .product-title{
@@ -36,18 +36,10 @@
   align-items: center;
 }
 
-.basketTotalContainer{
+.totalcartprice_container{
   margin-top: 2rem;
   display: flex;
   width:100%
-}
-
-.basketTotalTitle{
-  width: 85%;
-}
-
-.basketTotal{
-  width: 10%;
 }
 
 .cart{
@@ -67,6 +59,7 @@
   transition: all 0.54s;
   border-color: lightgreen;
   right: 5rem;
+  top: 10rem;
 }
 
 .cart:hover{

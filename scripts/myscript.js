@@ -1,4 +1,4 @@
-let individualItems = [
+let vegetablesFruits = [
   {
     name: "Oranges",
     tag: "oranges",
@@ -287,14 +287,194 @@ let individualItems = [
     price: 65,
     inCart: 0
   },
+  {
+    name: "Coca Cola Can 300ml",
+    tag: "cocacolacan300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Coca Cola 1.5L",
+    tag: "cocacola1.5l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Coca Cola 2.5L",
+    tag: "cocacola2.5l",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Pepsi Can 300ml",
+    tag: "pepsican300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Pepsi Lime 500ml",
+    tag: "pepsilime500ml",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Pepsi 1L",
+    tag: "pepsi1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Fanta Can 300ml",
+    tag: "fantacan300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Fanta 750ml",
+    tag: "fanta750ml",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Fanta Grape Can 300ml",
+    tag: "fantagrapecan300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Coca Cola Cherry 1.75L",
+    tag: "cocacolacherry1.75l",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Coca Cola Vanilla 500ml",
+    tag: "cocacolavanilla500ml",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Sprite Can 300ml",
+    tag: "spritecan300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Sprite 1.75L",
+    tag: "sprite1.75l",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Sprite Cranberry Can 300ml",
+    tag: "spritecranberrycan300ml",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Apple Juice 1L",
+    tag: "tropicanaapplejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Cranberry Juice 1L",
+    tag: "tropicanacranberryjuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Grape Juice 1L",
+    tag: "tropicanagrapejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Guava Juice 1L",
+    tag: "tropicanaguavajuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Lychee Juice 1L",
+    tag: "tropicanalycheejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Mango Juice 1L",
+    tag: "tropicanamangojuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Orange Juice 1L",
+    tag: "tropicanaorangejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Pineapple Juice 1L",
+    tag: "tropicanapineapplejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Pomegrenate Juice 1L",
+    tag: "tropicanapomegrenatejuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Tropicana Strawberry Kiwi Juice 1L",
+    tag: "tropicanastrawberrykiwijuice1l",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Assault 500ml",
+    tag: "monsterenergyassault500ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Classic 500ml",
+    tag: "monsterenergyclassic500ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Import 500ml",
+    tag: "monsterenergyimport500ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Ultra 500ml",
+    tag: "monsterenergyultra500ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Ultra Gold 500ml",
+    tag: "monsterenergyultragold500ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Monster Energy Ultra Red 500ml",
+    tag: "monsterenergyultrared500ml",
+    price: 550,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
 
 for(let i = 0; i < addButton.length; i++){     //selection of all add to cart buttons on screen
   addButton[i].addEventListener('click', () => {
-    itemNumberInCart(individualItems[i]);
-    finalPrice(individualItems[i]);
+    itemNumberInCart(vegetablesFruits[i]);
+    finalPrice(vegetablesFruits[i]);
   })
 }
 
@@ -376,31 +556,31 @@ function pageDisplay(){
     itemDiv.innerHTML = '';
     Object.values(prodsInCart).map(item => {
       itemDiv.innerHTML += `
-      <div class="product" style="display: inline-block; border-bottom: 0.1rem solid lightgrey;">
+      <div class="product" style="display: inline-block; border-bottom: 0.1rem solid grey;">
         <i class="fa fa-close" style="font-size:2rem; color:green; cursor:pointer;"></i>
-        <img class="img-fluid" src="../images/inside_main/vegetables_fruits/${item.tag}.jpg" width="180rem" height="180rem" style="object-fit:cover;padding:2rem;">
+        <img class="img-fluid" src="../images/inside_main/${item.tag}.jpg" width="190rem" height="190rem" style="object-fit:cover;padding-bottom:2rem;padding-top:2rem;padding-left:1rem;padding-right:1rem;">
         <span>${item.name}</span>
       </div>
-      <div class="price" style="display: inline-block; font-size:1.18rem; border-bottom: 0.1rem solid lightgrey;">
+      <div class="price" style="display: inline-block; font-size:1.18rem; border-bottom: 0.1rem solid grey;">
         HUF ${item.price}
       </div>
-      <div class="quantity" style="display: inline-block; font-size:1.3rem; border-bottom: 0.1rem solid lightgrey;">
+      <div class="quantity" style="display: inline-block; font-size:1.3rem; border-bottom: 0.1rem solid grey;">
         <i class="fa fa-arrow-circle-down decrement" style="font-size:1.5rem; cursor:pointer"></i>
         <span>${item.inCart}</span>
         <i class="fa fa-arrow-circle-up increment" style="font-size:1.5rem; cursor:pointer"></i>
       </div>
-      <div class="total" style="display: inline-block; font-size:1.18rem; border-bottom: 0.1rem solid lightgrey;">
+      <div class="total" style="display: inline-block; font-size:1.18rem; border-bottom: 0.1rem solid grey;">
         HUF ${item.inCart * item.price}
       </div>
       `
     });
 
     itemDiv.innerHTML += `
-    <div class="basketTotalContainer">
-      <h4 class="basketTotalTitle">
-        Basket Total
+    <div class="totalcartprice_container">
+      <h4 style="width: 85%;">
+        Total Cart Price
       </h4>
-      <h4 class="basketTotal">
+      <h4 style="width: 10%;">
         HUF ${totalCartPrice}
     </div>
     `;

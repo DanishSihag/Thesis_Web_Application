@@ -5,7 +5,7 @@ body{
 .navbar{
   background: linear-gradient(to left, #800080, #ffc0cb);
   font-family: 'Playfair Display', serif;
-  position: relative;
+  /*position: relative;*/
 }
 
 .navbar-brand{
@@ -81,6 +81,13 @@ hr{
   height: 0.14rem;
   background-color: black;
 }
+
+/*#line_category{
+  width: 84rem;
+  height: 0.14rem;
+  background-color: black;
+}
+*/
 
 .heading{
   text-decoration: underline;
