@@ -1,4 +1,4 @@
-let vegetablesFruits = [
+let individualItems = [
   {
     name: "Oranges",
     tag: "oranges",
@@ -467,14 +467,194 @@ let vegetablesFruits = [
     price: 550,
     inCart: 0
   },
+  {
+    name: "Aluminium Foil 40m",
+    tag: "aluminiumfoil40m",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Ariel Detergent Powder 1.5Kg",
+    tag: "arieldetergentpowder1.5kg",
+    price: 2900,
+    inCart: 0
+  },
+  {
+    name: "Ariel Liquid Detergent 1Kg",
+    tag: "arielliquiddetergent1kg",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Dishwashing Gel",
+    tag: "dishwashinggel",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Dishwashing Gel Refill",
+    tag: "dishwashinggelrefill",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Dishwashing Sponge 4pcs",
+    tag: "dishwashingsponge4pcs",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Domestos Extended Germ Kill",
+    tag: "domestosextendedgermkill",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Domestos Toilet Cleaner",
+    tag: "domestostoiletcleaner",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Dustbin Bags M 30pcs",
+    tag: "dustbinbagsm30pcs",
+    price: 700,
+    inCart: 0
+  },
+  {
+    name: "Dustbin Bags S 30pcs",
+    tag: "dustbinbagss30pcs",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Dustbin Bags XL 30pcs",
+    tag: "dustbinbagsxl30pcs",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Dustbin Bags XXL 30pcs",
+    tag: "dustbinbagsxxl30pcs",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Floor Cleaning Gel",
+    tag: "floorcleaninggel",
+    price: 1200,
+    inCart: 0
+  },
+  {
+    name: "Glade Air Freshener",
+    tag: "gladeairfreshener",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Harpic Limescale Remover",
+    tag: "harpiclimescaleremover",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Kitchen Towels",
+    tag: "kitchentowels",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Kitchen Wipes 50pcs",
+    tag: "kitchenwipes50pcs",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Kiwi Shoe Polish Black",
+    tag: "kiwishoepolishblack",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Kiwi Shoe Polish Brown",
+    tag: "kiwishoepolishbrown",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Napkins 50pcs",
+    tag: "napkins50pcs",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Oven Gloves",
+    tag: "ovengloves",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Party Napkins",
+    tag: "partynapkins",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Pest Stop Insect Killer",
+    tag: "peststopinsectkiller",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Raid Insect Killer",
+    tag: "raidinsectkiller",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Tissue Papers 50pcs",
+    tag: "tissuepapers50pcs",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Tissue Papers 100pcs",
+    tag: "tissuepapers100pcs",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Toilet Paper L",
+    tag: "toiletpaperl",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Toilet Paper M",
+    tag: "toiletpaperm",
+    price: 2400,
+    inCart: 0
+  },
+  {
+    name: "Wet Wipes 75pcs",
+    tag: "wetwipes75pcs",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Window Cleaner Gel",
+    tag: "windowcleanergel",
+    price: 1100,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
 
 for(let i = 0; i < addButton.length; i++){     //selection of all add to cart buttons on screen
   addButton[i].addEventListener('click', () => {
-    itemNumberInCart(vegetablesFruits[i]);
-    finalPrice(vegetablesFruits[i]);
+    itemNumberInCart(individualItems[i]);
+    finalPrice(individualItems[i]);
   })
 }
 
