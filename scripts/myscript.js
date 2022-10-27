@@ -647,6 +647,186 @@ let individualItems = [
     price: 1100,
     inCart: 0
   },
+  {
+    name: "Cheetos Cheese Flavour Chips 200g",
+    tag: "cheetoscheeseflavourchips200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Cheetos Flamin Hot Flavour Chips 200g",
+    tag: "cheetosflaminhotflavourchips200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Cheetos Puff Chips 200g",
+    tag: "cheetospuffchips200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Mogyi Classic Popcorn",
+    tag: "mogyiclassicpopcorn",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Mogyi Popcorn Cheese Flavoured",
+    tag: "mogyipopcorncheeseflavoured",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Mogyi Popcorn Chilli Flavoured",
+    tag: "mogyipopcornchilliflavoured",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Pringles Original 156g",
+    tag: "pringlesoriginal156g",
+    price: 1400,
+    inCart: 0
+  },
+  {
+    name: "Pringles Paprika 156g",
+    tag: "pringlespaprika156g",
+    price: 1400,
+    inCart: 0
+  },
+  {
+    name: "Pringles Sour Cream and Onion 156g",
+    tag: "pringlessourcreamandonion156g",
+    price: 1400,
+    inCart: 0
+  },
+  {
+    name: "Lays BBQ Flavoured Chips",
+    tag: "laysbbqflavouredchips",
+    price: 700,
+    inCart: 0
+  },
+  {
+    name: "Lays Cheese Flavoured Chips",
+    tag: "layscheeseflavouredchips",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Lays Cream and Onion Flavoured Chips",
+    tag: "layscreamandonionflavouredchips",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Lays Salted Chips",
+    tag: "layssaltedchips",
+    price: 500,
+    inCart: 0
+  },
+  {
+    name: "Ritz Crackers 6 Stacks",
+    tag: "ritzcrackers6stacks",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Croco Crackers 400g",
+    tag: "crococrackers400g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Oreo Chocolate Biscuits",
+    tag: "oreochocolatebiscuits",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Oreo Mint Biscuits",
+    tag: "oreomintbiscuits",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Oreo Strawberry Biscuits",
+    tag: "oreostrawberrybiscuits",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Oreo Vanilla Biscuits",
+    tag: "oreovanillabiscuits",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Chocolate Wafers 200g",
+    tag: "chocolatewafers200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Orange Wafers 200g",
+    tag: "orangewafers200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Pineapple Wafers 200g",
+    tag: "pineapplewafers200g",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Apple Cinnamon Cookies 400g",
+    tag: "applecinnamoncookies400g",
+    price: 1150,
+    inCart: 0
+  },
+  {
+    name: "Chocolate Cookies 400g",
+    tag: "chocolatecookies400g",
+    price: 1150,
+    inCart: 0
+  },//-----------------------------------------------------------------
+  {
+    name: "Strawberry Cookies 400g",
+    tag: "strawberrycookies400g",
+    price: 1150,
+    inCart: 0
+  },
+  {
+    name: "White Chocochip Cookies 400g",
+    tag: "whitechocochipcookies400g",
+    price: 1150,
+    inCart: 0
+  },
+  {
+    name: "Peanuts 250g",
+    tag: "peanuts250g",
+    price: 200,
+    inCart: 0
+  },
+  {
+    name: "Salted Peanuts 250g",
+    tag: "saltedpeanuts250g",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Monaco Salty Biscuits 150g",
+    tag: "monacosaltybiscuits150g",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Saltino Salty Biscuits 150g",
+    tag: "saltinosaltybiscuits150g",
+    price: 350,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
