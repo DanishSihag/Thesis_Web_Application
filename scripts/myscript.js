@@ -970,7 +970,7 @@ let individualItems = [
     tag: "antiperspirantrollon",
     price: 1900,
     inCart: 0
-  },/////////////////////////////////////////////////////////////////////////////////
+  },
   {
     name: "Men's Shaving Foam 50g",
     tag: "men'sshavingfoam50g",
@@ -1007,6 +1007,150 @@ let individualItems = [
     price: 20000,
     inCart: 0
   },
+  {
+    name: "Moulinde White Wine 750ml",
+    tag: "moulindewhitewine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Penfolds White Wine 750ml",
+    tag: "penfoldswhitewine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Penfolds Red Wine 750ml",
+    tag: "penfoldsredwine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Vega Ricare Red Wine 750ml",
+    tag: "vegaricareredwine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Kekfrankos Rose Wine 750ml",
+    tag: "kekfrankosrosewine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Koch Premium Rose Wine 750ml",
+    tag: "kochpremiumrosewine750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Carlsberg Beer Can 500ml",
+    tag: "carlsbergbeercan500ml",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Carlsberg Beer Can 12x500ml",
+    tag: "carlsbergbeercan12x500ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Daura Import Lager Beer 330ml",
+    tag: "dauraimportlagerbeer330ml",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Absolut Vodka 350ml",
+    tag: "absolutvodka350ml",
+    price: 2200,
+    inCart: 0
+  },
+  {
+    name: "Kalinka Vodka 500ml",
+    tag: "kalinkavodka500ml",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Bacardi Grand Reserve Rum 750ml",
+    tag: "bacardigrandreserverum750ml",
+    price: 3500,
+    inCart: 0
+  },
+  {
+    name: "Bacardi White Rum 700ml",
+    tag: "bacardiwhiterum700ml",
+    price: 3200,
+    inCart: 0
+  },
+  {
+    name: "Jagermeister Herb Liqueur 700ml",
+    tag: "jagermeisterherbliqueur700ml",
+    price: 5500,
+    inCart: 0
+  },
+  {
+    name: "Pannonhalmi Brandy 700ml",
+    tag: "pannonhalmibrandy700ml",
+    price: 3200,
+    inCart: 0
+  },
+  {
+    name: "Dewar's Scotch Whiskey 750ml",
+    tag: "dewar'sscotchwhiskey750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Glenfiddich Single Malt 750ml",
+    tag: "glenfiddichsinglemalt750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Glenmorangie Single Malt 750ml",
+    tag: "glenmorangiesinglemalt750ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "Monkey Shoulders Scotch 750ml",
+    tag: "monkeyshouldersscotch750ml",
+    price: 4800,
+    inCart: 0
+  },
+  {
+    name: "Royal Cider Green Apple 750ml",
+    tag: "royalcidergreenapple750ml",
+    price: 1300,
+    inCart: 0
+  },
+  {
+    name: "Somersby Apple Cider 330ml",
+    tag: "somersbyapplecider330ml",
+    price: 1300,
+    inCart: 0
+  },
+  {
+    name: "Reserve Blended Scotch 750ml",
+    tag: "reserveblendedscotch750ml",
+    price: 4800,
+    inCart: 0
+  },
+  {
+    name: "Trois Tours Spirit 500ml",
+    tag: "troistoursspirit500ml",
+    price: 3800,
+    inCart: 0
+  },
+  {
+    name: "V30 Spirit Drink 500ml",
+    tag: "v30spiritdrink500ml",
+    price: 3800,
+    inCart: 0
+  },//////////////////////////////////////////////////////////////////////
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
