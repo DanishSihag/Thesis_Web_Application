@@ -790,7 +790,7 @@ let individualItems = [
     tag: "chocolatecookies400g",
     price: 1150,
     inCart: 0
-  },//-----------------------------------------------------------------
+  },
   {
     name: "Strawberry Cookies 400g",
     tag: "strawberrycookies400g",
@@ -825,6 +825,186 @@ let individualItems = [
     name: "Saltino Salty Biscuits 150g",
     tag: "saltinosaltybiscuits150g",
     price: 350,
+    inCart: 0
+  },
+  {
+    name: "Dove Bar Soap 100g",
+    tag: "dovebarsoap100g",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Dove Bar Soap 200g",
+    tag: "dovebarsoap200g",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Dove Liquid Hand Wash Soap 200ml",
+    tag: "doveliquidhandwashsoap200ml",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Dove Liquid Hand Wash Soap Refill",
+    tag: "doveliquidhandwashsoaprefill",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Pantene Hair Oil 100ml",
+    tag: "pantenehairoil100ml",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Pantene Hair Oil 200ml",
+    tag: "pantenehairoil200ml",
+    price: 1900,
+    inCart: 0
+  },
+  {
+    name: "Colgate Toothpaste",
+    tag: "colgatetoothpaste",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Colgate Toothbrush",
+    tag: "colgatetoothbrush",
+    price: 1600,
+    inCart: 0
+  },
+  {
+    name: "Dove Winter Cream 200ml",
+    tag: "dovewintercream200ml",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Nivea Face Wash",
+    tag: "niveafacewash",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Dove Hand Cream 100ml",
+    tag: "dovehandcream100ml",
+    price: 1200,
+    inCart: 0
+  },
+  {
+    name: "Vaseline Foot Cream 250ml",
+    tag: "vaselinefootcream250ml",
+    price: 1200,
+    inCart: 0
+  },
+  {
+    name: "Dove Color Care Shampoo 600ml",
+    tag: "dovecolorcareshampoo600ml",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Dove Daily Moisture Shampoo 600ml",
+    tag: "dovedailymoistureshampoo600ml",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Hairfall Rescue Hair Conditioner 550ml",
+    tag: "hairfallrescuehairconditioner550ml",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Dove Hydrate Hair Conditioner 550ml",
+    tag: "dovehydratehairconditioner550ml",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Garnier Hair Color",
+    tag: "garnierhaircolor",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Shower Cap",
+    tag: "showercap",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Degree Men's Deodorant",
+    tag: "degreemen'sdeodorant",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Dove Women's Deodorant",
+    tag: "dovewomen'sdeodorant",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Women's Perfume",
+    tag: "women'sperfume",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Men's Perfume",
+    tag: "men'sperfume",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Dove Unisex Shower Gel",
+    tag: "doveunisexshowergel",
+    price: 1850,
+    inCart: 0
+  },
+  {
+    name: "Anti Perspirant Roll on",
+    tag: "antiperspirantrollon",
+    price: 1900,
+    inCart: 0
+  },/////////////////////////////////////////////////////////////////////////////////
+  {
+    name: "Men's Shaving Foam 50g",
+    tag: "men'sshavingfoam50g",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Men's Shaving Gel 100ml",
+    tag: "men'sshavinggel100ml",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Men's Shaving Razor Blade Set",
+    tag: "men'sshavingrazorbladeset",
+    price: 1200,
+    inCart: 0
+  },
+  {
+    name: "Hair Trimmer Set",
+    tag: "hairtrimmerset",
+    price: 4500,
+    inCart: 0
+  },
+  {
+    name: "Whey Protein 500g",
+    tag: "wheyprotein500g",
+    price: 6000,
+    inCart: 0
+  },
+  {
+    name: "Whey Protein 2.25Kg",
+    tag: "wheyprotein2.25kg",
+    price: 20000,
     inCart: 0
   },
 ]
