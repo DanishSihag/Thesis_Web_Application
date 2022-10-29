@@ -1366,7 +1366,151 @@ let individualItems = [
     tag: "liptonmintgreentea25g",
     price: 750,
     inCart: 0
+  },
+  {
+    name: "Eggs S Size 10pcs",
+    tag: "eggsssize10pcs",
+    price: 700,
+    inCart: 0
+  },
+  {
+    name: "Eggs M Size 10pcs",
+    tag: "eggsmsize10pcs",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Eggs L Size 10pcs",
+    tag: "eggslsize10pcs",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Eggs XL Size 10pcs",
+    tag: "eggsxlsize10pcs",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Butter 100g",
+    tag: "butter100g",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Butter 200g",
+    tag: "butter200g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Cheese Spread 100g",
+    tag: "cheesespread100g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Cheese Spread Paprika 100g",
+    tag: "cheesespreadpaprika100g",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Cheddar Cheese Slices 150g",
+    tag: "cheddarcheeseslices150g",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Emmentaler Cheese Slices 150g",
+    tag: "emmentalercheeseslices150g",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Gouda Cheese Slices 150g",
+    tag: "goudacheeseslices150g",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Trappista Cheese Slices 125g",
+    tag: "trappistacheeseslices125g",
+    price: 800,
+    inCart: 0
+  },
+  {
+    name: "Mizo Milk 1.5% 1L",
+    tag: "mizomilk1.5%1l",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Mizo Milk 2.8% 1L",
+    tag: "mizomilk2.8%1l",
+    price: 335,
+    inCart: 0
+  },
+  {
+    name: "Mizo Milk 3.5% 1L",
+    tag: "mizomilk3.5%1l",
+    price: 375,
+    inCart: 0
+  },
+  {
+    name: "Danone Unflavoured Yoghurt 140g",
+    tag: "danoneunflavouredyoghurt140g",
+    price: 350,
+    inCart: 0
+  },
+  {
+    name: "Danone Yoghurt Fruit 4x125g",
+    tag: "danoneyoghurtfruit4x125g",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Danone Yoghurt Strawberry 4x125g",
+    tag: "danoneyoghurtstrawberry4x125g",
+    price: 600,
+    inCart: 0
   },////////////////////////////////////////////////////////
+  {
+    name: "White Bread 200g",
+    tag: "whitebread200g",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Milk Bread 200g",
+    tag: "milkbread200g",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "Jumbo White Bread 200g",
+    tag: "jumbowhitebread200g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Brown Bread 200g",
+    tag: "brownbread200g",
+    price: 650,
+    inCart: 0
+  },
+  {
+    name: "Burger Buns x6",
+    tag: "burgerbunsx6",
+    price: 600,
+    inCart: 0
+  },
+  {
+    name: "HotDog Buns x8",
+    tag: "hotdogbunsx8",
+    price: 700,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
