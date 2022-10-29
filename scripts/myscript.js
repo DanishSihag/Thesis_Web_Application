@@ -1510,6 +1510,78 @@ let individualItems = [
     tag: "hotdogbunsx8",
     price: 700,
     inCart: 0
+  },//////////////////////////////////////////////////////////
+  {
+    name: "Nestle Chocolate Cereal 350g",
+    tag: "nestlechocolatecereal350g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Nestle Fruit Cereal 350g",
+    tag: "nestlefruitcereal350g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Nestle Strawberry Cereal 350g",
+    tag: "nestlestrawberrycereal350g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Nestle Corn Flakes 375g",
+    tag: "nestlecornflakes375g",
+    price: 1350,
+    inCart: 0
+  },
+  {
+    name: "Nestle Corn Flakes Chocolate 250g",
+    tag: "nestlecornflakeschocolate250g",
+    price: 1100,
+    inCart: 0
+  },
+  {
+    name: "Nestle Corn Flakes Strawberry 250g",
+    tag: "nestlecornflakesstrawberry250g",
+    price: 1100,
+    inCart: 0
+  },//////////////////////////////////////////////////////////
+  {
+    name: "Nestle Traditional Musli 350g",
+    tag: "nestletraditionalmusli350g",
+    price: 1600,
+    inCart: 0
+  },
+  {
+    name: "Nestle Tropical Musli 350g",
+    tag: "nestletropicalmusli350g",
+    price: 1600,
+    inCart: 0
+  },
+  {
+    name: "Nestle Chocolate Musli 350g",
+    tag: "nestlechocolatemusli350g",
+    price: 1600,
+    inCart: 0
+  },
+  {
+    name: "Nestle Honey Oatmeal 200g",
+    tag: "nestlehoneyoatmeal200g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Nestle Oatmeal 375g",
+    tag: "nestleoatmeal375g",
+    price: 1700,
+    inCart: 0
+  },
+  {
+    name: "Nestle Wheat Oatmeal 200g",
+    tag: "nestlewheatoatmeal200g",
+    price: 1500,
+    inCart: 0
   },
 ]
 
