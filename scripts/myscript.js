@@ -1150,7 +1150,115 @@ let individualItems = [
     tag: "v30spiritdrink500ml",
     price: 3800,
     inCart: 0
-  },//////////////////////////////////////////////////////////////////////
+  },
+  {
+    name: "Pampers Baby Wipes 12pcs",
+    tag: "pampersbabywipes12pcs",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Pampers Baby Wipes 4x52pcs",
+    tag: "pampersbabywipes4x52pcs",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Pampers Baby Wipes 1152pcs",
+    tag: "pampersbabywipes1152pcs",
+    price: 7000,
+    inCart: 0
+  },
+  {
+    name: "Pampers Nappies 43pcs",
+    tag: "pampersnappies43pcs",
+    price: 1400,
+    inCart: 0
+  },
+  {
+    name: "Pampers Nappies 64pcs",
+    tag: "pampersnappies64pcs",
+    price: 2500,
+    inCart: 0
+  },
+  {
+    name: "Pampers Nappies 120pcs",
+    tag: "pampersnappies120pcs",
+    price: 4900,
+    inCart: 0
+  },
+  {
+    name: "Baby Training Cup 150ml",
+    tag: "babytrainingcup150ml",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Baby Training Cup 300ml",
+    tag: "babytrainingcup300ml",
+    price: 1600,
+    inCart: 0
+  },
+  {
+    name: "Baby Soft Spoons 6pcs",
+    tag: "babysoftspoons6pcs",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Baby Eating Plates 6pcs",
+    tag: "babyeatingplates6pcs",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Shampoo 300ml",
+    tag: "johnson'sbabyshampoo300ml",
+    price: 1200,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Cream 100g",
+    tag: "johnson'sbabycream100g",
+    price: 1300,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Oil 500ml",
+    tag: "johnson'sbabyoil500ml",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Aquaphor Baby Ointment 400g",
+    tag: "aquaphorbabyointment400g",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Cotton Balls 75pcs",
+    tag: "johnson'sbabycottonballs75pcs",
+    price: 1300,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Cotton Pads 50pcs",
+    tag: "johnson'sbabycottonpads50pcs",
+    price: 2200,
+    inCart: 0
+  },
+  {
+    name: "Johnson's Baby Cotton Buds 100pcs",
+    tag: "johnson'sbabycottonbuds100pcs",
+    price: 2500,
+    inCart: 0
+  },
+  {
+    name: "Baby Towel Sheets 3pcs",
+    tag: "babytowelsheets3pcs",
+    price: 3000,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
