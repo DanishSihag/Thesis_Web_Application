@@ -1259,6 +1259,114 @@ let individualItems = [
     price: 3000,
     inCart: 0
   },
+  {
+    name: "Nescafe Classic Coffee 200g",
+    tag: "nescafeclassiccoffee200g",
+    price: 1900,
+    inCart: 0
+  },
+  {
+    name: "Nescafe Gold Coffee 200g",
+    tag: "nescafegoldcoffee200g",
+    price: 2300,
+    inCart: 0
+  },
+  {
+    name: "Nescafe Brasero Coffee 200g",
+    tag: "nescafebraserocoffee200g",
+    price: 1900,
+    inCart: 0
+  },
+  {
+    name: "Nescafe Gold Decaf Coffee 200g",
+    tag: "nescafegolddecafcoffee200g",
+    price: 2300,
+    inCart: 0
+  },
+  {
+    name: "Bru Instant Coffee 100g",
+    tag: "bruinstantcoffee100g",
+    price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Bru Instant Coffee 200g",
+    tag: "bruinstantcoffee200g",
+    price: 2800,
+    inCart: 0
+  },
+  {
+    name: "Bru Gold Instant Coffee 200g",
+    tag: "brugoldinstantcoffee200g",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Jacobs Instant Coffee 200g",
+    tag: "jacobsinstantcoffee200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Lipton Black Tea 40g",
+    tag: "liptonblacktea40g",
+    price: 550,
+    inCart: 0
+  },
+  {
+    name: "Lipton Black Tea 100g",
+    tag: "liptonblacktea100g",
+    price: 1000,
+    inCart: 0
+  },
+  {
+    name: "Lipton Green Tea 33g",
+    tag: "liptongreentea33g",
+    price: 650,
+    inCart: 0
+  },
+  {
+    name: "Lipton Citrus Green Tea 26g",
+    tag: "liptoncitrusgreentea26g",
+    price: 650,
+    inCart: 0
+  },
+  {
+    name: "Lipton Decaffeinated Tea 26g",
+    tag: "liptondecaffeinatedtea26g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Lipton Honey Lemon Green Tea 25g",
+    tag: "liptonhoneylemongreentea25g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Lipton Icetea Green Tea 750ml",
+    tag: "liptoniceteagreentea750ml",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Lipton Icetea Lemon 750ml",
+    tag: "liptonicetealemon750ml",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Lipton Icetea Mango 750ml",
+    tag: "liptoniceteamango750ml",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Lipton Mint Green Tea 25g",
+    tag: "liptonmintgreentea25g",
+    price: 750,
+    inCart: 0
+  },////////////////////////////////////////////////////////
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
