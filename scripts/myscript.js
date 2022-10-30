@@ -1907,6 +1907,78 @@ let individualItems = [
     price: 850,
     inCart: 0
   },
+  {
+    name: "Pedigree Beef Dog Food 10Kg",
+    tag: "pedigreebeefdogfood10kg",
+    price: 4500,
+    inCart: 0
+  },
+  {
+    name: "Pedigree Beef Dog Food Can 125g",
+    tag: "pedigreebeefdogfoodcan125g",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Pedigree Dog Food 15Kg",
+    tag: "pedigreedogfood15kg",
+    price: 5500,
+    inCart: 0
+  },
+  {
+    name: "Pedigree Puppy Food 6x400g",
+    tag: "pedigreepuppyfood6x400g",
+    price: 3000,
+    inCart: 0
+  },
+  {
+    name: "Pedigree Puppy Food 100g",
+    tag: "pedigreepuppyfood100g",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Fish Food 90g",
+    tag: "fishfood90g",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Medium Fish Food 90g",
+    tag: "mediumfishfood90g",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Small Fish Food 90g",
+    tag: "smallfishfood90g",
+    price: 900,
+    inCart: 0
+  },
+  {
+    name: "Chicken Gravy Cat Food 85g",
+    tag: "chickengravycatfood85g",
+    price: 450,
+    inCart: 0
+  },
+  {
+    name: "Ocean Fish Cat Food 480g",
+    tag: "oceanfishcatfood480g",
+    price: 1900,
+    inCart: 0
+  },
+  {
+    name: "Poultry Cat Food 200g",
+    tag: "poultrycatfood200g",
+    price: 1300,
+    inCart: 0
+  },
+  {
+    name: "Tuna Flavour Cat Food 3Kg",
+    tag: "tunaflavourcatfood3kg",
+    price: 2800,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
