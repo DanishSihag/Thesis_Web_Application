@@ -1474,7 +1474,7 @@ let individualItems = [
     tag: "danoneyoghurtstrawberry4x125g",
     price: 600,
     inCart: 0
-  },////////////////////////////////////////////////////////
+  },
   {
     name: "White Bread 200g",
     tag: "whitebread200g",
@@ -1510,7 +1510,7 @@ let individualItems = [
     tag: "hotdogbunsx8",
     price: 700,
     inCart: 0
-  },//////////////////////////////////////////////////////////
+  },
   {
     name: "Nestle Chocolate Cereal 350g",
     tag: "nestlechocolatecereal350g",
@@ -1546,7 +1546,7 @@ let individualItems = [
     tag: "nestlecornflakesstrawberry250g",
     price: 1100,
     inCart: 0
-  },//////////////////////////////////////////////////////////
+  },
   {
     name: "Nestle Traditional Musli 350g",
     tag: "nestletraditionalmusli350g",
@@ -1581,6 +1581,114 @@ let individualItems = [
     name: "Nestle Wheat Oatmeal 200g",
     tag: "nestlewheatoatmeal200g",
     price: 1500,
+    inCart: 0
+  },
+  {
+    name: "Kitkat Chocolate 42g",
+    tag: "kitkatchocolate42g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Kitkat Cookies & Cream 128g",
+    tag: "kitkatcookies&cream128g",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Kitkat Fruit 42g",
+    tag: "kitkatfruit42g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Kitkat Mango 42g",
+    tag: "kitkatmango42g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "M&M's Candy Jar 1700g",
+    tag: "m&m'scandyjar1700g",
+    price: 7000,
+    inCart: 0
+  },
+  {
+    name: "M&M's Milk Candies 50g",
+    tag: "m&m'smilkcandies50g",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Milka Alpine Chocolate 270g",
+    tag: "milkaalpinechocolate270g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Milka Bubbly Chocolate 270g",
+    tag: "milkabubblychocolate270g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Milka Coffee Chocolate 270g",
+    tag: "milkacoffeechocolate270g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Milka Hazelnut Chocolate 270g",
+    tag: "milkahazelnutchocolate270g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Milka White Chocolate 270g",
+    tag: "milkawhitechocolate270g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Shogetten Hazelnut Chocolate 100g",
+    tag: "shogettenhazelnutchocolate100g",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Shogetten Alpine Chocolate 100g",
+    tag: "shogettenalpinechocolate100g",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Shogetten Dark Chocolate 100g",
+    tag: "shogettendarkchocolate100g",
+    price: 300,
+    inCart: 0
+  },
+  {
+    name: "Skittles Berry Flavour 38g",
+    tag: "skittlesberryflavour38g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Skittles Fruit Flavour 38g",
+    tag: "skittlesfruitflavour38g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Skittles Smoothies Flavour 38g",
+    tag: "skittlessmoothiesflavour38g",
+    price: 250,
+    inCart: 0
+  },
+  {
+    name: "Skittles Sour Flavour 38g",
+    tag: "skittlessourflavour38g",
+    price: 250,
     inCart: 0
   },
 ]
