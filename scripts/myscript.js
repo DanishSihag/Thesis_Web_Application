@@ -1799,6 +1799,114 @@ let individualItems = [
     price: 1800,
     inCart: 0
   },
+  {
+    name: "Black Pepper 100g",
+    tag: "blackpepper100g",
+    price: 400,
+    inCart: 0
+  },
+  {
+    name: "Salt 100g",
+    tag: "salt100g",
+    price: 150,
+    inCart: 0
+  },
+  {
+    name: "Heinz Dutch Style Sauce 700g",
+    tag: "heinzdutchstylesauce700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Heinz Exotic Sauce 700g",
+    tag: "heinzexoticsauce700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Heinz Mayo Mix Sauce 700g",
+    tag: "heinzmayomixsauce700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Heinz Tartar Sauce 700g",
+    tag: "heinztartarsauce700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Heinz Tomato Ketchup 700g",
+    tag: "heinztomatoketchup700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Heinz Yellow Mustard Sauce 700g",
+    tag: "heinzyellowmustardsauce700g",
+    price: 750,
+    inCart: 0
+  },
+  {
+    name: "Knorr Cheese Sauce Base 40g",
+    tag: "knorrcheesesaucebase40g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Knorr Chilli Bean Mix 40g",
+    tag: "knorrchillibeanmix40g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Ben's Chunky Salsa Sauce 450g",
+    tag: "ben'schunkysalsasauce450g",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Ben's Sweet & Sour Sauce 450g",
+    tag: "ben'ssweet&soursauce450g",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Ben's texan BBQ Sauce 450g",
+    tag: "ben'stexanbbqsauce450g",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Ben's Thai Curry Sauce 450g",
+    tag: "ben'sthaicurrysauce450g",
+    price: 950,
+    inCart: 0
+  },
+  {
+    name: "Univer Caeser Dressing 230g",
+    tag: "univercaeserdressing230g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Univer Thousand Island 230g",
+    tag: "univerthousandisland230g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Univer Tzatziki Dressing 230g",
+    tag: "univertzatzikidressing230g",
+    price: 850,
+    inCart: 0
+  },
+  {
+    name: "Univer Yoghurt Dressing 230g",
+    tag: "univeryoghurtdressing230g",
+    price: 850,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
