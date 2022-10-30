@@ -1691,6 +1691,114 @@ let individualItems = [
     price: 250,
     inCart: 0
   },
+  {
+    name: "Almonds 200g",
+    tag: "almonds200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Cashew 200g",
+    tag: "cashew200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Cashew Fried 200g",
+    tag: "cashewfried200g",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Corn Nuts 200g",
+    tag: "cornnuts200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Dates 200g",
+    tag: "dates200g",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Dried Apricot 200g",
+    tag: "driedapricot200g",
+    price: 2100,
+    inCart: 0
+  },
+  {
+    name: "Dried Figs 200g",
+    tag: "driedfigs200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Dry Berries 200g",
+    tag: "dryberries200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Dry Coconut 200g",
+    tag: "drycoconut200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Hazelnuts 200g",
+    tag: "hazelnuts200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Pecans 200g",
+    tag: "pecans200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Pine Nuts 200g",
+    tag: "pinenuts200g",
+    price: 2000,
+    inCart: 0
+  },
+  {
+    name: "Pistachio 200g",
+    tag: "pistachio200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Prunes 200g",
+    tag: "prunes200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Raisins 200g",
+    tag: "raisins200g",
+    price: 1800,
+    inCart: 0
+  },
+  {
+    name: "Saffron 50g",
+    tag: "saffron50g",
+    price: 1400,
+    inCart: 0
+  },
+  {
+    name: "Walnuts 200g",
+    tag: "walnuts200g",
+    price: 6000,
+    inCart: 0
+  },
+  {
+    name: "Watermelon Seeds 200g",
+    tag: "watermelonseeds200g",
+    price: 1800,
+    inCart: 0
+  },
 ]
 
 let addButton = document.querySelectorAll('.btn_addToCart');
