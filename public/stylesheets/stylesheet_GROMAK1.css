@@ -1,0 +1,191 @@
+body{
+  overflow-x: hidden;
+}
+
+.navbar{
+  background: linear-gradient(to left, #800080, #ffc0cb);
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-brand{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 1.31rem;
+}
+
+.nav-link{
+  color: black;
+  font-size: 1.25rem;
+}
+
+.nav-link:focus{color:black;}
+
+.nav-link:hover{
+  color: black;
+}
+
+.nav > li{
+  padding-left: 3.3rem;
+  padding-right: 3.3rem;
+}
+
+#main_search{
+  width: 17rem;
+  font-family:sans-serif;
+}
+
+#search_btn{
+  width: 6rem;
+  color: black;
+  background-color: #ff794d;
+  font-size: 1.15rem;
+}
+
+.navbar-toggler-icon{
+  transition: all 0.4s;
+}
+
+.navbar-toggler-icon:hover{
+  transform: scale(1.285);
+}
+
+#offcanvasLightNavbar{
+  width: 15rem;
+  border-radius: 0.85rem;
+  background: linear-gradient(to left, #f0ddf0 5%, #ab63ab 100%);
+  font-size: 1.3rem;
+  font-family: 'Alkalami', serif;
+  overflow: hidden;
+  transition: .55s all;
+  text-align: center;
+  opacity: 0.97;
+}
+
+.offcanvas-title{
+  color: black;
+  font-size: 1.6rem;
+  font-family: 'Alkalami', serif;
+}
+
+#menu_txt{
+  font-size: 1.40rem;
+  font-style: italic;
+}
+
+#menu_txt:hover{
+text-shadow: 0.313rem 0.313rem 0.5rem #b300b3;
+}
+
+hr{
+  height: 0.14rem;
+  background-color: black;
+}
+
+.sliding_offers{
+  position: relative;
+  margin-top: 2rem;
+  height: 35rem;
+}
+
+.sliding_img{
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.82);
+}
+
+#sliding_caption{
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
+#carousel_btn{
+  color: black;
+}
+
+#img_logo{
+  margin-top: 3rem;
+  height: 55%;
+  object-fit: contain;
+  filter: brightness(0.92);
+  border-radius: 3rem;
+}
+
+.txt_logo{
+  color: black;
+}
+
+.products_btn{
+  width: 10rem;
+  height: 12rem;
+  border-color: black;
+  color: black;
+  background-color: #a3a3c2;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.145rem;
+  transition: all 0.4s;
+}
+
+.products_btn:hover{
+  transform: scale(1.1);
+  border-color: black;
+  color: black;
+  background-color: #8585ad;
+}
+
+.prod_img{
+  border-radius: 0.35rem;
+  object-fit: cover;
+  height: 70%;
+  overflow: hidden;
+}
+
+.elite_membership{
+  background: radial-gradient(circle, rgba(76,156,251,1) 0%, rgba(252,70,107,0.8690826672465861) 92%);
+  border-radius: 1.3rem;
+  width: 77vw;
+  height: 100%;
+}
+
+#premium_heading_main{
+  font-size: 2.6vw;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#premium_heading_secondary{
+  font-size: 2.1vw;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Playfair Display', serif;
+}
+
+#membership_txt{
+  font-size: 1.51vw;
+  font-family: 'Poppins', sans-serif;
+}
+
+#benefits_heading{
+  font-size: 2.3vw;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+#separator{
+  text-align: center;
+  margin: auto;
+  width: 60rem;
+}
+
+.card{
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1.4vw;
+  width: 18vw;
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  font-family: 'Merriweather', serif;
+}
+
+#gap-only{
+  height: 5rem;
+}

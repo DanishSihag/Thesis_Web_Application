@@ -1,0 +1,34 @@
+body{
+  background-color: #e6e6e6;
+}
+
+.form-outline{
+  text-align: center;
+}
+
+label{
+  font-size: 1.2rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input{
+  text-align: center;
+  margin: auto;
+  max-width: 25rem;
+}
+
+h3{
+  text-align: center;
+  font-size: 2.1rem;
+}
+
+.btn_submit{
+  background-color: #33ffbb;
+  border-color: green;
+  transition: 0.5s all;
+}
+
+.btn_submit:hover{
+  background-color: #00cc88;
+  transform: scale(1.1);
+}

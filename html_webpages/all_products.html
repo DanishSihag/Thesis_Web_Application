@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../stylesheets/stylesheet_all_products.css">
+    <link rel="stylesheet" href="../public/stylesheets/stylesheet_all_products.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
@@ -18,17 +18,18 @@
   <body>
     <nav class="navbar fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" >GROMAK</a>
+        <a class="navbar-brand ms-4" href="#">GROMAK</a>
         <ul class="nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" >GROMAK EliteClub</a>
+          <li class="nav-item ms-5">
+            <a class="nav-link ms-5" href="#">GROMAK EliteClub</a>
           </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <form class="d-flex" role="search">
-            <input id="main_search" class="form-control me-2" type="search" placeholder="Search in GROMAK" aria-label="Search">
+          <!--<form class="d-flex" role="search">
+            <input id="main_search" class="form-control me-2" type="text" placeholder="Search in GROMAK" aria-label="Search">
             <button id="search_btn" class="btn btn-success" type="submit">Search</button>
-          </form>
+          </form>-->
         </ul>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+
+      <label style="color:black;font-size:1.3rem;">Options</label>&nbsp&nbsp&nbsp<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -40,23 +41,20 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >Favorites</a>
-            </li><br>
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Previous Orders</a>
+            </li><br><hr><br>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Feedback</a>
+            </li><br> -->
             <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >Previous Orders</a>
-            </li><br>
-            <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >Feedback</a>
-            </li><br>
-            <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >FAQ Section</a>
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">FAQ Section</a>
             </li><br><hr><br>
             <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >Settings</a>
-            </li><br>
-            <li class="nav-item">
-              <a class="nav-link active" id="menu_txt" aria-current="page" >Logout</a>
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Settings</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Logout</a>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -64,16 +62,21 @@
   </nav><br><br><br><br><br><br><br>
 
   <div class="flex-fill">
+
+      <input id="main_search" class="form-control me-2" type="text" placeholder="Search in GROMAK" aria-label="Search">
+      <input type="submit" id="myBtn" value="Submit" onclick="searchFunction()">
+
+
     <h1 class="display-5 heading mt-5">Vegetables and Fruits</h1>
-    <div class="container-fluid" style="position:relative;">
+    <!--<div class="container-fluid" style="position:relative;">
       <a href="shopping_cart.html">
         <button class="cart">Items in Cart <i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;<span style="font-size:1.37rem"> 0</span></button>
       </a>
-    </div><br><br><br><br>
-    <div class="container-fluid ms-5">
+    </div><br>--><br><br><br>
+    <div id="myList" class="container-fluid ms-5">
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/oranges.jpg" class="card-img-top" alt="Orange">
+          <img src="../public/images/inside_main/oranges.jpg" class="card-img-top" alt="Orange">
           <div class="card-body">
             <h5 class="card-title">Oranges</h5>
             <p class="card-text">175 HUF / Piece</p>
@@ -81,7 +84,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/bananas.jpg" class="card-img-top" alt="Banana">
+          <img src="../public/images/inside_main/bananas.jpg" class="card-img-top" alt="Banana">
           <div class="card-body">
             <h5 class="card-title">Bananas</h5>
             <p class="card-text">100 HUF / Piece</p>
@@ -89,7 +92,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/strawberries.jpg" class="card-img-top" alt="Strawberries">
+          <img src="../public/images/inside_main/strawberries.jpg" class="card-img-top" alt="Strawberries">
           <div class="card-body">
             <h5 class="card-title">Strawberries</h5>
             <p class="card-text">200 HUF / 250gm</p>
@@ -97,7 +100,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/grapes.jpg" class="card-img-top" alt="Grapes">
+          <img src="../public/images/inside_main/grapes.jpg" class="card-img-top" alt="Grapes">
           <div class="card-body">
             <h5 class="card-title">Grapes</h5>
             <p class="card-text">350 HUF / 250gm</p>
@@ -105,7 +108,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/apples.jpg" class="card-img-top" alt="Apple">
+          <img src="../public/images/inside_main/apples.jpg" class="card-img-top" alt="Apple">
           <div class="card-body">
             <h5 class="card-title">Apples</h5>
             <p class="card-text">80 HUF / Piece</p>
@@ -113,7 +116,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/watermelon.jpg" class="card-img-top" alt="Watermelon">
+          <img src="../public/images/inside_main/watermelon.jpg" class="card-img-top" alt="Watermelon">
           <div class="card-body">
             <h5 class="card-title">Watermelon</h5>
             <p class="card-text">1100 HUF / Piece</p>
@@ -123,7 +126,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/blueberries.jpg" class="card-img-top" alt="Blueberries">
+          <img src="../public/images/inside_main/blueberries.jpg" class="card-img-top" alt="Blueberries">
           <div class="card-body">
             <h5 class="card-title">Blueberries</h5>
             <p class="card-text">1500 HUF / 250gm</p>
@@ -131,7 +134,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/lemons.jpg" class="card-img-top" alt="lemons">
+          <img src="../public/images/inside_main/lemons.jpg" class="card-img-top" alt="lemons">
           <div class="card-body">
             <h5 class="card-title">Lemons</h5>
             <p class="card-text">200 HUF / Piece</p>
@@ -139,7 +142,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/peaches.jpg" class="card-img-top" alt="Peaches">
+          <img src="../public/images/inside_main/peaches.jpg" class="card-img-top" alt="Peaches">
           <div class="card-body">
             <h5 class="card-title">Peaches</h5>
             <p class="card-text">150 HUF / Piece</p>
@@ -147,7 +150,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pineapple.jpg" class="card-img-top" alt="Pineapple">
+          <img src="../public/images/inside_main/pineapple.jpg" class="card-img-top" alt="Pineapple">
           <div class="card-body">
             <h5 class="card-title">Pineapple</h5>
             <p class="card-text">1000 HUF / Piece</p>
@@ -155,7 +158,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cherries.jpg" class="card-img-top" alt="Cherries">
+          <img src="../public/images/inside_main/cherries.jpg" class="card-img-top" alt="Cherries">
           <div class="card-body">
             <h5 class="card-title">Cherries</h5>
             <p class="card-text">500 HUF / 250gm</p>
@@ -163,7 +166,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/raspberries.jpg" class="card-img-top" alt="raspberries">
+          <img src="../public/images/inside_main/raspberries.jpg" class="card-img-top" alt="raspberries">
           <div class="card-body">
             <h5 class="card-title">Raspberries</h5>
             <p class="card-text">1600 HUF / 250gm</p>
@@ -173,7 +176,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/pear.jpg" class="card-img-top" alt="Pear">
+          <img src="../public/images/inside_main/pear.jpg" class="card-img-top" alt="Pear">
           <div class="card-body">
             <h5 class="card-title">Pear</h5>
             <p class="card-text">100 HUF / Piece</p>
@@ -181,7 +184,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mango.jpg" class="card-img-top" alt="Mango">
+          <img src="../public/images/inside_main/mango.jpg" class="card-img-top" alt="Mango">
           <div class="card-body">
             <h5 class="card-title">Mango</h5>
             <p class="card-text">450 HUF / Piece</p>
@@ -189,7 +192,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/plums.jpg" class="card-img-top" alt="Plums">
+          <img src="../public/images/inside_main/plums.jpg" class="card-img-top" alt="Plums">
           <div class="card-body">
             <h5 class="card-title">Plums</h5>
             <p class="card-text">80 HUF / Piece</p>
@@ -197,7 +200,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/guava.jpg" class="card-img-top" alt="Guava">
+          <img src="../public/images/inside_main/guava.jpg" class="card-img-top" alt="Guava">
           <div class="card-body">
             <h5 class="card-title">Guava</h5>
             <p class="card-text">80 HUF / Piece</p>
@@ -205,7 +208,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/apricot.jpg" class="card-img-top" alt="Apricot">
+          <img src="../public/images/inside_main/apricot.jpg" class="card-img-top" alt="Apricot">
           <div class="card-body">
             <h5 class="card-title">Apricot</h5>
             <p class="card-text">200 HUF / Piece</p>
@@ -213,7 +216,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/papaya.jpg" class="card-img-top" alt="Papaya">
+          <img src="../public/images/inside_main/papaya.jpg" class="card-img-top" alt="Papaya">
           <div class="card-body">
             <h5 class="card-title">Papaya</h5>
             <p class="card-text">600 HUF / Piece</p>
@@ -223,7 +226,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/dragonfruit.jpg" class="card-img-top" alt="Dragonfruit">
+          <img src="../public/images/inside_main/dragonfruit.jpg" class="card-img-top" alt="Dragonfruit">
           <div class="card-body">
             <h5 class="card-title">Dragonfruit</h5>
             <p class="card-text">1800 HUF / Piece</p>
@@ -231,7 +234,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kiwi.jpg" class="card-img-top" alt="Kiwi">
+          <img src="../public/images/inside_main/kiwi.jpg" class="card-img-top" alt="Kiwi">
           <div class="card-body">
             <h5 class="card-title">Kiwi</h5>
             <p class="card-text">250 HUF / Piece</p>
@@ -239,7 +242,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/passionfruit.jpg" class="card-img-top" alt="passionfruit">
+          <img src="../public/images/inside_main/passionfruit.jpg" class="card-img-top" alt="passionfruit">
           <div class="card-body">
             <h5 class="card-title">Passionfruit</h5>
             <p class="card-text">200 HUF / Piece</p>
@@ -247,7 +250,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/lychee.jpg" class="card-img-top" alt="lychee">
+          <img src="../public/images/inside_main/lychee.jpg" class="card-img-top" alt="lychee">
           <div class="card-body">
             <h5 class="card-title">Lychee</h5>
             <p class="card-text">500 HUF / 250gm</p>
@@ -255,7 +258,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/durian.jpg" class="card-img-top" alt="durian">
+          <img src="../public/images/inside_main/durian.jpg" class="card-img-top" alt="durian">
           <div class="card-body">
             <h5 class="card-title">Durian</h5>
             <p class="card-text">800 HUF / 250gm</p>
@@ -263,7 +266,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/jackfruit.jpg" class="card-img-top" alt="jackfruit">
+          <img src="../public/images/inside_main/jackfruit.jpg" class="card-img-top" alt="jackfruit">
           <div class="card-body">
             <h5 class="card-title">Jackfruit</h5>
             <p class="card-text">1200 HUF / 250gm</p>
@@ -273,7 +276,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/Potatoes.jpg" class="card-img-top" alt="Potatoes">
+          <img src="../public/images/inside_main/Potatoes.jpg" class="card-img-top" alt="Potatoes">
           <div class="card-body">
             <h5 class="card-title">Potatoes</h5>
             <p class="card-text">70 HUF / Piece</p>
@@ -281,7 +284,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Tomatoes.jpg" class="card-img-top" alt="Tomatoes">
+          <img src="../public/images/inside_main/Tomatoes.jpg" class="card-img-top" alt="Tomatoes">
           <div class="card-body">
             <h5 class="card-title">Tomatoes</h5>
             <p class="card-text">150 HUF / Piece</p>
@@ -289,7 +292,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Onions.jpg" class="card-img-top" alt="Onions">
+          <img src="../public/images/inside_main/Onions.jpg" class="card-img-top" alt="Onions">
           <div class="card-body">
             <h5 class="card-title">Onions</h5>
             <p class="card-text">60 HUF / Piece</p>
@@ -297,7 +300,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Carrot.jpg" class="card-img-top" alt="Carrot">
+          <img src="../public/images/inside_main/Carrot.jpg" class="card-img-top" alt="Carrot">
           <div class="card-body">
             <h5 class="card-title">Carrot</h5>
             <p class="card-text">55 HUF / Piece</p>
@@ -305,7 +308,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/bellpepper.jpg" class="card-img-top" alt="bellpepper">
+          <img src="../public/images/inside_main/bellpepper.jpg" class="card-img-top" alt="bellpepper">
           <div class="card-body">
             <h5 class="card-title">Bell Pepper</h5>
             <p class="card-text">275 HUF / Piece</p>
@@ -313,7 +316,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Broccoli.jpg" class="card-img-top" alt="Broccoli">
+          <img src="../public/images/inside_main/Broccoli.jpg" class="card-img-top" alt="Broccoli">
           <div class="card-body">
             <h5 class="card-title">Broccoli</h5>
             <p class="card-text">400 HUF / 250gm</p>
@@ -323,7 +326,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/Cucumber.jpg" class="card-img-top" alt="Cucumber">
+          <img src="../public/images/inside_main/Cucumber.jpg" class="card-img-top" alt="Cucumber">
           <div class="card-body">
             <h5 class="card-title">Cucumber</h5>
             <p class="card-text">80 HUF / Piece</p>
@@ -331,7 +334,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Lettuce.jpg" class="card-img-top" alt="Lettuce">
+          <img src="../public/images/inside_main/Lettuce.jpg" class="card-img-top" alt="Lettuce">
           <div class="card-body">
             <h5 class="card-title">Lettuce</h5>
             <p class="card-text">600 HUF / Piece</p>
@@ -339,7 +342,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Mushrooms.jpg" class="card-img-top" alt="Mushrooms">
+          <img src="../public/images/inside_main/Mushrooms.jpg" class="card-img-top" alt="Mushrooms">
           <div class="card-body">
             <h5 class="card-title">Mushrooms</h5>
             <p class="card-text">550 HUF / 250gm</p>
@@ -347,7 +350,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Corn.jpg" class="card-img-top" alt="Corn">
+          <img src="../public/images/inside_main/Corn.jpg" class="card-img-top" alt="Corn">
           <div class="card-body">
             <h5 class="card-title">Corn</h5>
             <p class="card-text">150 HUF / Piece</p>
@@ -355,7 +358,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Garlic.jpg" class="card-img-top" alt="Garlic">
+          <img src="../public/images/inside_main/Garlic.jpg" class="card-img-top" alt="Garlic">
           <div class="card-body">
             <h5 class="card-title">Garlic</h5>
             <p class="card-text">80 HUF / Piece</p>
@@ -363,7 +366,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Spinach.jpg" class="card-img-top" alt="Spinach">
+          <img src="../public/images/inside_main/Spinach.jpg" class="card-img-top" alt="Spinach">
           <div class="card-body">
             <h5 class="card-title">Spinach</h5>
             <p class="card-text">750 HUF / 250gm</p>
@@ -373,7 +376,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/greenbeans.jpg" class="card-img-top" alt="Green Beans">
+          <img src="../public/images/inside_main/greenbeans.jpg" class="card-img-top" alt="Green Beans">
           <div class="card-body">
             <h5 class="card-title">Green Beans</h5>
             <p class="card-text">750 HUF / 250gm</p>
@@ -381,7 +384,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Cabbage.jpg" class="card-img-top" alt="Cabbage">
+          <img src="../public/images/inside_main/Cabbage.jpg" class="card-img-top" alt="Cabbage">
           <div class="card-body">
             <h5 class="card-title">Cabbage</h5>
             <p class="card-text">400 HUF / Piece</p>
@@ -389,7 +392,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/sweetpotatoes.jpg" class="card-img-top" alt="Sweet Potatoes">
+          <img src="../public/images/inside_main/sweetpotatoes.jpg" class="card-img-top" alt="Sweet Potatoes">
           <div class="card-body">
             <h5 class="card-title">Sweet Potatoes</h5>
             <p class="card-text">120 HUF / Piece</p>
@@ -397,7 +400,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Cauliflower.jpg" class="card-img-top" alt="Cauliflower">
+          <img src="../public/images/inside_main/Cauliflower.jpg" class="card-img-top" alt="Cauliflower">
           <div class="card-body">
             <h5 class="card-title">Cauliflower</h5>
             <p class="card-text">375 HUF / Piece</p>
@@ -405,7 +408,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Eggplant.jpg" class="card-img-top" alt="Eggplant">
+          <img src="../public/images/inside_main/Eggplant.jpg" class="card-img-top" alt="Eggplant">
           <div class="card-body">
             <h5 class="card-title">Eggplant</h5>
             <p class="card-text">300 HUF / Piece</p>
@@ -413,7 +416,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/Pumpkin.jpg" class="card-img-top" alt="Pumpkin">
+          <img src="../public/images/inside_main/Pumpkin.jpg" class="card-img-top" alt="Pumpkin">
           <div class="card-body">
             <h5 class="card-title">Pumpkin</h5>
             <p class="card-text">500 HUF / Piece</p>
@@ -423,7 +426,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/Peas.jpg" class="card-img-top" alt="Peas">
+          <img src="../public/images/inside_main/Peas.jpg" class="card-img-top" alt="Peas">
           <div class="card-body">
             <h5 class="card-title">Peas</h5>
             <p class="card-text">300 HUF / 250gm</p>
@@ -431,7 +434,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ladyfinger.jpg" class="card-img-top" alt="Lady-finger">
+          <img src="../public/images/inside_main/ladyfinger.jpg" class="card-img-top" alt="Lady-finger">
           <div class="card-body">
             <h5 class="card-title">Lady Finger</h5>
             <p class="card-text">300 HUF / 250gm</p>
@@ -439,7 +442,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/coriander.jpg" class="card-img-top" alt="coriander">
+          <img src="../public/images/inside_main/coriander.jpg" class="card-img-top" alt="coriander">
           <div class="card-body">
             <h5 class="card-title">Coriander</h5>
             <p class="card-text">850 HUF / 250gm</p>
@@ -447,7 +450,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/parsley.jpg" class="card-img-top" alt="parsley">
+          <img src="../public/images/inside_main/parsley.jpg" class="card-img-top" alt="parsley">
           <div class="card-body">
             <h5 class="card-title">Parsley</h5>
             <p class="card-text">300 HUF / Piece</p>
@@ -455,7 +458,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ginger.jpg" class="card-img-top" alt="ginger">
+          <img src="../public/images/inside_main/ginger.jpg" class="card-img-top" alt="ginger">
           <div class="card-body">
             <h5 class="card-title">Ginger</h5>
             <p class="card-text">300 HUF / 250gm</p>
@@ -463,7 +466,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/greenchilli.jpg" class="card-img-top" alt="greenchilli">
+          <img src="../public/images/inside_main/greenchilli.jpg" class="card-img-top" alt="greenchilli">
           <div class="card-body">
             <h5 class="card-title">Green Chilli</h5>
             <p class="card-text">65 HUF / Piece</p>
@@ -474,7 +477,7 @@
       <h1 class="display-5 heading mt-5">Juices and Cold-Drinks</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/cocacolacan300ml.jpg" class="card-img-top" alt="Coca Cola Can 300ml">
+          <img src="../public/images/inside_main/cocacolacan300ml.jpg" class="card-img-top" alt="Coca Cola Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Coca Cola Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -482,7 +485,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cocacola1.5l.jpg" class="card-img-top" alt="Coca Cola 1.5L">
+          <img src="../public/images/inside_main/cocacola1.5l.jpg" class="card-img-top" alt="Coca Cola 1.5L">
           <div  class="card-body">
             <h5 class="card-title">Coca Cola 1.5L</h5>
             <p class="card-text">400 HUF</p>
@@ -490,7 +493,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cocacola2.5l.jpg" class="card-img-top" alt="Coca Cola 2.5L">
+          <img src="../public/images/inside_main/cocacola2.5l.jpg" class="card-img-top" alt="Coca Cola 2.5L">
           <div  class="card-body">
             <h5 class="card-title">Coca Cola 2.5L</h5>
             <p class="card-text">600 HUF</p>
@@ -498,7 +501,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pepsican300ml.jpg" class="card-img-top" alt="Pepsi Can 300ml">
+          <img src="../public/images/inside_main/pepsican300ml.jpg" class="card-img-top" alt="Pepsi Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Pepsi Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -506,7 +509,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pepsilime500ml.jpg" class="card-img-top" alt="Pepsi Lime 500ml">
+          <img src="../public/images/inside_main/pepsilime500ml.jpg" class="card-img-top" alt="Pepsi Lime 500ml">
           <div  class="card-body">
             <h5 class="card-title">Pepsi Lime 500ml</h5>
             <p class="card-text">350 HUF</p>
@@ -514,7 +517,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pepsi1l.jpg" class="card-img-top" alt="Pepsi 1L">
+          <img src="../public/images/inside_main/pepsi1l.jpg" class="card-img-top" alt="Pepsi 1L">
           <div  class="card-body">
             <h5 class="card-title">Pepsi 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -524,7 +527,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/fantacan300ml.jpg" class="card-img-top" alt="Fanta Can 300ml">
+          <img src="../public/images/inside_main/fantacan300ml.jpg" class="card-img-top" alt="Fanta Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Fanta Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -532,7 +535,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/fanta750ml.jpg" class="card-img-top" alt="Fanta 750ml">
+          <img src="../public/images/inside_main/fanta750ml.jpg" class="card-img-top" alt="Fanta 750ml">
           <div  class="card-body">
             <h5 class="card-title">Fanta 750ml</h5>
             <p class="card-text">350 HUF</p>
@@ -540,7 +543,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/fantagrapecan300ml.jpg" class="card-img-top" alt="Fanta Grape Can 300ml">
+          <img src="../public/images/inside_main/fantagrapecan300ml.jpg" class="card-img-top" alt="Fanta Grape Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Fanta Grape Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -548,7 +551,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cocacolacherry1.75l.jpg" class="card-img-top" alt="Coca Cola Cherry 1.75L">
+          <img src="../public/images/inside_main/cocacolacherry1.75l.jpg" class="card-img-top" alt="Coca Cola Cherry 1.75L">
           <div  class="card-body">
             <h5 class="card-title">Coca Cola Cherry 1.75L</h5>
             <p class="card-text">450 HUF</p>
@@ -556,7 +559,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cocacolavanilla500ml.jpg" class="card-img-top" alt="Coca Cola Vanilla 500ml">
+          <img src="../public/images/inside_main/cocacolavanilla500ml.jpg" class="card-img-top" alt="Coca Cola Vanilla 500ml">
           <div  class="card-body">
             <h5 class="card-title">Coca Cola Vanilla 500ml</h5>
             <p class="card-text">350 HUF</p>
@@ -564,7 +567,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/spritecan300ml.jpg" class="card-img-top" alt="Sprite Can 300ml">
+          <img src="../public/images/inside_main/spritecan300ml.jpg" class="card-img-top" alt="Sprite Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Sprite Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -574,7 +577,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/sprite1.75l.jpg" class="card-img-top" alt="Sprite 1.75L">
+          <img src="../public/images/inside_main/sprite1.75l.jpg" class="card-img-top" alt="Sprite 1.75L">
           <div  class="card-body">
             <h5 class="card-title">Sprite 1.75L</h5>
             <p class="card-text">450 HUF</p>
@@ -582,7 +585,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/spritecranberrycan300ml.jpg" class="card-img-top" alt="Sprite Cranberry Can 300ml">
+          <img src="../public/images/inside_main/spritecranberrycan300ml.jpg" class="card-img-top" alt="Sprite Cranberry Can 300ml">
           <div  class="card-body">
             <h5 class="card-title">Sprite Cranberry Can 300ml</h5>
             <p class="card-text">250 HUF</p>
@@ -590,7 +593,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanaapplejuice1l.jpg" class="card-img-top" alt="Tropicana Apple Juice 1L">
+          <img src="../public/images/inside_main/tropicanaapplejuice1l.jpg" class="card-img-top" alt="Tropicana Apple Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Apple Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -598,7 +601,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanacranberryjuice1l.jpg" class="card-img-top" alt="Tropicana Cranberry Juice 1L">
+          <img src="../public/images/inside_main/tropicanacranberryjuice1l.jpg" class="card-img-top" alt="Tropicana Cranberry Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Cranberry Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -606,7 +609,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanagrapejuice1l.jpg" class="card-img-top" alt="Tropicana Grape Juice 1L">
+          <img src="../public/images/inside_main/tropicanagrapejuice1l.jpg" class="card-img-top" alt="Tropicana Grape Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Grape Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -614,7 +617,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanaguavajuice1l.jpg" class="card-img-top" alt="Tropicana Guava Juice 1L">
+          <img src="../public/images/inside_main/tropicanaguavajuice1l.jpg" class="card-img-top" alt="Tropicana Guava Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Guava Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -624,7 +627,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/tropicanalycheejuice1l.jpg" class="card-img-top" alt="Tropicana Lychee Juice 1L">
+          <img src="../public/images/inside_main/tropicanalycheejuice1l.jpg" class="card-img-top" alt="Tropicana Lychee Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Lychee Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -632,7 +635,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanamangojuice1l.jpg" class="card-img-top" alt="Tropicana Mango Juice 1L">
+          <img src="../public/images/inside_main/tropicanamangojuice1l.jpg" class="card-img-top" alt="Tropicana Mango Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Mango Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -640,7 +643,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanaorangejuice1l.jpg" class="card-img-top" alt="Tropicana Orange Juice 1L">
+          <img src="../public/images/inside_main/tropicanaorangejuice1l.jpg" class="card-img-top" alt="Tropicana Orange Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Orange Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -648,7 +651,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanapineapplejuice1l.jpg" class="card-img-top" alt="Tropicana Pineapple Juice 1L">
+          <img src="../public/images/inside_main/tropicanapineapplejuice1l.jpg" class="card-img-top" alt="Tropicana Pineapple Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Pineapple Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -656,7 +659,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanapomegrenatejuice1l.jpg" class="card-img-top" alt="Tropicana Pomegrenate Juice 1L">
+          <img src="../public/images/inside_main/tropicanapomegrenatejuice1l.jpg" class="card-img-top" alt="Tropicana Pomegrenate Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Pomegrenate Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -664,7 +667,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tropicanastrawberrykiwijuice1l.jpg" class="card-img-top" alt="Tropicana Strawberry Kiwi Juice 1L">
+          <img src="../public/images/inside_main/tropicanastrawberrykiwijuice1l.jpg" class="card-img-top" alt="Tropicana Strawberry Kiwi Juice 1L">
           <div  class="card-body">
             <h5 class="card-title">Tropicana Strawberry Kiwi Juice 1L</h5>
             <p class="card-text">400 HUF</p>
@@ -674,7 +677,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/monsterenergyassault500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyassault500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Assault 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -682,7 +685,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monsterenergyclassic500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyclassic500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Classic 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -690,7 +693,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monsterenergyimport500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyimport500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Import 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -698,7 +701,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monsterenergyultra500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyultra500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Ultra 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -706,7 +709,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monsterenergyultragold500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyultragold500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Ultra Gold 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -714,7 +717,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monsterenergyultrared500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
+          <img src="../public/images/inside_main/monsterenergyultrared500ml.jpg" class="card-img-top" alt="Monster Energy Assault 500ml">
           <div  class="card-body">
             <h5 class="card-title">Monster Energy Ultra Red 500ml</h5>
             <p class="card-text">550 HUF</p>
@@ -725,7 +728,7 @@
       <h1 class="display-5 heading mt-5">Household Products</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/aluminiumfoil40m.jpg" class="card-img-top" alt="Aluminium Foil 40m">
+          <img src="../public/images/inside_main/aluminiumfoil40m.jpg" class="card-img-top" alt="Aluminium Foil 40m">
           <div  class="card-body">
             <h5 class="card-title">Aluminium Foil 40m</h5>
             <p class="card-text">2000 HUF</p>
@@ -733,7 +736,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/arieldetergentpowder1.5kg.jpg" class="card-img-top" alt="Ariel Detergent Powder 1.5Kg">
+          <img src="../public/images/inside_main/arieldetergentpowder1.5kg.jpg" class="card-img-top" alt="Ariel Detergent Powder 1.5Kg">
           <div  class="card-body">
             <h5 class="card-title">Ariel Detergent Powder 1.5Kg</h5>
             <p class="card-text">2900 HUF</p>
@@ -741,7 +744,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/arielliquiddetergent1kg.jpg" class="card-img-top" alt="Ariel Liquid Detergent 1Kg">
+          <img src="../public/images/inside_main/arielliquiddetergent1kg.jpg" class="card-img-top" alt="Ariel Liquid Detergent 1Kg">
           <div  class="card-body">
             <h5 class="card-title">Ariel Liquid Detergent 1Kg</h5>
             <p class="card-text">3000 HUF</p>
@@ -749,7 +752,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dishwashinggel.jpg" class="card-img-top" alt="Dishwashing Gel">
+          <img src="../public/images/inside_main/dishwashinggel.jpg" class="card-img-top" alt="Dishwashing Gel">
           <div  class="card-body">
             <h5 class="card-title">Dishwashing Gel</h5>
             <p class="card-text">800 HUF</p>
@@ -757,7 +760,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dishwashinggelrefill.jpg" class="card-img-top" alt="Dishwashing Gel Refill">
+          <img src="../public/images/inside_main/dishwashinggelrefill.jpg" class="card-img-top" alt="Dishwashing Gel Refill">
           <div  class="card-body">
             <h5 class="card-title">Dishwashing Gel Refill</h5>
             <p class="card-text">750 HUF</p>
@@ -765,7 +768,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dishwashingsponge4pcs.jpg" class="card-img-top" alt="Dishwashing Sponge 4pcs">
+          <img src="../public/images/inside_main/dishwashingsponge4pcs.jpg" class="card-img-top" alt="Dishwashing Sponge 4pcs">
           <div  class="card-body">
             <h5 class="card-title">Dishwashing Sponge 4pcs</h5>
             <p class="card-text">400 HUF</p>
@@ -775,7 +778,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/domestosextendedgermkill.jpg" class="card-img-top" alt="Domestos Extended Germ Kill">
+          <img src="../public/images/inside_main/domestosextendedgermkill.jpg" class="card-img-top" alt="Domestos Extended Germ Kill">
           <div  class="card-body">
             <h5 class="card-title">Domestos Extended Germ Kill</h5>
             <p class="card-text">1100 HUF</p>
@@ -783,7 +786,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/domestostoiletcleaner.jpg" class="card-img-top" alt="Domestos Toilet Cleaner">
+          <img src="../public/images/inside_main/domestostoiletcleaner.jpg" class="card-img-top" alt="Domestos Toilet Cleaner">
           <div  class="card-body">
             <h5 class="card-title">Domestos Toilet Cleaner</h5>
             <p class="card-text">1000 HUF</p>
@@ -791,7 +794,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dustbinbagsm30pcs.jpg" class="card-img-top" alt="Dustbin Bags M 30pcs">
+          <img src="../public/images/inside_main/dustbinbagsm30pcs.jpg" class="card-img-top" alt="Dustbin Bags M 30pcs">
           <div  class="card-body">
             <h5 class="card-title">Dustbin Bags M</h5>
             <p class="card-text">700 HUF</p>
@@ -799,7 +802,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dustbinbagss30pcs.jpg" class="card-img-top" alt="Dustbin Bags S 30pcs">
+          <img src="../public/images/inside_main/dustbinbagss30pcs.jpg" class="card-img-top" alt="Dustbin Bags S 30pcs">
           <div  class="card-body">
             <h5 class="card-title">Dustbin Bags S</h5>
             <p class="card-text">600 HUF</p>
@@ -807,7 +810,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dustbinbagsxl30pcs.jpg" class="card-img-top" alt="Dustbin Bags XL 30pcs">
+          <img src="../public/images/inside_main/dustbinbagsxl30pcs.jpg" class="card-img-top" alt="Dustbin Bags XL 30pcs">
           <div  class="card-body">
             <h5 class="card-title">Dustbin Bags XL</h5>
             <p class="card-text">900 HUF</p>
@@ -815,7 +818,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dustbinbagsxxl30pcs.jpg" class="card-img-top" alt="Dustbin Bags XXL 30pcs">
+          <img src="../public/images/inside_main/dustbinbagsxxl30pcs.jpg" class="card-img-top" alt="Dustbin Bags XXL 30pcs">
           <div  class="card-body">
             <h5 class="card-title">Dustbin Bags XXL</h5>
             <p class="card-text">1100 HUF</p>
@@ -825,7 +828,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/floorcleaninggel.jpg" class="card-img-top" alt="Floor Cleaning Gel">
+          <img src="../public/images/inside_main/floorcleaninggel.jpg" class="card-img-top" alt="Floor Cleaning Gel">
           <div  class="card-body">
             <h5 class="card-title">Floor Cleaning Gel</h5>
             <p class="card-text">1200 HUF</p>
@@ -833,7 +836,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/gladeairfreshener.jpg" class="card-img-top" alt="Glade Air Freshener">
+          <img src="../public/images/inside_main/gladeairfreshener.jpg" class="card-img-top" alt="Glade Air Freshener">
           <div  class="card-body">
             <h5 class="card-title">Glade Air Freshener</h5>
             <p class="card-text">950 HUF</p>
@@ -841,7 +844,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/harpiclimescaleremover.jpg" class="card-img-top" alt="Harpic Limescale Remover">
+          <img src="../public/images/inside_main/harpiclimescaleremover.jpg" class="card-img-top" alt="Harpic Limescale Remover">
           <div  class="card-body">
             <h5 class="card-title">Harpic Limescale Remover</h5>
             <p class="card-text">1100 HUF</p>
@@ -849,7 +852,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kitchentowels.jpg" class="card-img-top" alt="Kitchen Towels">
+          <img src="../public/images/inside_main/kitchentowels.jpg" class="card-img-top" alt="Kitchen Towels">
           <div  class="card-body">
             <h5 class="card-title">Kitchen Towels</h5>
             <p class="card-text">450 HUF</p>
@@ -857,7 +860,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kitchenwipes50pcs.jpg" class="card-img-top" alt="Kitchen Wipes 50pcs">
+          <img src="../public/images/inside_main/kitchenwipes50pcs.jpg" class="card-img-top" alt="Kitchen Wipes 50pcs">
           <div  class="card-body">
             <h5 class="card-title">Kitchen Wipes 50pcs</h5>
             <p class="card-text">950 HUF</p>
@@ -865,7 +868,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kiwishoepolishblack.jpg" class="card-img-top" alt="Kiwi Shoe Polish Black">
+          <img src="../public/images/inside_main/kiwishoepolishblack.jpg" class="card-img-top" alt="Kiwi Shoe Polish Black">
           <div  class="card-body">
             <h5 class="card-title">Kiwi Shoe Polish Black</h5>
             <p class="card-text">900 HUF</p>
@@ -875,7 +878,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/kiwishoepolishbrown.jpg" class="card-img-top" alt="Kiwi Shoe Polish Brown">
+          <img src="../public/images/inside_main/kiwishoepolishbrown.jpg" class="card-img-top" alt="Kiwi Shoe Polish Brown">
           <div  class="card-body">
             <h5 class="card-title">Kiwi Shoe Polish Brown</h5>
             <p class="card-text">900 HUF</p>
@@ -883,7 +886,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/napkins50pcs.jpg" class="card-img-top" alt="Napkins 50pcs">
+          <img src="../public/images/inside_main/napkins50pcs.jpg" class="card-img-top" alt="Napkins 50pcs">
           <div  class="card-body">
             <h5 class="card-title">Napkins 50pcs</h5>
             <p class="card-text">350 HUF</p>
@@ -891,7 +894,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ovengloves.jpg" class="card-img-top" alt="Oven Gloves">
+          <img src="../public/images/inside_main/ovengloves.jpg" class="card-img-top" alt="Oven Gloves">
           <div  class="card-body">
             <h5 class="card-title">Oven Gloves</h5>
             <p class="card-text">850 HUF</p>
@@ -899,7 +902,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/partynapkins.jpg" class="card-img-top" alt="Party Napkins">
+          <img src="../public/images/inside_main/partynapkins.jpg" class="card-img-top" alt="Party Napkins">
           <div  class="card-body">
             <h5 class="card-title">Party Napkins</h5>
             <p class="card-text">250 HUF /Piece</p>
@@ -907,7 +910,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/peststopinsectkiller.jpg" class="card-img-top" alt="Pest Stop Insect Killer">
+          <img src="../public/images/inside_main/peststopinsectkiller.jpg" class="card-img-top" alt="Pest Stop Insect Killer">
           <div  class="card-body">
             <h5 class="card-title">Pest Stop Insect Killer</h5>
             <p class="card-text">900 HUF</p>
@@ -915,7 +918,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/raidinsectkiller.jpg" class="card-img-top" alt="Raid Insect Killer">
+          <img src="../public/images/inside_main/raidinsectkiller.jpg" class="card-img-top" alt="Raid Insect Killer">
           <div  class="card-body">
             <h5 class="card-title">Raid Insect Killer</h5>
             <p class="card-text">900 HUF</p>
@@ -925,7 +928,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/tissuepapers50pcs.jpg" class="card-img-top" alt="Tissue Papers 50pcs">
+          <img src="../public/images/inside_main/tissuepapers50pcs.jpg" class="card-img-top" alt="Tissue Papers 50pcs">
           <div  class="card-body">
             <h5 class="card-title">Tissue Papers 50pcs</h5>
             <p class="card-text">550 HUF</p>
@@ -933,7 +936,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tissuepapers100pcs.jpg" class="card-img-top" alt="Tissue Papers 100pcs">
+          <img src="../public/images/inside_main/tissuepapers100pcs.jpg" class="card-img-top" alt="Tissue Papers 100pcs">
           <div  class="card-body">
             <h5 class="card-title">Tissue Papers 100pcs</h5>
             <p class="card-text">1000 HUF</p>
@@ -941,7 +944,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/toiletpaperl.jpg" class="card-img-top" alt="Toilet Paper L">
+          <img src="../public/images/inside_main/toiletpaperl.jpg" class="card-img-top" alt="Toilet Paper L">
           <div  class="card-body">
             <h5 class="card-title">Toilet Paper L</h5>
             <p class="card-text">3000 HUF</p>
@@ -949,7 +952,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/toiletpaperm.jpg" class="card-img-top" alt="Dishwashing Gel">
+          <img src="../public/images/inside_main/toiletpaperm.jpg" class="card-img-top" alt="Dishwashing Gel">
           <div  class="card-body">
             <h5 class="card-title">Toilet Paper M</h5>
             <p class="card-text">2400 HUF</p>
@@ -957,7 +960,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/wetwipes75pcs.jpg" class="card-img-top" alt="Wet Wipes 75pcs">
+          <img src="../public/images/inside_main/wetwipes75pcs.jpg" class="card-img-top" alt="Wet Wipes 75pcs">
           <div  class="card-body">
             <h5 class="card-title">Wet Wipes 75pcs</h5>
             <p class="card-text">1500 HUF</p>
@@ -965,7 +968,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/windowcleanergel.jpg" class="card-img-top" alt="Window Cleaner Gel">
+          <img src="../public/images/inside_main/windowcleanergel.jpg" class="card-img-top" alt="Window Cleaner Gel">
           <div  class="card-body">
             <h5 class="card-title">Window Cleaner Gel</h5>
             <p class="card-text">1100 HUF</p>
@@ -976,7 +979,7 @@
       <h1 class="display-5 heading mt-5">Snacks, Biscuits, Chips</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/cheetoscheeseflavourchips200g.jpg" class="card-img-top" alt="Cheetos Cheese Flavoured Chips 200g">
+          <img src="../public/images/inside_main/cheetoscheeseflavourchips200g.jpg" class="card-img-top" alt="Cheetos Cheese Flavoured Chips 200g">
           <div  class="card-body">
             <h5 class="card-title">Cheetos Cheese Flavour Chips 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -984,7 +987,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cheetosflaminhotflavourchips200g.jpg" class="card-img-top" alt="Cheetos Flamin Hot Flavour Chips 200g">
+          <img src="../public/images/inside_main/cheetosflaminhotflavourchips200g.jpg" class="card-img-top" alt="Cheetos Flamin Hot Flavour Chips 200g">
           <div  class="card-body">
             <h5 class="card-title">Cheetos Flamin Hot Flavour Chips 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -992,7 +995,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cheetospuffchips200g.jpg" class="card-img-top" alt="Cheetos Puff Chips 200g">
+          <img src="../public/images/inside_main/cheetospuffchips200g.jpg" class="card-img-top" alt="Cheetos Puff Chips 200g">
           <div  class="card-body">
             <h5 class="card-title">Cheetos Puff Chips 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -1000,7 +1003,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mogyiclassicpopcorn.jpg" class="card-img-top" alt="Mogyi Classic Popcorn">
+          <img src="../public/images/inside_main/mogyiclassicpopcorn.jpg" class="card-img-top" alt="Mogyi Classic Popcorn">
           <div  class="card-body">
             <h5 class="card-title">Mogyi Classic Popcorn</h5>
             <p class="card-text">450 HUF</p>
@@ -1008,7 +1011,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mogyipopcorncheeseflavoured.jpg" class="card-img-top" alt="Mogyi Popcorn Cheese Flavoured">
+          <img src="../public/images/inside_main/mogyipopcorncheeseflavoured.jpg" class="card-img-top" alt="Mogyi Popcorn Cheese Flavoured">
           <div  class="card-body">
             <h5 class="card-title">Mogyi Popcorn Cheese Flavoured</h5>
             <p class="card-text">450 HUF</p>
@@ -1016,7 +1019,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mogyipopcornchilliflavoured.jpg" class="card-img-top" alt="Mogyi Popcorn Chilli Flavoured">
+          <img src="../public/images/inside_main/mogyipopcornchilliflavoured.jpg" class="card-img-top" alt="Mogyi Popcorn Chilli Flavoured">
           <div  class="card-body">
             <h5 class="card-title">Mogyi Popcorn Chilli Flavoured</h5>
             <p class="card-text">450 HUF</p>
@@ -1026,7 +1029,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/pringlesoriginal156g.jpg" class="card-img-top" alt="Pringles Original 156g">
+          <img src="../public/images/inside_main/pringlesoriginal156g.jpg" class="card-img-top" alt="Pringles Original 156g">
           <div  class="card-body">
             <h5 class="card-title">Pringles Original 156g</h5>
             <p class="card-text">1400 HUF</p>
@@ -1034,7 +1037,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pringlespaprika156g.jpg" class="card-img-top" alt="Pringles Paprika 156g">
+          <img src="../public/images/inside_main/pringlespaprika156g.jpg" class="card-img-top" alt="Pringles Paprika 156g">
           <div  class="card-body">
             <h5 class="card-title">Pringles Paprika 156g</h5>
             <p class="card-text">1400 HUF</p>
@@ -1042,7 +1045,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pringlessourcreamandonion156g.jpg" class="card-img-top" alt="Pringles Sour Cream and Onion 156g">
+          <img src="../public/images/inside_main/pringlessourcreamandonion156g.jpg" class="card-img-top" alt="Pringles Sour Cream and Onion 156g">
           <div  class="card-body">
             <h5 class="card-title">Pringles Sour Cream and Onion 156g</h5>
             <p class="card-text">1400 HUF</p>
@@ -1050,7 +1053,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/laysbbqflavouredchips.jpg" class="card-img-top" alt="Lays BBQ Flavoured Chips">
+          <img src="../public/images/inside_main/laysbbqflavouredchips.jpg" class="card-img-top" alt="Lays BBQ Flavoured Chips">
           <div  class="card-body">
             <h5 class="card-title">Lays BBQ Flavoured Chips</h5>
             <p class="card-text">700 HUF</p>
@@ -1058,7 +1061,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/layscheeseflavouredchips.jpg" class="card-img-top" alt="Lays Cheese Flavoured Chips">
+          <img src="../public/images/inside_main/layscheeseflavouredchips.jpg" class="card-img-top" alt="Lays Cheese Flavoured Chips">
           <div  class="card-body">
             <h5 class="card-title">Lays Cheese Flavoured Chips</h5>
             <p class="card-text">600 HUF</p>
@@ -1066,7 +1069,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/layscreamandonionflavouredchips.jpg" class="card-img-top" alt="Lays Cream and Onion Flavoured Chips">
+          <img src="../public/images/inside_main/layscreamandonionflavouredchips.jpg" class="card-img-top" alt="Lays Cream and Onion Flavoured Chips">
           <div  class="card-body">
             <h5 class="card-title">Lays Cream and Onion Flavoured Chips</h5>
             <p class="card-text">600 HUF</p>
@@ -1076,7 +1079,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/layssaltedchips.jpg" class="card-img-top" alt="Lays Salted Chips">
+          <img src="../public/images/inside_main/layssaltedchips.jpg" class="card-img-top" alt="Lays Salted Chips">
           <div  class="card-body">
             <h5 class="card-title">Lays Salted Chips</h5>
             <p class="card-text">500 HUF</p>
@@ -1084,7 +1087,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ritzcrackers6stacks.jpg" class="card-img-top" alt="Ritz Crackers 6 Stacks">
+          <img src="../public/images/inside_main/ritzcrackers6stacks.jpg" class="card-img-top" alt="Ritz Crackers 6 Stacks">
           <div  class="card-body">
             <h5 class="card-title">Ritz Crackers 6 Stacks</h5>
             <p class="card-text">1100 HUF</p>
@@ -1092,7 +1095,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/crococrackers400g.jpg" class="card-img-top" alt=">Croco Crackers 400g">
+          <img src="../public/images/inside_main/crococrackers400g.jpg" class="card-img-top" alt=">Croco Crackers 400g">
           <div  class="card-body">
             <h5 class="card-title">Croco Crackers 400g</h5>
             <p class="card-text">750 HUF</p>
@@ -1100,7 +1103,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/oreochocolatebiscuits.jpg" class="card-img-top" alt="Oreo Chocolate Biscuits">
+          <img src="../public/images/inside_main/oreochocolatebiscuits.jpg" class="card-img-top" alt="Oreo Chocolate Biscuits">
           <div  class="card-body">
             <h5 class="card-title">Oreo Chocolate Biscuits</h5>
             <p class="card-text">450 HUF</p>
@@ -1108,7 +1111,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/oreomintbiscuits.jpg" class="card-img-top" alt="Oreo Mint Biscuits">
+          <img src="../public/images/inside_main/oreomintbiscuits.jpg" class="card-img-top" alt="Oreo Mint Biscuits">
           <div  class="card-body">
             <h5 class="card-title">Oreo Mint Biscuits</h5>
             <p class="card-text">450 HUF</p>
@@ -1116,7 +1119,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/oreostrawberrybiscuits.jpg" class="card-img-top" alt="Oreo Strawberry Biscuits">
+          <img src="../public/images/inside_main/oreostrawberrybiscuits.jpg" class="card-img-top" alt="Oreo Strawberry Biscuits">
           <div  class="card-body">
             <h5 class="card-title">Oreo Strawberry Biscuits</h5>
             <p class="card-text">450 HUF</p>
@@ -1126,7 +1129,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/oreovanillabiscuits.jpg" class="card-img-top" alt="Oreo Vanilla Biscuits">
+          <img src="../public/images/inside_main/oreovanillabiscuits.jpg" class="card-img-top" alt="Oreo Vanilla Biscuits">
           <div  class="card-body">
             <h5 class="card-title">Oreo Vanilla Biscuits</h5>
             <p class="card-text">450 HUF</p>
@@ -1134,7 +1137,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/chocolatewafers200g.jpg" class="card-img-top" alt="Chocolate Wafers 200g">
+          <img src="../public/images/inside_main/chocolatewafers200g.jpg" class="card-img-top" alt="Chocolate Wafers 200g">
           <div  class="card-body">
             <h5 class="card-title">Chocolate Wafers 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -1142,7 +1145,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/orangewafers200g.jpg" class="card-img-top" alt="Orange Wafers 200g">
+          <img src="../public/images/inside_main/orangewafers200g.jpg" class="card-img-top" alt="Orange Wafers 200g">
           <div  class="card-body">
             <h5 class="card-title">Orange Wafers 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -1150,7 +1153,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pineapplewafers200g.jpg" class="card-img-top" alt="Pineapple Wafers 200g">
+          <img src="../public/images/inside_main/pineapplewafers200g.jpg" class="card-img-top" alt="Pineapple Wafers 200g">
           <div  class="card-body">
             <h5 class="card-title">Pineapple Wafers 200g</h5>
             <p class="card-text">375 HUF</p>
@@ -1158,7 +1161,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/applecinnamoncookies400g.jpg" class="card-img-top" alt="Apple Cinnamon Cookies 400g">
+          <img src="../public/images/inside_main/applecinnamoncookies400g.jpg" class="card-img-top" alt="Apple Cinnamon Cookies 400g">
           <div  class="card-body">
             <h5 class="card-title">Apple Cinnamon Cookies 400g</h5>
             <p class="card-text">1150 HUF</p>
@@ -1166,7 +1169,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/chocolatecookies400g.jpg" class="card-img-top" alt="Chocolate Cookies 400g">
+          <img src="../public/images/inside_main/chocolatecookies400g.jpg" class="card-img-top" alt="Chocolate Cookies 400g">
           <div  class="card-body">
             <h5 class="card-title">Chocolate Cookies 400g</h5>
             <p class="card-text">1150 HUF</p>
@@ -1176,7 +1179,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/strawberrycookies400g.jpg" class="card-img-top" alt="Strawberry Cookies 400g">
+          <img src="../public/images/inside_main/strawberrycookies400g.jpg" class="card-img-top" alt="Strawberry Cookies 400g">
           <div  class="card-body">
             <h5 class="card-title">Strawberry Cookies 400g</h5>
             <p class="card-text">1150 HUF</p>
@@ -1184,7 +1187,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/whitechocochipcookies400g.jpg" class="card-img-top" alt="White Chocochip Cookies 400g">
+          <img src="../public/images/inside_main/whitechocochipcookies400g.jpg" class="card-img-top" alt="White Chocochip Cookies 400g">
           <div  class="card-body">
             <h5 class="card-title">White Chocochip Cookies 400g</h5>
             <p class="card-text">1150 HUF</p>
@@ -1192,7 +1195,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/peanuts250g.jpg" class="card-img-top" alt="Peanuts 250g">
+          <img src="../public/images/inside_main/peanuts250g.jpg" class="card-img-top" alt="Peanuts 250g">
           <div  class="card-body">
             <h5 class="card-title">Peanuts 250g</h5>
             <p class="card-text">200 HUF</p>
@@ -1200,7 +1203,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/saltedpeanuts250g.jpg" class="card-img-top" alt="Salted Peanuts 250g">
+          <img src="../public/images/inside_main/saltedpeanuts250g.jpg" class="card-img-top" alt="Salted Peanuts 250g">
           <div  class="card-body">
             <h5 class="card-title">Salted Peanuts 250g</h5>
             <p class="card-text">300 HUF</p>
@@ -1208,7 +1211,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/monacosaltybiscuits150g.jpg" class="card-img-top" alt="Monaco Salty Biscuits 150g">
+          <img src="../public/images/inside_main/monacosaltybiscuits150g.jpg" class="card-img-top" alt="Monaco Salty Biscuits 150g">
           <div  class="card-body">
             <h5 class="card-title">Monaco Salty Biscuits 150g</h5>
             <p class="card-text">350 HUF</p>
@@ -1216,7 +1219,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/saltinosaltybiscuits150g.jpg" class="card-img-top" alt="Saltino Salty Biscuits 150g">
+          <img src="../public/images/inside_main/saltinosaltybiscuits150g.jpg" class="card-img-top" alt="Saltino Salty Biscuits 150g">
           <div  class="card-body">
             <h5 class="card-title">Saltino Salty Biscuits 150g</h5>
             <p class="card-text">350 HUF</p>
@@ -1227,7 +1230,7 @@
       <h1 class="display-5 heading mt-5">Self-Care Products</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/dovebarsoap100g.jpg" class="card-img-top" alt="Dove Bar Soap 100g">
+          <img src="../public/images/inside_main/dovebarsoap100g.jpg" class="card-img-top" alt="Dove Bar Soap 100g">
           <div  class="card-body">
             <h5 class="card-title">Dove Bar Soap 100g</h5>
             <p class="card-text">600 HUF</p>
@@ -1235,7 +1238,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovebarsoap200g.jpg" class="card-img-top" alt="Dove Bar Soap 200g">
+          <img src="../public/images/inside_main/dovebarsoap200g.jpg" class="card-img-top" alt="Dove Bar Soap 200g">
           <div  class="card-body">
             <h5 class="card-title">Dove Bar Soap 200g</h5>
             <p class="card-text">1100 HUF</p>
@@ -1243,7 +1246,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/doveliquidhandwashsoap200ml.jpg" class="card-img-top" alt="Dove Liquid Hand Wash Soap 200ml">
+          <img src="../public/images/inside_main/doveliquidhandwashsoap200ml.jpg" class="card-img-top" alt="Dove Liquid Hand Wash Soap 200ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Liquid Hand Wash Soap 200ml</h5>
             <p class="card-text">1000 HUF</p>
@@ -1251,7 +1254,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/doveliquidhandwashsoaprefill.jpg" class="card-img-top" alt="Dove Liquid Hand Wash Soap Refill">
+          <img src="../public/images/inside_main/doveliquidhandwashsoaprefill.jpg" class="card-img-top" alt="Dove Liquid Hand Wash Soap Refill">
           <div  class="card-body">
             <h5 class="card-title">Dove Liquid Hand Wash Soap Refill</h5>
             <p class="card-text">900 HUF</p>
@@ -1259,7 +1262,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pantenehairoil100ml.jpg" class="card-img-top" alt="Pantene Hair Oil 100ml">
+          <img src="../public/images/inside_main/pantenehairoil100ml.jpg" class="card-img-top" alt="Pantene Hair Oil 100ml">
           <div  class="card-body">
             <h5 class="card-title">Pantene Hair Oil 100ml</h5>
             <p class="card-text">1000 HUF</p>
@@ -1267,7 +1270,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pantenehairoil200ml.jpg" class="card-img-top" alt="Pantene Hair Oil 200ml">
+          <img src="../public/images/inside_main/pantenehairoil200ml.jpg" class="card-img-top" alt="Pantene Hair Oil 200ml">
           <div  class="card-body">
             <h5 class="card-title">Pantene Hair Oil 200ml</h5>
             <p class="card-text">1900 HUF</p>
@@ -1277,7 +1280,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/colgatetoothpaste.jpg" class="card-img-top" alt="Colgate Toothpaste">
+          <img src="../public/images/inside_main/colgatetoothpaste.jpg" class="card-img-top" alt="Colgate Toothpaste">
           <div  class="card-body">
             <h5 class="card-title">Colgate Toothpaste</h5>
             <p class="card-text">1000 HUF</p>
@@ -1285,7 +1288,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/colgatetoothbrush.jpg" class="card-img-top" alt="Colgate Toothbrush">
+          <img src="../public/images/inside_main/colgatetoothbrush.jpg" class="card-img-top" alt="Colgate Toothbrush">
           <div  class="card-body">
             <h5 class="card-title">Colgate Toothbrush</h5>
             <p class="card-text">1600 HUF</p>
@@ -1293,7 +1296,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovewintercream200ml.jpg" class="card-img-top" alt="Dove Winter Cream 200ml">
+          <img src="../public/images/inside_main/dovewintercream200ml.jpg" class="card-img-top" alt="Dove Winter Cream 200ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Winter Cream 200ml</h5>
             <p class="card-text">1500 HUF</p>
@@ -1301,7 +1304,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/niveafacewash.jpg" class="card-img-top" alt="Nivea Face Wash">
+          <img src="../public/images/inside_main/niveafacewash.jpg" class="card-img-top" alt="Nivea Face Wash">
           <div  class="card-body">
             <h5 class="card-title">Nivea Face Wash</h5>
             <p class="card-text">750 HUF</p>
@@ -1309,7 +1312,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovehandcream100ml.jpg" class="card-img-top" alt="Dove Hand Cream 100ml">
+          <img src="../public/images/inside_main/dovehandcream100ml.jpg" class="card-img-top" alt="Dove Hand Cream 100ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Hand Cream 100ml</h5>
             <p class="card-text">1200 HUF</p>
@@ -1317,7 +1320,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/vaselinefootcream250ml.jpg" class="card-img-top" alt="Vaseline Foot Cream 250ml">
+          <img src="../public/images/inside_main/vaselinefootcream250ml.jpg" class="card-img-top" alt="Vaseline Foot Cream 250ml">
           <div  class="card-body">
             <h5 class="card-title">Vaseline Foot Cream 250ml</h5>
             <p class="card-text">1200 HUF</p>
@@ -1327,7 +1330,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/dovecolorcareshampoo600ml.jpg" class="card-img-top" alt="Dove Color Care Shampoo 600ml">
+          <img src="../public/images/inside_main/dovecolorcareshampoo600ml.jpg" class="card-img-top" alt="Dove Color Care Shampoo 600ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Color Care Shampoo 600ml</h5>
             <p class="card-text">2100 HUF</p>
@@ -1335,7 +1338,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovedailymoistureshampoo600ml.jpg" class="card-img-top" alt="Dove Daily Moisture Shampoo 600ml">
+          <img src="../public/images/inside_main/dovedailymoistureshampoo600ml.jpg" class="card-img-top" alt="Dove Daily Moisture Shampoo 600ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Daily Moisture Shampoo 600ml</h5>
             <p class="card-text">2100 HUF</p>
@@ -1343,7 +1346,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/hairfallrescuehairconditioner550ml.jpg" class="card-img-top" alt="Hairfall Rescue Hair Conditioner 550ml">
+          <img src="../public/images/inside_main/hairfallrescuehairconditioner550ml.jpg" class="card-img-top" alt="Hairfall Rescue Hair Conditioner 550ml">
           <div  class="card-body">
             <h5 class="card-title">Hairfall Rescue Hair Conditioner 550ml</h5>
             <p class="card-text">1100 HUF</p>
@@ -1351,7 +1354,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovehydratehairconditioner550ml.jpg" class="card-img-top" alt="Dove Hydrate Hair Conditioner 550ml">
+          <img src="../public/images/inside_main/dovehydratehairconditioner550ml.jpg" class="card-img-top" alt="Dove Hydrate Hair Conditioner 550ml">
           <div  class="card-body">
             <h5 class="card-title">Dove Hydrate Hair Conditioner 550ml</h5>
             <p class="card-text">1100 HUF</p>
@@ -1359,7 +1362,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/garnierhaircolor.jpg" class="card-img-top" alt="Garnier Hair Color">
+          <img src="../public/images/inside_main/garnierhaircolor.jpg" class="card-img-top" alt="Garnier Hair Color">
           <div  class="card-body">
             <h5 class="card-title">Garnier Hair Color</h5>
             <p class="card-text">1800 HUF</p>
@@ -1367,7 +1370,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/showercap.jpg" class="card-img-top" alt="Shower Cap">
+          <img src="../public/images/inside_main/showercap.jpg" class="card-img-top" alt="Shower Cap">
           <div  class="card-body">
             <h5 class="card-title">Shower Cap</h5>
             <p class="card-text">550 HUF</p>
@@ -1377,7 +1380,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/degreemen'sdeodorant.jpg" class="card-img-top" alt="Degree Men's Deodorant">
+          <img src="../public/images/inside_main/degreemen'sdeodorant.jpg" class="card-img-top" alt="Degree Men's Deodorant">
           <div  class="card-body">
             <h5 class="card-title">Degree Men's Deodorant</h5>
             <p class="card-text">950 HUF</p>
@@ -1385,7 +1388,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dovewomen'sdeodorant.jpg" class="card-img-top" alt="Dove Women's Deodorant">
+          <img src="../public/images/inside_main/dovewomen'sdeodorant.jpg" class="card-img-top" alt="Dove Women's Deodorant">
           <div  class="card-body">
             <h5 class="card-title">Dove Women's Deodorant</h5>
             <p class="card-text">950 HUF</p>
@@ -1393,7 +1396,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/women'sperfume.jpg" class="card-img-top" alt="Women's Perfume">
+          <img src="../public/images/inside_main/women'sperfume.jpg" class="card-img-top" alt="Women's Perfume">
           <div  class="card-body">
             <h5 class="card-title">Women's Perfume</h5>
             <p class="card-text">1500 HUF</p>
@@ -1401,7 +1404,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/men'sperfume.jpg" class="card-img-top" alt="Men's Perfume">
+          <img src="../public/images/inside_main/men'sperfume.jpg" class="card-img-top" alt="Men's Perfume">
           <div  class="card-body">
             <h5 class="card-title">Men's Perfume</h5>
             <p class="card-text">1500 HUF</p>
@@ -1409,7 +1412,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/doveunisexshowergel.jpg" class="card-img-top" alt="Dove Unisex Shower Gel">
+          <img src="../public/images/inside_main/doveunisexshowergel.jpg" class="card-img-top" alt="Dove Unisex Shower Gel">
           <div  class="card-body">
             <h5 class="card-title">Dove Unisex Shower Gel</h5>
             <p class="card-text">1850 HUF</p>
@@ -1417,7 +1420,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/antiperspirantrollon.jpg" class="card-img-top" alt="Anti Perspirant Roll on">
+          <img src="../public/images/inside_main/antiperspirantrollon.jpg" class="card-img-top" alt="Anti Perspirant Roll on">
           <div  class="card-body">
             <h5 class="card-title">Anti Perspirant Roll on</h5>
             <p class="card-text">1900 HUF</p>
@@ -1427,7 +1430,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/men'sshavingfoam50g.jpg" class="card-img-top" alt="Men's Shaving Foam 50g">
+          <img src="../public/images/inside_main/men'sshavingfoam50g.jpg" class="card-img-top" alt="Men's Shaving Foam 50g">
           <div  class="card-body">
             <h5 class="card-title">Men's Shaving Foam 50g</h5>
             <p class="card-text">550 HUF</p>
@@ -1435,7 +1438,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/men'sshavinggel100ml.jpg" class="card-img-top" alt="Men's Shaving Gel 100ml">
+          <img src="../public/images/inside_main/men'sshavinggel100ml.jpg" class="card-img-top" alt="Men's Shaving Gel 100ml">
           <div  class="card-body">
             <h5 class="card-title">Men's Shaving Gel 100ml</h5>
             <p class="card-text">850 HUF</p>
@@ -1443,7 +1446,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/men'sshavingrazorbladeset.jpg" class="card-img-top" alt="Men's Shaving Razor Blade Set">
+          <img src="../public/images/inside_main/men'sshavingrazorbladeset.jpg" class="card-img-top" alt="Men's Shaving Razor Blade Set">
           <div  class="card-body">
             <h5 class="card-title">Men's Shaving Razor Blade Set</h5>
             <p class="card-text">1800 HUF</p>
@@ -1451,7 +1454,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/hairtrimmerset.jpg" class="card-img-top" alt="Hair Trimmer Set">
+          <img src="../public/images/inside_main/hairtrimmerset.jpg" class="card-img-top" alt="Hair Trimmer Set">
           <div  class="card-body">
             <h5 class="card-title">Hair Trimmer Set</h5>
             <p class="card-text">4500 HUF</p>
@@ -1459,7 +1462,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/wheyprotein500g.jpg" class="card-img-top" alt="Whey Protein 500g">
+          <img src="../public/images/inside_main/wheyprotein500g.jpg" class="card-img-top" alt="Whey Protein 500g">
           <div  class="card-body">
             <h5 class="card-title">Whey Protein 500g</h5>
             <p class="card-text">6000 HUF</p>
@@ -1467,7 +1470,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/wheyprotein2.25Kg.jpg" class="card-img-top" alt="Whey Protein 2.25Kg">
+          <img src="../public/images/inside_main/wheyprotein2.25Kg.jpg" class="card-img-top" alt="Whey Protein 2.25Kg">
           <div  class="card-body">
             <h5 class="card-title">Whey Protein 2.25Kg</h5>
             <p class="card-text">20000 HUF</p>
@@ -1478,7 +1481,7 @@
       <h1 class="display-5 heading mt-5">Alcohol</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/moulindewhitewine750ml.jpg" class="card-img-top" alt="Moulinde White Wine 750ml">
+          <img src="../public/images/inside_main/moulindewhitewine750ml.jpg" class="card-img-top" alt="Moulinde White Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Moulinde White Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1486,7 +1489,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/penfoldswhitewine750ml.jpg" class="card-img-top" alt="Penfolds White Wine 750ml">
+          <img src="../public/images/inside_main/penfoldswhitewine750ml.jpg" class="card-img-top" alt="Penfolds White Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Penfolds White Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1494,7 +1497,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/penfoldsredwine750ml.jpg" class="card-img-top" alt="Penfolds Red Wine 750ml">
+          <img src="../public/images/inside_main/penfoldsredwine750ml.jpg" class="card-img-top" alt="Penfolds Red Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Penfolds Red Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1502,7 +1505,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/vegaricareredwine750ml.jpg" class="card-img-top" alt="Vega Ricare Red Wine 750ml">
+          <img src="../public/images/inside_main/vegaricareredwine750ml.jpg" class="card-img-top" alt="Vega Ricare Red Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Vega Ricare Red Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1510,7 +1513,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kekfrankosrosewine750ml.jpg" class="card-img-top" alt="Kekfrancos Rose Wine 750ml">
+          <img src="../public/images/inside_main/kekfrankosrosewine750ml.jpg" class="card-img-top" alt="Kekfrancos Rose Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Kekfrankos Rose Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1518,7 +1521,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kochpremiumrosewine750ml.jpg" class="card-img-top" alt="Koch Premium Rose Wine 750ml">
+          <img src="../public/images/inside_main/kochpremiumrosewine750ml.jpg" class="card-img-top" alt="Koch Premium Rose Wine 750ml">
           <div  class="card-body">
             <h5 class="card-title">Koch Premium Rose Wine 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1528,7 +1531,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/carlsbergbeercan500ml.jpg" class="card-img-top" alt="Carlsberg Beer Can 500ml">
+          <img src="../public/images/inside_main/carlsbergbeercan500ml.jpg" class="card-img-top" alt="Carlsberg Beer Can 500ml">
           <div  class="card-body">
             <h5 class="card-title">Carlsberg Beer Can 500ml</h5>
             <p class="card-text">350 HUF</p>
@@ -1536,7 +1539,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/carlsbergbeercan12x500ml.jpg" class="card-img-top" alt="Carlsberg Beer Can 12x500ml">
+          <img src="../public/images/inside_main/carlsbergbeercan12x500ml.jpg" class="card-img-top" alt="Carlsberg Beer Can 12x500ml">
           <div  class="card-body">
             <h5 class="card-title">Carlsberg Beer Can 12x500ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1544,7 +1547,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dauraimportlagerbeer330ml.jpg" class="card-img-top" alt="Daura Import Lager Beer 330ml">
+          <img src="../public/images/inside_main/dauraimportlagerbeer330ml.jpg" class="card-img-top" alt="Daura Import Lager Beer 330ml">
           <div  class="card-body">
             <h5 class="card-title">Daura Import Lager Beer 330ml</h5>
             <p class="card-text">550 HUF</p>
@@ -1552,7 +1555,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/absolutvodka350ml.jpg" class="card-img-top" alt="Absolut Vodka 350ml">
+          <img src="../public/images/inside_main/absolutvodka350ml.jpg" class="card-img-top" alt="Absolut Vodka 350ml">
           <div  class="card-body">
             <h5 class="card-title">Absolut Vodka 350ml</h5>
             <p class="card-text">2200 HUF</p>
@@ -1560,7 +1563,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kalinkavodka500ml.jpg" class="card-img-top" alt="Kalinka Vodka 500ml">
+          <img src="../public/images/inside_main/kalinkavodka500ml.jpg" class="card-img-top" alt="Kalinka Vodka 500ml">
           <div  class="card-body">
             <h5 class="card-title">Kalinka Vodka 500ml</h5>
             <p class="card-text">3000 HUF</p>
@@ -1568,7 +1571,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/bacardigrandreserverum750ml.jpg" class="card-img-top" alt="Bacardi Grand Reserve Rum 750ml">
+          <img src="../public/images/inside_main/bacardigrandreserverum750ml.jpg" class="card-img-top" alt="Bacardi Grand Reserve Rum 750ml">
           <div  class="card-body">
             <h5 class="card-title">Bacardi Grand Reserve Rum 750ml</h5>
             <p class="card-text">3500 HUF</p>
@@ -1578,7 +1581,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/bacardiwhiterum700ml.jpg" class="card-img-top" alt="Bacardi White Rum 700ml">
+          <img src="../public/images/inside_main/bacardiwhiterum700ml.jpg" class="card-img-top" alt="Bacardi White Rum 700ml">
           <div  class="card-body">
             <h5 class="card-title">Bacardi White Rum 700ml</h5>
             <p class="card-text">3200 HUF</p>
@@ -1586,7 +1589,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/jagermeisterherbliqueur700ml.jpg" class="card-img-top" alt="Jagermeister Herb Liqueur 700ml">
+          <img src="../public/images/inside_main/jagermeisterherbliqueur700ml.jpg" class="card-img-top" alt="Jagermeister Herb Liqueur 700ml">
           <div  class="card-body">
             <h5 class="card-title">Jagermeister Herb Liqueur 700ml</h5>
             <p class="card-text">5500 HUF</p>
@@ -1594,7 +1597,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pannonhalmibrandy700ml.jpg" class="card-img-top" alt="Pannonhalmi Brandy 700ml">
+          <img src="../public/images/inside_main/pannonhalmibrandy700ml.jpg" class="card-img-top" alt="Pannonhalmi Brandy 700ml">
           <div  class="card-body">
             <h5 class="card-title">Pannonhalmi Brandy 700ml</h5>
             <p class="card-text">3200 HUF</p>
@@ -1602,7 +1605,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dewar'sscotchwhiskey750ml.jpg" class="card-img-top" alt="Dewar's Scotch Whiskey 750ml">
+          <img src="../public/images/inside_main/dewar'sscotchwhiskey750ml.jpg" class="card-img-top" alt="Dewar's Scotch Whiskey 750ml">
           <div  class="card-body">
             <h5 class="card-title">Dewar's Scotch Whiskey 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1610,7 +1613,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/glenfiddichsinglemalt750ml.jpg" class="card-img-top" alt="Glenfiddich Single Malt 750ml">
+          <img src="../public/images/inside_main/glenfiddichsinglemalt750ml.jpg" class="card-img-top" alt="Glenfiddich Single Malt 750ml">
           <div  class="card-body">
             <h5 class="card-title">Glenfiddich Single Malt 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1618,7 +1621,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/glenmorangiesinglemalt750ml.jpg" class="card-img-top" alt="Glenmorangie Single Malt 750ml">
+          <img src="../public/images/inside_main/glenmorangiesinglemalt750ml.jpg" class="card-img-top" alt="Glenmorangie Single Malt 750ml">
           <div  class="card-body">
             <h5 class="card-title">Glenmorangie Single Malt 750ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1628,7 +1631,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/monkeyshouldersscotch750ml.jpg" class="card-img-top" alt="Monkey Shoulders Scotch 750ml">
+          <img src="../public/images/inside_main/monkeyshouldersscotch750ml.jpg" class="card-img-top" alt="Monkey Shoulders Scotch 750ml">
           <div  class="card-body">
             <h5 class="card-title">Monkey Shoulders Scotch 750ml</h5>
             <p class="card-text">4800 HUF</p>
@@ -1636,7 +1639,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/royalcidergreenapple750ml.jpg" class="card-img-top" alt="Royal Cider Green Apple 750ml">
+          <img src="../public/images/inside_main/royalcidergreenapple750ml.jpg" class="card-img-top" alt="Royal Cider Green Apple 750ml">
           <div  class="card-body">
             <h5 class="card-title">Royal Cider Green Apple 750ml</h5>
             <p class="card-text">1300 HUF</p>
@@ -1644,7 +1647,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/somersbyapplecider330ml.jpg" class="card-img-top" alt="Somersby Apple Cider 330ml">
+          <img src="../public/images/inside_main/somersbyapplecider330ml.jpg" class="card-img-top" alt="Somersby Apple Cider 330ml">
           <div  class="card-body">
             <h5 class="card-title">Somersby Apple Cider 330ml</h5>
             <p class="card-text">1300 HUF</p>
@@ -1652,7 +1655,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/reserveblendedscotch750ml.jpg" class="card-img-top" alt="Reserve Blended Scotch 750ml">
+          <img src="../public/images/inside_main/reserveblendedscotch750ml.jpg" class="card-img-top" alt="Reserve Blended Scotch 750ml">
           <div  class="card-body">
             <h5 class="card-title">Reserve Blended Scotch 750ml</h5>
             <p class="card-text">4800 HUF</p>
@@ -1660,7 +1663,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/troistoursspirit500ml.jpg" class="card-img-top" alt="Trois Tours Spirit 500ml">
+          <img src="../public/images/inside_main/troistoursspirit500ml.jpg" class="card-img-top" alt="Trois Tours Spirit 500ml">
           <div  class="card-body">
             <h5 class="card-title">Trois Tours Spirit 500ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1668,7 +1671,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/v30spiritdrink500ml.jpg" class="card-img-top" alt="V30 Spirit Drink 500ml">
+          <img src="../public/images/inside_main/v30spiritdrink500ml.jpg" class="card-img-top" alt="V30 Spirit Drink 500ml">
           <div  class="card-body">
             <h5 class="card-title">V30 Spirit Drink 500ml</h5>
             <p class="card-text">3800 HUF</p>
@@ -1679,7 +1682,7 @@
       <h1 class="display-5 heading mt-5">Baby Care Products</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/pampersbabywipes12pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 12pcs">
+          <img src="../public/images/inside_main/pampersbabywipes12pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 12pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Baby Wipes 12pcs</h5>
             <p class="card-text">400 HUF</p>
@@ -1687,7 +1690,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pampersbabywipes4x52pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 4x52pcs">
+          <img src="../public/images/inside_main/pampersbabywipes4x52pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 4x52pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Baby Wipes 4x52pcs</h5>
             <p class="card-text">3000 HUF</p>
@@ -1695,7 +1698,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pampersbabywipes1152pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 1152pcs">
+          <img src="../public/images/inside_main/pampersbabywipes1152pcs.jpg" class="card-img-top" alt="Pampers Baby Wipes 1152pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Baby Wipes 1152pcs</h5>
             <p class="card-text">7000 HUF</p>
@@ -1703,7 +1706,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pampersnappies43pcs.jpg" class="card-img-top" alt="Pampers Nappies 43pcs">
+          <img src="../public/images/inside_main/pampersnappies43pcs.jpg" class="card-img-top" alt="Pampers Nappies 43pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Nappies 43pcs</h5>
             <p class="card-text">1400 HUF</p>
@@ -1711,7 +1714,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pampersnappies64pcs.jpg" class="card-img-top" alt="Pampers Nappies 64pcs">
+          <img src="../public/images/inside_main/pampersnappies64pcs.jpg" class="card-img-top" alt="Pampers Nappies 64pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Nappies 64pcs</h5>
             <p class="card-text">2500 HUF</p>
@@ -1719,7 +1722,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pampersnappies120pcs.jpg" class="card-img-top" alt="Pampers Nappies 120pcs">
+          <img src="../public/images/inside_main/pampersnappies120pcs.jpg" class="card-img-top" alt="Pampers Nappies 120pcs">
           <div  class="card-body">
             <h5 class="card-title">Pampers Nappies 120pcs</h5>
             <p class="card-text">4900 HUF</p>
@@ -1729,7 +1732,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/babytrainingcup150ml.jpg" class="card-img-top" alt="Baby Training Cup 150ml">
+          <img src="../public/images/inside_main/babytrainingcup150ml.jpg" class="card-img-top" alt="Baby Training Cup 150ml">
           <div  class="card-body">
             <h5 class="card-title">Baby Training Cup 150ml</h5>
             <p class="card-text">850 HUF</p>
@@ -1737,7 +1740,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/babytrainingcup300ml.jpg" class="card-img-top" alt="Baby Training Cup 300ml">
+          <img src="../public/images/inside_main/babytrainingcup300ml.jpg" class="card-img-top" alt="Baby Training Cup 300ml">
           <div  class="card-body">
             <h5 class="card-title">Baby Training Cup 300ml</h5>
             <p class="card-text">1600 HUF</p>
@@ -1745,7 +1748,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/babysoftspoons6pcs.jpg" class="card-img-top" alt="Baby Soft Spoons 6pcs">
+          <img src="../public/images/inside_main/babysoftspoons6pcs.jpg" class="card-img-top" alt="Baby Soft Spoons 6pcs">
           <div  class="card-body">
             <h5 class="card-title">Baby Soft Spoons 6pcs</h5>
             <p class="card-text">1800 HUF</p>
@@ -1753,7 +1756,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/babyeatingplates6pcs.jpg" class="card-img-top" alt="Baby Eating Plates 6pcs">
+          <img src="../public/images/inside_main/babyeatingplates6pcs.jpg" class="card-img-top" alt="Baby Eating Plates 6pcs">
           <div  class="card-body">
             <h5 class="card-title">Baby Eating Plates 6pcs</h5>
             <p class="card-text">1800 HUF</p>
@@ -1761,7 +1764,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabyshampoo300ml.jpg" class="card-img-top" alt="Johnson's Baby Shampoo 300ml">
+          <img src="../public/images/inside_main/johnson'sbabyshampoo300ml.jpg" class="card-img-top" alt="Johnson's Baby Shampoo 300ml">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Shampoo 300ml</h5>
             <p class="card-text">1200 HUF</p>
@@ -1769,7 +1772,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabycream100g.jpg" class="card-img-top" alt="Johnson's Baby Cream 100g">
+          <img src="../public/images/inside_main/johnson'sbabycream100g.jpg" class="card-img-top" alt="Johnson's Baby Cream 100g">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Cream 100g</h5>
             <p class="card-text">1300 HUF</p>
@@ -1779,7 +1782,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabyoil500ml.jpg" class="card-img-top" alt="Johnson's Baby Oil 500ml">
+          <img src="../public/images/inside_main/johnson'sbabyoil500ml.jpg" class="card-img-top" alt="Johnson's Baby Oil 500ml">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Oil 500ml</h5>
             <p class="card-text">1800 HUF</p>
@@ -1787,7 +1790,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/aquaphorbabyointment400g.jpg" class="card-img-top" alt="Aquaphor Baby Ointment 400g">
+          <img src="../public/images/inside_main/aquaphorbabyointment400g.jpg" class="card-img-top" alt="Aquaphor Baby Ointment 400g">
           <div  class="card-body">
             <h5 class="card-title">Aquaphor Baby Ointment 400g</h5>
             <p class="card-text">2100 HUF</p>
@@ -1795,7 +1798,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabycottonballs75pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Balls 75pcs">
+          <img src="../public/images/inside_main/johnson'sbabycottonballs75pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Balls 75pcs">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Cotton Balls 75pcs</h5>
             <p class="card-text">1300 HUF</p>
@@ -1803,7 +1806,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabycottonpads50pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Pads 50pcs">
+          <img src="../public/images/inside_main/johnson'sbabycottonpads50pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Pads 50pcs">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Cotton Pads 50pcs</h5>
             <p class="card-text">2200 HUF</p>
@@ -1811,7 +1814,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/johnson'sbabycottonbuds100pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Buds 100pcs">
+          <img src="../public/images/inside_main/johnson'sbabycottonbuds100pcs.jpg" class="card-img-top" alt="Johnson's Baby Cotton Buds 100pcs">
           <div  class="card-body">
             <h5 class="card-title">Johnson's Baby Cotton Buds 100pcs</h5>
             <p class="card-text">2500 HUF</p>
@@ -1819,7 +1822,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/babytowelsheets3pcs.jpg" class="card-img-top" alt="Baby Towel Sheets 3pcs">
+          <img src="../public/images/inside_main/babytowelsheets3pcs.jpg" class="card-img-top" alt="Baby Towel Sheets 3pcs">
           <div  class="card-body">
             <h5 class="card-title">Baby Towel Sheets 3pcs</h5>
             <p class="card-text">3000 HUF</p>
@@ -1830,7 +1833,7 @@
       <h1 class="display-5 heading mt-5">Coffee & Tea</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/nescafeclassiccoffee200g.jpg" class="card-img-top" alt="Nescafe Classic Coffee 200g">
+          <img src="../public/images/inside_main/nescafeclassiccoffee200g.jpg" class="card-img-top" alt="Nescafe Classic Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Nescafe Classic Coffee 200g</h5>
             <p class="card-text">1900 HUF</p>
@@ -1838,7 +1841,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nescafegoldcoffee200g.jpg" class="card-img-top" alt="Nescafe Gold Coffee 200g">
+          <img src="../public/images/inside_main/nescafegoldcoffee200g.jpg" class="card-img-top" alt="Nescafe Gold Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Nescafe Gold Coffee 200g</h5>
             <p class="card-text">2300 HUF</p>
@@ -1846,7 +1849,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nescafebraserocoffee200g.jpg" class="card-img-top" alt="Nescafe Brasero Coffee 200g">
+          <img src="../public/images/inside_main/nescafebraserocoffee200g.jpg" class="card-img-top" alt="Nescafe Brasero Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Nescafe Brasero Coffee 200g</h5>
             <p class="card-text">1900 HUF</p>
@@ -1854,7 +1857,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nescafegolddecafcoffee200g.jpg" class="card-img-top" alt="Nescafe Gold Decaf Coffee 200g">
+          <img src="../public/images/inside_main/nescafegolddecafcoffee200g.jpg" class="card-img-top" alt="Nescafe Gold Decaf Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Nescafe Gold Decaf Coffee 200g</h5>
             <p class="card-text">2300 HUF</p>
@@ -1862,7 +1865,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/bruinstantcoffee100g.jpg" class="card-img-top" alt="Bru Instant Coffee 100g">
+          <img src="../public/images/inside_main/bruinstantcoffee100g.jpg" class="card-img-top" alt="Bru Instant Coffee 100g">
           <div  class="card-body">
             <h5 class="card-title">Bru Instant Coffee 100g</h5>
             <p class="card-text">1500 HUF</p>
@@ -1870,7 +1873,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/bruinstantcoffee200g.jpg" class="card-img-top" alt="Bru Instant Coffee 200g">
+          <img src="../public/images/inside_main/bruinstantcoffee200g.jpg" class="card-img-top" alt="Bru Instant Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Bru Instant Coffee 200g</h5>
             <p class="card-text">2800 HUF</p>
@@ -1880,7 +1883,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/brugoldinstantcoffee200g.jpg" class="card-img-top" alt="Bru Instant Gold Coffee 200g">
+          <img src="../public/images/inside_main/brugoldinstantcoffee200g.jpg" class="card-img-top" alt="Bru Instant Gold Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Bru Gold Instant Coffee 200g</h5>
             <p class="card-text">3000 HUF</p>
@@ -1888,7 +1891,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/jacobsinstantcoffee200g.jpg" class="card-img-top" alt="Jacobs Instant Coffee 200g">
+          <img src="../public/images/inside_main/jacobsinstantcoffee200g.jpg" class="card-img-top" alt="Jacobs Instant Coffee 200g">
           <div  class="card-body">
             <h5 class="card-title">Jacobs Instant Coffee 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -1896,7 +1899,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptonblacktea40g.jpg" class="card-img-top" alt="Lipton Black Tea 40g">
+          <img src="../public/images/inside_main/liptonblacktea40g.jpg" class="card-img-top" alt="Lipton Black Tea 40g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Black Tea 40g</h5>
             <p class="card-text">550 HUF</p>
@@ -1904,7 +1907,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptonblacktea100g.jpg" class="card-img-top" alt="Lipton Black Tea 100g">
+          <img src="../public/images/inside_main/liptonblacktea100g.jpg" class="card-img-top" alt="Lipton Black Tea 100g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Black Tea 100g</h5>
             <p class="card-text">1000 HUF</p>
@@ -1912,7 +1915,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptongreentea33g.jpg" class="card-img-top" alt="Lipton Green Tea 33g">
+          <img src="../public/images/inside_main/liptongreentea33g.jpg" class="card-img-top" alt="Lipton Green Tea 33g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Green Tea 33g</h5>
             <p class="card-text">650 HUF</p>
@@ -1920,7 +1923,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptoncitrusgreentea26g.jpg" class="card-img-top" alt="Lipton Citrus Green Tea 26g">
+          <img src="../public/images/inside_main/liptoncitrusgreentea26g.jpg" class="card-img-top" alt="Lipton Citrus Green Tea 26g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Citrus Green Tea 26g</h5>
             <p class="card-text">650 HUF</p>
@@ -1930,7 +1933,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/liptondecaffeinatedtea26g.jpg" class="card-img-top" alt="Lipton Decaffeinated Tea 26g">
+          <img src="../public/images/inside_main/liptondecaffeinatedtea26g.jpg" class="card-img-top" alt="Lipton Decaffeinated Tea 26g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Decaffeinated Tea 26g</h5>
             <p class="card-text">750 HUF</p>
@@ -1938,7 +1941,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptonhoneylemongreentea25g.jpg" class="card-img-top" alt="Lipton Honey Lemon Green Tea 25g">
+          <img src="../public/images/inside_main/liptonhoneylemongreentea25g.jpg" class="card-img-top" alt="Lipton Honey Lemon Green Tea 25g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Honey Lemon Green Tea 25g</h5>
             <p class="card-text">750 HUF</p>
@@ -1946,7 +1949,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptoniceteagreentea750ml.jpg" class="card-img-top" alt="Lipton Icetea Green Tea 750ml">
+          <img src="../public/images/inside_main/liptoniceteagreentea750ml.jpg" class="card-img-top" alt="Lipton Icetea Green Tea 750ml">
           <div  class="card-body">
             <h5 class="card-title">Lipton Icetea Green Tea 750ml</h5>
             <p class="card-text">900 HUF</p>
@@ -1954,7 +1957,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptonicetealemon750ml.jpg" class="card-img-top" alt="Lipton Icetea Lemon 750ml">
+          <img src="../public/images/inside_main/liptonicetealemon750ml.jpg" class="card-img-top" alt="Lipton Icetea Lemon 750ml">
           <div  class="card-body">
             <h5 class="card-title">Lipton Icetea Lemon 750ml</h5>
             <p class="card-text">900 HUF</p>
@@ -1962,7 +1965,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptoniceteamango750ml.jpg" class="card-img-top" alt="Lipton Icetea Mango 750ml">
+          <img src="../public/images/inside_main/liptoniceteamango750ml.jpg" class="card-img-top" alt="Lipton Icetea Mango 750ml">
           <div  class="card-body">
             <h5 class="card-title">Lipton Icetea Mango 750ml</h5>
             <p class="card-text">900 HUF</p>
@@ -1970,7 +1973,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/liptonmintgreentea25g.jpg" class="card-img-top" alt="Lipton Mint Green Tea 25g">
+          <img src="../public/images/inside_main/liptonmintgreentea25g.jpg" class="card-img-top" alt="Lipton Mint Green Tea 25g">
           <div  class="card-body">
             <h5 class="card-title">Lipton Mint Green Tea 25g</h5>
             <p class="card-text">750 HUF</p>
@@ -1981,7 +1984,7 @@
       <h1 class="display-5 heading mt-5">Dairy Products</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/eggsssize10pcs.jpg" class="card-img-top" alt="Eggs S Size 10pcs">
+          <img src="../public/images/inside_main/eggsssize10pcs.jpg" class="card-img-top" alt="Eggs S Size 10pcs">
           <div  class="card-body">
             <h5 class="card-title">Eggs S Size 10pcs</h5>
             <p class="card-text">700 HUF</p>
@@ -1989,7 +1992,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/eggsmsize10pcs.jpg" class="card-img-top" alt="Eggs M Size 10pcs">
+          <img src="../public/images/inside_main/eggsmsize10pcs.jpg" class="card-img-top" alt="Eggs M Size 10pcs">
           <div  class="card-body">
             <h5 class="card-title">Eggs M Size 10pcs</h5>
             <p class="card-text">850 HUF</p>
@@ -1997,7 +2000,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/eggslsize10pcs.jpg" class="card-img-top" alt="Eggs L Size 10pcs">
+          <img src="../public/images/inside_main/eggslsize10pcs.jpg" class="card-img-top" alt="Eggs L Size 10pcs">
           <div  class="card-body">
             <h5 class="card-title">Eggs L Size 10pcs</h5>
             <p class="card-text">950 HUF</p>
@@ -2005,7 +2008,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/eggsxlsize10pcs.jpg" class="card-img-top" alt="Eggs XL Size 10pcs">
+          <img src="../public/images/inside_main/eggsxlsize10pcs.jpg" class="card-img-top" alt="Eggs XL Size 10pcs">
           <div  class="card-body">
             <h5 class="card-title">Eggs XL Size 10pcs</h5>
             <p class="card-text">1100 HUF</p>
@@ -2013,7 +2016,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/butter100g.jpg" class="card-img-top" alt="Butter 100g">
+          <img src="../public/images/inside_main/butter100g.jpg" class="card-img-top" alt="Butter 100g">
           <div  class="card-body">
             <h5 class="card-title">Butter 100g</h5>
             <p class="card-text">800 HUF</p>
@@ -2021,7 +2024,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/butter200g.jpg" class="card-img-top" alt="Butter 200g">
+          <img src="../public/images/inside_main/butter200g.jpg" class="card-img-top" alt="Butter 200g">
           <div  class="card-body">
             <h5 class="card-title">Butter 200g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2031,7 +2034,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/cheesespread100g.jpg" class="card-img-top" alt="Cheese Spread 100g">
+          <img src="../public/images/inside_main/cheesespread100g.jpg" class="card-img-top" alt="Cheese Spread 100g">
           <div  class="card-body">
             <h5 class="card-title">Cheese Spread 100g</h5>
             <p class="card-text">850 HUF</p>
@@ -2039,7 +2042,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cheesespreadpaprika100g.jpg" class="card-img-top" alt="Cheese Spread Paprika 100g">
+          <img src="../public/images/inside_main/cheesespreadpaprika100g.jpg" class="card-img-top" alt="Cheese Spread Paprika 100g">
           <div  class="card-body">
             <h5 class="card-title">Cheese Spread Paprika 100g</h5>
             <p class="card-text">900 HUF</p>
@@ -2047,7 +2050,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cheddarcheeseslices150g.jpg" class="card-img-top" alt="Cheddar Cheese Slices 150g">
+          <img src="../public/images/inside_main/cheddarcheeseslices150g.jpg" class="card-img-top" alt="Cheddar Cheese Slices 150g">
           <div  class="card-body">
             <h5 class="card-title">Cheddar Cheese Slices 150g</h5>
             <p class="card-text">800 HUF</p>
@@ -2055,7 +2058,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/emmentalercheeseslices150g.jpg" class="card-img-top" alt="Emmentaler Cheese Slices 150g">
+          <img src="../public/images/inside_main/emmentalercheeseslices150g.jpg" class="card-img-top" alt="Emmentaler Cheese Slices 150g">
           <div  class="card-body">
             <h5 class="card-title">Emmentaler Cheese Slices 150g</h5>
             <p class="card-text">800 HUF</p>
@@ -2063,7 +2066,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/goudacheeseslices150g.jpg" class="card-img-top" alt="Gouda Cheese Slices 150g">
+          <img src="../public/images/inside_main/goudacheeseslices150g.jpg" class="card-img-top" alt="Gouda Cheese Slices 150g">
           <div  class="card-body">
             <h5 class="card-title">Gouda Cheese Slices 150g</h5>
             <p class="card-text">800 HUF</p>
@@ -2071,7 +2074,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/trappistacheeseslices125g.jpg" class="card-img-top" alt="Trappista Cheese Slices 150g">
+          <img src="../public/images/inside_main/trappistacheeseslices125g.jpg" class="card-img-top" alt="Trappista Cheese Slices 150g">
           <div  class="card-body">
             <h5 class="card-title">Trappista Cheese Slices 150g</h5>
             <p class="card-text">800 HUF</p>
@@ -2081,7 +2084,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/mizomilk1.5%1l.jpg" class="card-img-top" alt="Mizo Milk 1.5% 1L">
+          <img src="../public/images/inside_main/mizomilk1.5%1l.jpg" class="card-img-top" alt="Mizo Milk 1.5% 1L">
           <div  class="card-body">
             <h5 class="card-title">Mizo Milk 1.5% 1L</h5>
             <p class="card-text">300 HUF</p>
@@ -2089,7 +2092,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mizomilk2.8%1l.jpg" class="card-img-top" alt="Mizo Milk 2.8% 1L">
+          <img src="../public/images/inside_main/mizomilk2.8%1l.jpg" class="card-img-top" alt="Mizo Milk 2.8% 1L">
           <div  class="card-body">
             <h5 class="card-title">Mizo Milk 2.8% 1L</h5>
             <p class="card-text">335 HUF</p>
@@ -2097,7 +2100,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/mizomilk3.5%1l.jpg" class="card-img-top" alt="Mizo Milk 3.5% 1L">
+          <img src="../public/images/inside_main/mizomilk3.5%1l.jpg" class="card-img-top" alt="Mizo Milk 3.5% 1L">
           <div  class="card-body">
             <h5 class="card-title">Mizo Milk 3.5% 1L</h5>
             <p class="card-text">375 HUF</p>
@@ -2105,7 +2108,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/danoneunflavouredyoghurt140g.jpg" class="card-img-top" alt="Danone Unflavoured Yoghurt 140g">
+          <img src="../public/images/inside_main/danoneunflavouredyoghurt140g.jpg" class="card-img-top" alt="Danone Unflavoured Yoghurt 140g">
           <div  class="card-body">
             <h5 class="card-title">Danone Unflavoured Yoghurt 140g</h5>
             <p class="card-text">350 HUF</p>
@@ -2113,7 +2116,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/danoneyoghurtfruit4x125g.jpg" class="card-img-top" alt="Danone Yoghurt Fruit 4x125g">
+          <img src="../public/images/inside_main/danoneyoghurtfruit4x125g.jpg" class="card-img-top" alt="Danone Yoghurt Fruit 4x125g">
           <div  class="card-body">
             <h5 class="card-title">Danone Yoghurt Fruit 4x125g</h5>
             <p class="card-text">600 HUF</p>
@@ -2121,7 +2124,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/danoneyoghurtstrawberry4x125g.jpg" class="card-img-top" alt="Danone Yoghurt Strawberry 4x125g">
+          <img src="../public/images/inside_main/danoneyoghurtstrawberry4x125g.jpg" class="card-img-top" alt="Danone Yoghurt Strawberry 4x125g">
           <div  class="card-body">
             <h5 class="card-title">Danone Yoghurt Strawberry 4x125g</h5>
             <p class="card-text">600 HUF</p>
@@ -2131,7 +2134,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/whitebread200g.jpg" class="card-img-top" alt="White Bread 200g">
+          <img src="../public/images/inside_main/whitebread200g.jpg" class="card-img-top" alt="White Bread 200g">
           <div  class="card-body">
             <h5 class="card-title">White Bread 200g</h5>
             <p class="card-text">600 HUF</p>
@@ -2139,7 +2142,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/milkbread200g.jpg" class="card-img-top" alt="Milk Bread 200g">
+          <img src="../public/images/inside_main/milkbread200g.jpg" class="card-img-top" alt="Milk Bread 200g">
           <div  class="card-body">
             <h5 class="card-title">Milk Bread 200g</h5>
             <p class="card-text">600 HUF</p>
@@ -2147,7 +2150,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/jumbowhitebread200g.jpg" class="card-img-top" alt="Jumbo White Bread 200g">
+          <img src="../public/images/inside_main/jumbowhitebread200g.jpg" class="card-img-top" alt="Jumbo White Bread 200g">
           <div  class="card-body">
             <h5 class="card-title">Jumbo White Bread 200g</h5>
             <p class="card-text">750 HUF</p>
@@ -2155,7 +2158,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/brownbread200g.jpg" class="card-img-top" alt="Brown Bread 200g">
+          <img src="../public/images/inside_main/brownbread200g.jpg" class="card-img-top" alt="Brown Bread 200g">
           <div  class="card-body">
             <h5 class="card-title">Brown Bread 200g</h5>
             <p class="card-text">650 HUF</p>
@@ -2163,7 +2166,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/burgerbunsx6.jpg" class="card-img-top" alt="Burger Buns x6">
+          <img src="../public/images/inside_main/burgerbunsx6.jpg" class="card-img-top" alt="Burger Buns x6">
           <div  class="card-body">
             <h5 class="card-title">Burger Buns x6</h5>
             <p class="card-text">600 HUF</p>
@@ -2171,7 +2174,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/hotdogbunsx8.jpg" class="card-img-top" alt="HotDog Buns x8">
+          <img src="../public/images/inside_main/hotdogbunsx8.jpg" class="card-img-top" alt="HotDog Buns x8">
           <div  class="card-body">
             <h5 class="card-title">HotDog Buns x8</h5>
             <p class="card-text">700 HUF</p>
@@ -2182,7 +2185,7 @@
       <h1 class="display-5 heading mt-5">Breakfast and Cereal</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/nestlechocolatecereal350g.jpg" class="card-img-top" alt="Nestle Chocolate Cereal 350g">
+          <img src="../public/images/inside_main/nestlechocolatecereal350g.jpg" class="card-img-top" alt="Nestle Chocolate Cereal 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Chocolate Cereal 350g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2190,7 +2193,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlefruitcereal350g.jpg" class="card-img-top" alt="Nestle Fruit Cereal 350g">
+          <img src="../public/images/inside_main/nestlefruitcereal350g.jpg" class="card-img-top" alt="Nestle Fruit Cereal 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Fruit Cereal 350g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2198,7 +2201,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlestrawberrycereal350g.jpg" class="card-img-top" alt="Nestle Strawberry Cereal 350g">
+          <img src="../public/images/inside_main/nestlestrawberrycereal350g.jpg" class="card-img-top" alt="Nestle Strawberry Cereal 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Strawberry Cereal 350g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2206,7 +2209,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlecornflakes375g.jpg" class="card-img-top" alt="Nestle Corn Flakes 375g">
+          <img src="../public/images/inside_main/nestlecornflakes375g.jpg" class="card-img-top" alt="Nestle Corn Flakes 375g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Corn Flakes 375g</h5>
             <p class="card-text">1350 HUF</p>
@@ -2214,7 +2217,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlecornflakeschocolate250g.jpg" class="card-img-top" alt="Nestle Corn Flakes Chocolate 250g">
+          <img src="../public/images/inside_main/nestlecornflakeschocolate250g.jpg" class="card-img-top" alt="Nestle Corn Flakes Chocolate 250g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Corn Flakes Chocolate 250g</h5>
             <p class="card-text">1100 HUF</p>
@@ -2222,7 +2225,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlecornflakesstrawberry250g.jpg" class="card-img-top" alt="Nestle Corn Flakes Strawberry 250g">
+          <img src="../public/images/inside_main/nestlecornflakesstrawberry250g.jpg" class="card-img-top" alt="Nestle Corn Flakes Strawberry 250g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Corn Flakes Strawberry 250g</h5>
             <p class="card-text">1100 HUF</p>
@@ -2232,7 +2235,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/nestletraditionalmusli350g.jpg" class="card-img-top" alt="Nestle Traditional Musli 350g">
+          <img src="../public/images/inside_main/nestletraditionalmusli350g.jpg" class="card-img-top" alt="Nestle Traditional Musli 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Traditional Musli 350g</h5>
             <p class="card-text">1600 HUF</p>
@@ -2240,7 +2243,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestletropicalmusli350g.jpg" class="card-img-top" alt="Nestle Tropical Musli 350g">
+          <img src="../public/images/inside_main/nestletropicalmusli350g.jpg" class="card-img-top" alt="Nestle Tropical Musli 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Tropical Musli 350g</h5>
             <p class="card-text">1600 HUF</p>
@@ -2248,7 +2251,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlechocolatemusli350g.jpg" class="card-img-top" alt="Nestle Chocolate Musli 350g">
+          <img src="../public/images/inside_main/nestlechocolatemusli350g.jpg" class="card-img-top" alt="Nestle Chocolate Musli 350g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Chocolate Musli 350g</h5>
             <p class="card-text">1600 HUF</p>
@@ -2256,7 +2259,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlehoneyoatmeal200g.jpg" class="card-img-top" alt="Nestle Honey Oatmeal 200g">
+          <img src="../public/images/inside_main/nestlehoneyoatmeal200g.jpg" class="card-img-top" alt="Nestle Honey Oatmeal 200g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Honey Oatmeal 200g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2264,7 +2267,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestleoatmeal375g.jpg" class="card-img-top" alt="Nestle Oatmeal 375g">
+          <img src="../public/images/inside_main/nestleoatmeal375g.jpg" class="card-img-top" alt="Nestle Oatmeal 375g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Oatmeal 375g</h5>
             <p class="card-text">1700 HUF</p>
@@ -2272,7 +2275,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/nestlewheatoatmeal200g.jpg" class="card-img-top" alt="Nestle Wheat Oatmeal 200g">
+          <img src="../public/images/inside_main/nestlewheatoatmeal200g.jpg" class="card-img-top" alt="Nestle Wheat Oatmeal 200g">
           <div  class="card-body">
             <h5 class="card-title">Nestle Wheat Oatmeal 200g</h5>
             <p class="card-text">1500 HUF</p>
@@ -2283,7 +2286,7 @@
       <h1 class="display-5 heading mt-5">Chocolates and Sweets</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/kitkatchocolate42g.jpg" class="card-img-top" alt="Kitkat Chocolate 42g">
+          <img src="../public/images/inside_main/kitkatchocolate42g.jpg" class="card-img-top" alt="Kitkat Chocolate 42g">
           <div  class="card-body">
             <h5 class="card-title">Kitkat Chocolate 42g</h5>
             <p class="card-text">250 HUF</p>
@@ -2291,7 +2294,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kitkatcookies&cream128g.jpg" class="card-img-top" alt="Kitkat Cookies & Cream 128g">
+          <img src="../public/images/inside_main/kitkatcookies&cream128g.jpg" class="card-img-top" alt="Kitkat Cookies & Cream 128g">
           <div  class="card-body">
             <h5 class="card-title">Kitkat Cookies & Cream 128g</h5>
             <p class="card-text">400 HUF</p>
@@ -2299,7 +2302,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kitkatfruit42g.jpg" class="card-img-top" alt="Kitkat Fruit 42g">
+          <img src="../public/images/inside_main/kitkatfruit42g.jpg" class="card-img-top" alt="Kitkat Fruit 42g">
           <div  class="card-body">
             <h5 class="card-title">Kitkat Fruit 42g</h5>
             <p class="card-text">250 HUF</p>
@@ -2307,7 +2310,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/kitkatmango42g.jpg" class="card-img-top" alt="Kitkat Mango 42g">
+          <img src="../public/images/inside_main/kitkatmango42g.jpg" class="card-img-top" alt="Kitkat Mango 42g">
           <div  class="card-body">
             <h5 class="card-title">Kitkat Mango 42g</h5>
             <p class="card-text">250 HUF</p>
@@ -2315,7 +2318,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/m&m'scandyjar1700g.jpg" class="card-img-top" alt="M&M's Candy Jar 1700g">
+          <img src="../public/images/inside_main/m&m'scandyjar1700g.jpg" class="card-img-top" alt="M&M's Candy Jar 1700g">
           <div  class="card-body">
             <h5 class="card-title">M&M's Candy Jar 1700g</h5>
             <p class="card-text">7000 HUF</p>
@@ -2323,7 +2326,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/m&m'smilkcandies50g.jpg" class="card-img-top" alt="M&M's Milk Candies 50g">
+          <img src="../public/images/inside_main/m&m'smilkcandies50g.jpg" class="card-img-top" alt="M&M's Milk Candies 50g">
           <div  class="card-body">
             <h5 class="card-title">M&M's Milk Candies 50g</h5>
             <p class="card-text">300 HUF</p>
@@ -2333,7 +2336,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/milkaalpinechocolate270g.jpg" class="card-img-top" alt="Milka Alpine Chocolate 270g">
+          <img src="../public/images/inside_main/milkaalpinechocolate270g.jpg" class="card-img-top" alt="Milka Alpine Chocolate 270g">
           <div  class="card-body">
             <h5 class="card-title">Milka Alpine Chocolate 270g</h5>
             <p class="card-text">250 HUF</p>
@@ -2341,7 +2344,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/milkabubblychocolate270g.jpg" class="card-img-top" alt="Milka Bubbly Chocolate 270g">
+          <img src="../public/images/inside_main/milkabubblychocolate270g.jpg" class="card-img-top" alt="Milka Bubbly Chocolate 270g">
           <div  class="card-body">
             <h5 class="card-title">Milka Bubbly Chocolate 270g</h5>
             <p class="card-text">250 HUF</p>
@@ -2349,7 +2352,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/milkacoffeechocolate270g.jpg" class="card-img-top" alt="Milka Coffee Chocolate 270g">
+          <img src="../public/images/inside_main/milkacoffeechocolate270g.jpg" class="card-img-top" alt="Milka Coffee Chocolate 270g">
           <div  class="card-body">
             <h5 class="card-title">Milka Coffee Chocolate 270g</h5>
             <p class="card-text">250 HUF</p>
@@ -2357,7 +2360,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/milkahazelnutchocolate270g.jpg" class="card-img-top" alt="Milka Hazelnut Chocolate 270g">
+          <img src="../public/images/inside_main/milkahazelnutchocolate270g.jpg" class="card-img-top" alt="Milka Hazelnut Chocolate 270g">
           <div  class="card-body">
             <h5 class="card-title">Milka Hazelnut Chocolate 270g</h5>
             <p class="card-text">250 HUF</p>
@@ -2365,7 +2368,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/milkawhitechocolate270g.jpg" class="card-img-top" alt="Milka White Chocolate 270g">
+          <img src="../public/images/inside_main/milkawhitechocolate270g.jpg" class="card-img-top" alt="Milka White Chocolate 270g">
           <div  class="card-body">
             <h5 class="card-title">Milka White Chocolate 270g</h5>
             <p class="card-text">250 HUF</p>
@@ -2373,7 +2376,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/shogettenhazelnutchocolate100g.jpg" class="card-img-top" alt="Shogetten Hazelnut Chocolate 100g">
+          <img src="../public/images/inside_main/shogettenhazelnutchocolate100g.jpg" class="card-img-top" alt="Shogetten Hazelnut Chocolate 100g">
           <div  class="card-body">
             <h5 class="card-title">Shogetten Hazelnut Chocolate 100g</h5>
             <p class="card-text">300 HUF</p>
@@ -2383,7 +2386,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/shogettenalpinechocolate100g.jpg" class="card-img-top" alt="Shogetten Alpine Chocolate 100g">
+          <img src="../public/images/inside_main/shogettenalpinechocolate100g.jpg" class="card-img-top" alt="Shogetten Alpine Chocolate 100g">
           <div  class="card-body">
             <h5 class="card-title">Shogetten Alpine Chocolate 100g</h5>
             <p class="card-text">300 HUF</p>
@@ -2391,7 +2394,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/shogettendarkchocolate100g.jpg" class="card-img-top" alt="Shogetten Dark Chocolate 100g">
+          <img src="../public/images/inside_main/shogettendarkchocolate100g.jpg" class="card-img-top" alt="Shogetten Dark Chocolate 100g">
           <div  class="card-body">
             <h5 class="card-title">Shogetten Dark Chocolate 100g</h5>
             <p class="card-text">300 HUF</p>
@@ -2399,7 +2402,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/skittlesberryflavour38g.jpg" class="card-img-top" alt="Skittles Berry Flavour 38g">
+          <img src="../public/images/inside_main/skittlesberryflavour38g.jpg" class="card-img-top" alt="Skittles Berry Flavour 38g">
           <div  class="card-body">
             <h5 class="card-title">Skittles Berry Flavour 38g</h5>
             <p class="card-text">250 HUF</p>
@@ -2407,7 +2410,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/skittlesfruitflavour38g.jpg" class="card-img-top" alt="Skittles Fruit Flavour 38g">
+          <img src="../public/images/inside_main/skittlesfruitflavour38g.jpg" class="card-img-top" alt="Skittles Fruit Flavour 38g">
           <div  class="card-body">
             <h5 class="card-title">Skittles Fruit Flavour 38g</h5>
             <p class="card-text">250 HUF</p>
@@ -2415,7 +2418,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/skittlessmoothiesflavour38g.jpg" class="card-img-top" alt="Skittles Smoothies Flavour 38g">
+          <img src="../public/images/inside_main/skittlessmoothiesflavour38g.jpg" class="card-img-top" alt="Skittles Smoothies Flavour 38g">
           <div  class="card-body">
             <h5 class="card-title">Skittles Smoothies Flavour 38g</h5>
             <p class="card-text">250 HUF</p>
@@ -2423,7 +2426,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/skittlessourflavour38g.jpg" class="card-img-top" alt="Skittles Sour Flavour 38g">
+          <img src="../public/images/inside_main/skittlessourflavour38g.jpg" class="card-img-top" alt="Skittles Sour Flavour 38g">
           <div  class="card-body">
             <h5 class="card-title">Skittles Sour Flavour 38g</h5>
             <p class="card-text">250 HUF</p>
@@ -2434,7 +2437,7 @@
       <h1 class="display-5 heading mt-5">Dry Fruits</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/almonds200g.jpg" class="card-img-top" alt="Almonds 200g">
+          <img src="../public/images/inside_main/almonds200g.jpg" class="card-img-top" alt="Almonds 200g">
           <div  class="card-body">
             <h5 class="card-title">Almonds 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2442,7 +2445,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cashew200g.jpg" class="card-img-top" alt="Cashew 200g">
+          <img src="../public/images/inside_main/cashew200g.jpg" class="card-img-top" alt="Cashew 200g">
           <div  class="card-body">
             <h5 class="card-title">Cashew 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2450,7 +2453,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cashewfried200g.jpg" class="card-img-top" alt="Cashew Fried 200g">
+          <img src="../public/images/inside_main/cashewfried200g.jpg" class="card-img-top" alt="Cashew Fried 200g">
           <div  class="card-body">
             <h5 class="card-title">Cashew Fried 200g</h5>
             <p class="card-text">2100 HUF</p>
@@ -2458,7 +2461,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/cornnuts200g.jpg" class="card-img-top" alt="Corn Nuts 200g">
+          <img src="../public/images/inside_main/cornnuts200g.jpg" class="card-img-top" alt="Corn Nuts 200g">
           <div  class="card-body">
             <h5 class="card-title">Corn Nuts 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2466,7 +2469,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dates200g.jpg" class="card-img-top" alt="Dates 200g">
+          <img src="../public/images/inside_main/dates200g.jpg" class="card-img-top" alt="Dates 200g">
           <div  class="card-body">
             <h5 class="card-title">Dates 200g</h5>
             <p class="card-text">2100 HUF</p>
@@ -2474,7 +2477,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/driedapricot200g.jpg" class="card-img-top" alt="Dried Apricot 200g">
+          <img src="../public/images/inside_main/driedapricot200g.jpg" class="card-img-top" alt="Dried Apricot 200g">
           <div  class="card-body">
             <h5 class="card-title">Dried Apricot 200g</h5>
             <p class="card-text">2100 HUF</p>
@@ -2484,7 +2487,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/driedfigs200g.jpg" class="card-img-top" alt="Dried Figs 200g">
+          <img src="../public/images/inside_main/driedfigs200g.jpg" class="card-img-top" alt="Dried Figs 200g">
           <div  class="card-body">
             <h5 class="card-title">Dried Figs 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2492,7 +2495,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/dryberries200g.jpg" class="card-img-top" alt="Dry Berries 200g">
+          <img src="../public/images/inside_main/dryberries200g.jpg" class="card-img-top" alt="Dry Berries 200g">
           <div  class="card-body">
             <h5 class="card-title">Dry Berries 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2500,7 +2503,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/drycoconut200g.jpg" class="card-img-top" alt="Dry Coconut 200g">
+          <img src="../public/images/inside_main/drycoconut200g.jpg" class="card-img-top" alt="Dry Coconut 200g">
           <div  class="card-body">
             <h5 class="card-title">Dry Coconut 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2508,7 +2511,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/hazelnuts200g.jpg" class="card-img-top" alt="Hazelnuts 200g">
+          <img src="../public/images/inside_main/hazelnuts200g.jpg" class="card-img-top" alt="Hazelnuts 200g">
           <div  class="card-body">
             <h5 class="card-title">Hazelnuts 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2516,7 +2519,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pecans200g.jpg" class="card-img-top" alt="Pecans 200g">
+          <img src="../public/images/inside_main/pecans200g.jpg" class="card-img-top" alt="Pecans 200g">
           <div  class="card-body">
             <h5 class="card-title">Pecans 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2524,7 +2527,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pinenuts200g.jpg" class="card-img-top" alt="Pine Nuts 200g">
+          <img src="../public/images/inside_main/pinenuts200g.jpg" class="card-img-top" alt="Pine Nuts 200g">
           <div  class="card-body">
             <h5 class="card-title">Pine Nuts 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2534,7 +2537,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/pistachio200g.jpg" class="card-img-top" alt="Pistachio 200g">
+          <img src="../public/images/inside_main/pistachio200g.jpg" class="card-img-top" alt="Pistachio 200g">
           <div  class="card-body">
             <h5 class="card-title">Pistachio 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2542,7 +2545,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/prunes200g.jpg" class="card-img-top" alt="Prunes 200g">
+          <img src="../public/images/inside_main/prunes200g.jpg" class="card-img-top" alt="Prunes 200g">
           <div  class="card-body">
             <h5 class="card-title">Prunes 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2550,7 +2553,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/raisins200g.jpg" class="card-img-top" alt="Raisins 200g">
+          <img src="../public/images/inside_main/raisins200g.jpg" class="card-img-top" alt="Raisins 200g">
           <div  class="card-body">
             <h5 class="card-title">Raisins 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2558,7 +2561,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/saffron50g.jpg" class="card-img-top" alt="Saffron 50g">
+          <img src="../public/images/inside_main/saffron50g.jpg" class="card-img-top" alt="Saffron 50g">
           <div  class="card-body">
             <h5 class="card-title">Saffron 50g</h5>
             <p class="card-text">1400 HUF</p>
@@ -2566,7 +2569,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/walnuts200g.jpg" class="card-img-top" alt="Walnuts 200g">
+          <img src="../public/images/inside_main/walnuts200g.jpg" class="card-img-top" alt="Walnuts 200g">
           <div  class="card-body">
             <h5 class="card-title">Walnuts 200g</h5>
             <p class="card-text">2000 HUF</p>
@@ -2574,7 +2577,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/watermelonseeds200g.jpg" class="card-img-top" alt="Watermelon Seeds 200g">
+          <img src="../public/images/inside_main/watermelonseeds200g.jpg" class="card-img-top" alt="Watermelon Seeds 200g">
           <div  class="card-body">
             <h5 class="card-title">Watermelon Seeds 200g</h5>
             <p class="card-text">1800 HUF</p>
@@ -2585,7 +2588,7 @@
       <h1 class="display-5 heading mt-5">Sauces & Food Flavouring</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/blackpepper100g.jpg" class="card-img-top" alt="Black Pepper 100g">
+          <img src="../public/images/inside_main/blackpepper100g.jpg" class="card-img-top" alt="Black Pepper 100g">
           <div  class="card-body">
             <h5 class="card-title">Black Pepper 100g</h5>
             <p class="card-text">400 HUF</p>
@@ -2593,7 +2596,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/salt100g.jpg" class="card-img-top" alt="Salt 100g">
+          <img src="../public/images/inside_main/salt100g.jpg" class="card-img-top" alt="Salt 100g">
           <div  class="card-body">
             <h5 class="card-title">Salt 100g</h5>
             <p class="card-text">150 HUF</p>
@@ -2601,7 +2604,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/heinzdutchstylesauce700g.jpg" class="card-img-top" alt="Heinz Dutch Style Sauce 700g">
+          <img src="../public/images/inside_main/heinzdutchstylesauce700g.jpg" class="card-img-top" alt="Heinz Dutch Style Sauce 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Dutch Style Sauce 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2609,7 +2612,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/heinzexoticsauce700g.jpg" class="card-img-top" alt="Heinz Exotic Sauce 700g">
+          <img src="../public/images/inside_main/heinzexoticsauce700g.jpg" class="card-img-top" alt="Heinz Exotic Sauce 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Exotic Sauce 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2617,7 +2620,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/heinzmayomixsauce700g.jpg" class="card-img-top" alt="Heinz Mayo Mix Sauce 700g">
+          <img src="../public/images/inside_main/heinzmayomixsauce700g.jpg" class="card-img-top" alt="Heinz Mayo Mix Sauce 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Mayo Mix Sauce 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2625,7 +2628,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/heinztartarsauce700g.jpg" class="card-img-top" alt="Heinz Tartar Sauce 700g">
+          <img src="../public/images/inside_main/heinztartarsauce700g.jpg" class="card-img-top" alt="Heinz Tartar Sauce 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Tartar Sauce 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2635,7 +2638,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/heinztomatoketchup700g.jpg" class="card-img-top" alt="Heinz Tomato Ketchup 700g">
+          <img src="../public/images/inside_main/heinztomatoketchup700g.jpg" class="card-img-top" alt="Heinz Tomato Ketchup 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Tomato Ketchup 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2643,7 +2646,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/heinzyellowmustardsauce700g.jpg" class="card-img-top" alt="Heinz Yellow Mustard Sauce 700g">
+          <img src="../public/images/inside_main/heinzyellowmustardsauce700g.jpg" class="card-img-top" alt="Heinz Yellow Mustard Sauce 700g">
           <div  class="card-body">
             <h5 class="card-title">Heinz Yellow Mustard Sauce 700g</h5>
             <p class="card-text">750 HUF</p>
@@ -2651,7 +2654,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/knorrcheesesaucebase40g.jpg" class="card-img-top" alt="Knorr Cheese Sauce Base 40g">
+          <img src="../public/images/inside_main/knorrcheesesaucebase40g.jpg" class="card-img-top" alt="Knorr Cheese Sauce Base 40g">
           <div  class="card-body">
             <h5 class="card-title">Knorr Cheese Sauce Base 40g</h5>
             <p class="card-text">850 HUF</p>
@@ -2659,7 +2662,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/knorrchillibeanmix40g.jpg" class="card-img-top" alt="Knorr Chilli Bean Mix 40g">
+          <img src="../public/images/inside_main/knorrchillibeanmix40g.jpg" class="card-img-top" alt="Knorr Chilli Bean Mix 40g">
           <div  class="card-body">
             <h5 class="card-title">Knorr Chilli Bean Mix 40g</h5>
             <p class="card-text">850 HUF</p>
@@ -2667,7 +2670,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ben'schunkysalsasauce450g.jpg" class="card-img-top" alt="Ben's Chunky Salsa Sauce 450g">
+          <img src="../public/images/inside_main/ben'schunkysalsasauce450g.jpg" class="card-img-top" alt="Ben's Chunky Salsa Sauce 450g">
           <div  class="card-body">
             <h5 class="card-title">Ben's Chunky Salsa Sauce 450g</h5>
             <p class="card-text">950 HUF</p>
@@ -2675,7 +2678,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ben'ssweet&soursauce450g.jpg" class="card-img-top" alt="Ben's Sweet & Sour Sauce 450g">
+          <img src="../public/images/inside_main/ben'ssweet&soursauce450g.jpg" class="card-img-top" alt="Ben's Sweet & Sour Sauce 450g">
           <div  class="card-body">
             <h5 class="card-title">Ben's Sweet & Sour Sauce 450g</h5>
             <p class="card-text">950 HUF</p>
@@ -2685,7 +2688,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/ben'stexanbbqsauce450g.jpg" class="card-img-top" alt="Ben's Texan BBQ Sauce 450g">
+          <img src="../public/images/inside_main/ben'stexanbbqsauce450g.jpg" class="card-img-top" alt="Ben's Texan BBQ Sauce 450g">
           <div  class="card-body">
             <h5 class="card-title">Ben's Texan BBQ Sauce 450g</h5>
             <p class="card-text">950 HUF</p>
@@ -2693,7 +2696,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/ben'sthaicurrysauce450g.jpg" class="card-img-top" alt="Ben's Thai Curry Sauce 450g">
+          <img src="../public/images/inside_main/ben'sthaicurrysauce450g.jpg" class="card-img-top" alt="Ben's Thai Curry Sauce 450g">
           <div  class="card-body">
             <h5 class="card-title">Ben's Thai Curry Sauce 450g</h5>
             <p class="card-text">950 HUF</p>
@@ -2701,7 +2704,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/univercaeserdressing230g.jpg" class="card-img-top" alt="Univer Caeser Dressing 230g">
+          <img src="../public/images/inside_main/univercaeserdressing230g.jpg" class="card-img-top" alt="Univer Caeser Dressing 230g">
           <div  class="card-body">
             <h5 class="card-title">Univer Caeser Dressing 230g</h5>
             <p class="card-text">850 HUF</p>
@@ -2709,7 +2712,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/univerthousandisland230g.jpg" class="card-img-top" alt="Univer Thousand Island 230g">
+          <img src="../public/images/inside_main/univerthousandisland230g.jpg" class="card-img-top" alt="Univer Thousand Island 230g">
           <div  class="card-body">
             <h5 class="card-title">Univer Thousand Island 230g</h5>
             <p class="card-text">850 HUF</p>
@@ -2717,7 +2720,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/univertzatzikidressing230g.jpg" class="card-img-top" alt="Univer Tzatziki Dressing 230g">
+          <img src="../public/images/inside_main/univertzatzikidressing230g.jpg" class="card-img-top" alt="Univer Tzatziki Dressing 230g">
           <div  class="card-body">
             <h5 class="card-title">Univer Tzatziki Dressing 230g</h5>
             <p class="card-text">850 HUF</p>
@@ -2725,7 +2728,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/univeryoghurtdressing230g.jpg" class="card-img-top" alt="Univer Yoghurt Dressing 230g">
+          <img src="../public/images/inside_main/univeryoghurtdressing230g.jpg" class="card-img-top" alt="Univer Yoghurt Dressing 230g">
           <div  class="card-body">
             <h5 class="card-title">Univer Yoghurt Dressing 230g</h5>
             <p class="card-text">850 HUF</p>
@@ -2736,7 +2739,7 @@
       <h1 class="display-5 heading mt-5">Pet Food</h1><br><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/pedigreebeefdogfood10kg.jpg" class="card-img-top" alt="Pedigree Beef Dog Food 10Kg">
+          <img src="../public/images/inside_main/pedigreebeefdogfood10kg.jpg" class="card-img-top" alt="Pedigree Beef Dog Food 10Kg">
           <div  class="card-body">
             <h5 class="card-title">Pedigree Beef Dog Food 10Kg</h5>
             <p class="card-text">4500 HUF</p>
@@ -2744,7 +2747,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pedigreebeefdogfoodcan125g.jpg" class="card-img-top" alt="Pedigree Beef Dog Food Can 125g">
+          <img src="../public/images/inside_main/pedigreebeefdogfoodcan125g.jpg" class="card-img-top" alt="Pedigree Beef Dog Food Can 125g">
           <div  class="card-body">
             <h5 class="card-title">Pedigree Beef Dog Food Can 125g</h5>
             <p class="card-text">450 HUF</p>
@@ -2752,7 +2755,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pedigreedogfood15kg.jpg" class="card-img-top" alt="Pedigree Dog Food 15Kg">
+          <img src="../public/images/inside_main/pedigreedogfood15kg.jpg" class="card-img-top" alt="Pedigree Dog Food 15Kg">
           <div  class="card-body">
             <h5 class="card-title">Pedigree Dog Food 15Kg</h5>
             <p class="card-text">5500 HUF</p>
@@ -2760,7 +2763,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pedigreepuppyfood6x400g.jpg" class="card-img-top" alt="Pedigree Puppy Food 6x400g">
+          <img src="../public/images/inside_main/pedigreepuppyfood6x400g.jpg" class="card-img-top" alt="Pedigree Puppy Food 6x400g">
           <div  class="card-body">
             <h5 class="card-title">Pedigree Puppy Food 6x400g</h5>
             <p class="card-text">3000 HUF</p>
@@ -2768,7 +2771,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/pedigreepuppyfood100g.jpg" class="card-img-top" alt="Pedigree Puppy Food 100g">
+          <img src="../public/images/inside_main/pedigreepuppyfood100g.jpg" class="card-img-top" alt="Pedigree Puppy Food 100g">
           <div  class="card-body">
             <h5 class="card-title">Pedigree Puppy Food 100g</h5>
             <p class="card-text">400 HUF</p>
@@ -2776,7 +2779,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/fishfood90g.jpg" class="card-img-top" alt="Fish Food 90g">
+          <img src="../public/images/inside_main/fishfood90g.jpg" class="card-img-top" alt="Fish Food 90g">
           <div  class="card-body">
             <h5 class="card-title">Fish Food 90g</h5>
             <p class="card-text">900 HUF</p>
@@ -2786,7 +2789,7 @@
       </div><br>
       <div class="row gap-4">
         <div class="card">
-          <img src="../images/inside_main/mediumfishfood90g.jpg" class="card-img-top" alt="Medium Fish Food 90g">
+          <img src="../public/images/inside_main/mediumfishfood90g.jpg" class="card-img-top" alt="Medium Fish Food 90g">
           <div  class="card-body">
             <h5 class="card-title">Medium Fish Food 90g</h5>
             <p class="card-text">900 HUF</p>
@@ -2794,7 +2797,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/smallfishfood90g.jpg" class="card-img-top" alt="Small Fish Food 90g">
+          <img src="../public/images/inside_main/smallfishfood90g.jpg" class="card-img-top" alt="Small Fish Food 90g">
           <div  class="card-body">
             <h5 class="card-title">Small Fish Food 90g</h5>
             <p class="card-text">900 HUF</p>
@@ -2802,7 +2805,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/chickengravycatfood85g.jpg" class="card-img-top" alt="Chicken Gravy Cat Food 85g">
+          <img src="../public/images/inside_main/chickengravycatfood85g.jpg" class="card-img-top" alt="Chicken Gravy Cat Food 85g">
           <div  class="card-body">
             <h5 class="card-title">Chicken Gravy Cat Food 85g</h5>
             <p class="card-text">450 HUF</p>
@@ -2810,7 +2813,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/oceanfishcatfood480g.jpg" class="card-img-top" alt="Ocean Fish Cat Food 480g">
+          <img src="../public/images/inside_main/oceanfishcatfood480g.jpg" class="card-img-top" alt="Ocean Fish Cat Food 480g">
           <div  class="card-body">
             <h5 class="card-title">Ocean Fish Cat Food 480g</h5>
             <p class="card-text">1900HUF</p>
@@ -2818,7 +2821,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/poultrycatfood200g.jpg" class="card-img-top" alt="Poultry Cat Food 200g">
+          <img src="../public/images/inside_main/poultrycatfood200g.jpg" class="card-img-top" alt="Poultry Cat Food 200g">
           <div  class="card-body">
             <h5 class="card-title">Poultry Cat Food 200g</h5>
             <p class="card-text">1300 HUF</p>
@@ -2826,7 +2829,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="../images/inside_main/tunaflavourcatfood3kg.jpg" class="card-img-top" alt="Tuna Flavour Cat Food 3Kg">
+          <img src="../public/images/inside_main/tunaflavourcatfood3kg.jpg" class="card-img-top" alt="Tuna Flavour Cat Food 3Kg">
           <div  class="card-body">
             <h5 class="card-title">Tuna Flavour Cat Food 3Kg</h5>
             <p class="card-text">2800 HUF</p>
@@ -2835,6 +2838,6 @@
         </div>
       </div><br>
    </div>
-  <script src="../scripts/myscript.js"></script>
+  <script src="../searchbar.js"></script>
  </body>
 </html>

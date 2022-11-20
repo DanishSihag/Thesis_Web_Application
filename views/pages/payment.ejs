@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/stylesheet_payment.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Payment</title>
+  </head>
+  <body><br><br>
+    <div class="container-fluid mt-3 text-center">
+      <h1 style="text-align:center;">Payment</h1><br>
+      <h2>Total: HUF <%= total %></h2><br>
+      <div id="paypal-button-container"></div><br>
+      <div>
+        <h3 class="display-5">Summary of Selected Products: </h3><br>
+        <% cart.forEach(function(item){ %>
+        <div class="container-fluid products">
+          <div class="product" style="display: inline-block;">
+            <img class="img-fluid" src="../images/inside_main/<%= item.image %>">
+            <span style="font-size:1.2rem;"><%= item.name %></span>
+          </div>
+          <div class="total" style="display: inline-block; font-size:1.18rem;">
+            Total: HUF <%= item.price * item.quantity %>
+          </div>
+          <div style="display: inline-block; width:26%; font-size: 1.2rem;">
+             <input type="hidden" name="id" value="<%= item.id %>">
+    Quantity:<input id="qty" type="text" name="quantity" value="<%= item.quantity %>" readonly>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div><br>
+ </body>
+</html>
+
+<!-- Include the PayPal JavaScript SDK; replace "test" with your own sandbox Business account app client ID -->
+    <script src="https://www.paypal.com/sdk/js?&client-id=AcvpbFT0Midk4Px05uUlVGdrYI52TNd0ORyNTVvUD44n4LzdbRp5da2u_pniDbDcGDgKCDCxgEPhN5Kh&currency=USD"></script>
+
+    <!-- Set up a container element for the button -->
+
+
+    <script>
+      paypal.Buttons({
+
+        // Sets up the transaction when a payment button is clicked
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '<%= total %>' // Can reference variables or functions. Example: `value: document.getElementById('...').value`
+              }
+            }]
+          });
+        },
+
+        // Finalize the transaction after payer approval
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(orderData) {
+            // Successful capture! For dev/demo purposes:
+                console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+                var transaction = orderData.purchase_units[0].payments.captures[0];
+                alert('Transaction '+ transaction.status + ': ' + transaction.id + '\n\nSee console for all available details');
+
+            // When ready to go live, remove the alert and show a success message within this page. For example:
+            // var element = document.getElementById('paypal-button-container');
+            // element.innerHTML = '';
+            // element.innerHTML = '<h3>Thank you for your payment!</h3>';
+            // Or go to another URL:  actions.redirect('thank_you.html');
+          });
+        }
+      }).render('#paypal-button-container');
+
+    </script>
