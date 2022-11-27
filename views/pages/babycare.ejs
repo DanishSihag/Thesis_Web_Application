@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/stylesheet_all_products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Baby-Care</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" >GROMAK</a>
+        <ul class="nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" >GROMAK EliteClub</a>
+          </li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <form class="d-flex" action="/search_household">
+            <input id="main_search" class="form-control me-2" type="search"  name="name" placeholder="Search in Baby-Care" aria-label="Search">
+            <input id="search_btn" class="btn btn-success" type="submit" value="Search">
+          </form>
+        </ul>
+        <label style="color:black;font-size:1.3rem;">Options</label>&nbsp&nbsp&nbsp<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLightNavbar" aria-controls="offcanvasLightNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasLightNavbar" aria-labelledby="offcanvasLightNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLightNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div><hr>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Previous Orders</a>
+            </li><br><hr><br>
+            <li class="nav-item">
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">FAQ Section</a>
+            </li><br><hr><br>
+            <li class="nav-item">
+              <a class="nav-link active" id="menu_txt" aria-current="page" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav><br><br><br><br><br><br><br>
+
+  <div class="flex-fill">
+    <h1 class="display-5 heading mt-5">Baby-Care Products</h1>
+    <div class="container-fluid" style="position:relative;">
+      <form method="post" action="/go_to_cart">
+        <button class="cart" type="submit">Go to Cart &nbsp;<i class="fa fa-shopping-cart"></i><span style="font-size:1.37rem"></span></button>
+      </form>
+    </div><br><br><br><br>
+    <div class="container-fluid ms-5">
+      <div class="row gap-4">
+
+        <% result.forEach(function(item){ %>
+        <div class="card">
+          <img src="/images/inside_main/<%= item.image %>" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title"><%= item.name %></h5>
+            <p class="card-text"><%= item.price %> HUF</p>
+            <form action="/add_to_cart" method="post">
+              <input type="hidden" name="id" value="<%= item.id %>">
+              <input type="hidden" name="name" value="<%= item.name %>">
+              <input type="hidden" name="tag" value="<%= item.tag %>">
+              <input type="hidden" name="price" value="<%= item.price %>">
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="image" value="<%= item.image %>">
+              <input type="submit" value="Add To Cart" class="btn btn_addToCart">
+            </form>
+          </div>
+        </div>
+        <%}) %>
+
+       </div><br>
+      </div>
+     </div>
+ </body>
+</html>

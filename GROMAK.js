@@ -95,6 +95,184 @@ app.post('/open_household', function(req,res){
 
 });
 
+
+app.post('/open_snacks', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM snacks", (err,result) =>{
+
+      res.render('pages/snacks',{result:result});
+    })
+
+});
+
+app.post('/open_selfcare', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM selfcare", (err,result) =>{
+
+      res.render('pages/selfcare',{result:result});
+    })
+
+});
+
+app.post('/open_alcohol', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM alcohol", (err,result) =>{
+
+      res.render('pages/alcohol',{result:result});
+    })
+
+});
+
+app.post('/open_babycare', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM babycare", (err,result) =>{
+
+      res.render('pages/babycare',{result:result});
+    })
+
+});
+
+app.post('/open_coffee', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM coffee", (err,result) =>{
+
+      res.render('pages/coffee',{result:result});
+    })
+
+});
+
+app.post('/open_dairy', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM dairy", (err,result) =>{
+
+      res.render('pages/dairy',{result:result});
+    })
+
+});
+
+app.post('/open_breakfast', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM breakfast", (err,result) =>{
+
+      res.render('pages/breakfast',{result:result});
+    })
+
+});
+
+app.post('/open_chocolates', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM chocolates", (err,result) =>{
+
+      res.render('pages/chocolates',{result:result});
+    })
+
+});
+
+app.post('/open_dryfruits', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM dryfruits", (err,result) =>{
+
+      res.render('pages/dryfruits',{result:result});
+    })
+
+});
+
+app.post('/open_sauces', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM sauces", (err,result) =>{
+
+      res.render('pages/sauces',{result:result});
+    })
+
+});
+
+app.post('/open_pet', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM pet", (err,result) =>{
+
+      res.render('pages/pet',{result:result});
+    })
+
+});
+
+
 app.post('/go_to_cart', function(req,res){
   var cart = req.session.cart;
   var total = req.session.total;
@@ -238,6 +416,194 @@ app.get('/search_household', function(req,res){
   con.query("SELECT * from household where name LIKE '%"+name+"%'", (err,result) =>{
 
     res.render('pages/searchHousehold',{result:result});
+
+    })
+  })
+
+
+app.get('/search_snacks', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from snacks where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchSnacks',{result:result});
+
+    })
+  })
+
+app.get('/search_selfcare', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from selfcare where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchSelfCare',{result:result});
+
+    })
+  })
+
+app.get('/search_alcohol', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from alcohol where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchAlcohol',{result:result});
+
+    })
+  })
+
+app.get('/search_babycare', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from babycare where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchBaby',{result:result});
+
+    })
+  })
+
+app.get('/search_coffee', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from coffee where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchCoffee',{result:result});
+
+    })
+  })
+
+app.get('/search_dairy', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from dairy where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchDairy',{result:result});
+
+    })
+  })
+
+app.get('/search_breakfast', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from breakfast where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchBreakfast',{result:result});
+
+    })
+  })
+
+app.get('/search_chocolates', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from chocolates where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchChocolates',{result:result});
+
+    })
+  })
+
+app.get('/search_dryfruits', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from dryfruits where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchDryfruits',{result:result});
+
+    })
+  })
+
+app.get('/search_sauces', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from sauces where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchSauces',{result:result});
+
+    })
+  })
+
+app.get('/search_pet', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from pet where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchPet',{result:result});
 
     })
   })
