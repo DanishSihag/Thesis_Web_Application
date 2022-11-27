@@ -24,17 +24,17 @@
           <% cart.forEach(function(item){ %>
           <div class="container-fluid products">
             <div class="product" style="display: inline-block; border-bottom: 0.13rem solid black;">
-              <form action="/remove_product" method="post" style="display: inline-block; width:23%;">
+              <form action="/remove_product" method="post" style="display: inline-block; width:18%;">
                 <input type="hidden" name="id" value="<%= item.id %>">
                 <input type="submit" value="Delete" class="btn btn-danger">
               </form>
               <img class="img-fluid" src="../images/inside_main/<%= item.image %>">
-              <span style="font-size:1.2rem;"><%= item.name %></span>
+              <span style="font-size:1.08rem;"><%= item.name %></span>
             </div>
             <div class="price-item">
               HUF <%= item.price %>
             </div>
-            <form method="post" action="/edit_product_quantity" style="display: inline-block; width:26%;">
+            <form method="post" action="/edit_product_quantity" style="display: inline-block; width:20%;">
               <input type="hidden" name="id" value="<%= item.id %>">
               <input type="submit" name="decrement" value="-" class="btn btn-info edit-btn" style="font-weight:bolder;">
               <input id="qty" type="text" name="quantity" value="<%= item.quantity %>" readonly>
@@ -53,7 +53,7 @@
     </div>
     <div class="checkout-form-container ms-5" style="display: inline-block;">
     <form method="get" action="/checkout">
-      <input class="btn btn-success checkout-btn ms-5" type="submit" value="Checkout" name="" style="font-size: 1.25rem; display: inline-block;"></input>
+      <input class="btn btn-success checkout-btn ms-5" type="submit" value="Checkout" style="font-size: 1.25rem; display: inline-block;"></input>
     </form>
     </div>
     <br><br><br>

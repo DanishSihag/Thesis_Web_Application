@@ -79,6 +79,22 @@ app.post('/open_juices', function(req,res){
 
 });
 
+app.post('/open_household', function(req,res){
+
+    var con = mysqlp.createConnection({
+      host: "localhost",
+      user: "root",
+      password: "",
+      database: "thesis_data"
+    })
+
+    con.query("SELECT * FROM household", (err,result) =>{
+
+      res.render('pages/household',{result:result});
+    })
+
+});
+
 app.post('/go_to_cart', function(req,res){
   var cart = req.session.cart;
   var total = req.session.total;
@@ -175,7 +191,7 @@ app.post('/edit_product_quantity', function(req,res){
 });
 
 
-app.get('/search', function(req,res){
+app.get('/search_vegetables', function(req,res){
   var name = req.query.name;
 
   var con = mysqlp.createConnection({
@@ -192,52 +208,85 @@ app.get('/search', function(req,res){
     })
   })
 
+app.get('/search_juices', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from juices_colddrinks where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchJuices',{result:result});
+
+    })
+  })
+
+app.get('/search_household', function(req,res){
+  var name = req.query.name;
+
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
+  })
+
+  con.query("SELECT * from household where name LIKE '%"+name+"%'", (err,result) =>{
+
+    res.render('pages/searchHousehold',{result:result});
+
+    })
+  })
+
   app.get('/checkout', function(req,res){
     var total = req.session.total;
     res.render('pages/checkout',{total:total});
   })
 
-  app.post('/place_order', function(req,res){
-    var name = req.body.name;
-    var email = req.body.email;
-    var phone = req.body.phone;
-    var city = req.body.city;
-    var address = req.body.address;
+app.post('/place_order', function(req,res){
+  var name = req.body.name;
+  var email = req.body.email;
+  var phone = req.body.phone;
+  var city = req.body.city;
+  var address = req.body.address;
 
-    var cost = req.session.total;
-    var date = new Date();
-    var products_ids = "";
+  var cart = req.session.cart;
+  var cost = req.session.total;
+  var status = "not paid";
+  var date = new Date();
+  var product_names = "";
 
-    /*var cart = req.session.cart;*/
-
-    var con = mysqlp.createConnection({
-      host: "localhost",
-      user: "root",
-      password: "",
-      database: "thesis_data"
-    })
-
-    var cart = req.session.cart;
-    for(let i = 0; i < cart.length; i++){
-      products_ids = products_ids + "," + cart[i].id;
-    }
-
-    con.connect((err) => {
-      if(err){
-        console.log(err)
-      }else{
-        var query = "INSERT INTO orders(cost, name, email, city, address, phone, date, products_ids) VALUES ? ";
-        var values = [
-          [cost, name, email, city, address, phone, date, products_ids]
-        ];
-
-        con.query(query, [values], (err, result) => {
-          res.redirect('/payment');
-        })
-      }
-    })
-
+  var con = mysqlp.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "thesis_data"
   })
+
+  for(let i = 0; i < cart.length; i++){
+    product_names = product_names + "," + cart[i].name;
+  }
+
+  con.connect((err) => {
+    if(err){
+      console.log(err)
+    }else{
+      var query = "INSERT INTO orders(cost, name, email, status, city, address, phone, date, product_names) VALUES ? ";
+      var values = [
+        [cost, name, email, status, city, address, phone, date, product_names]
+      ];
+
+      con.query(query, [values], (err, result) => {
+        res.redirect('/payment');
+      })
+    }
+  })
+
+})
 
 
 app.get('/payment', function(req,res){
