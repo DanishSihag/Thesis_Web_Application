@@ -42,7 +42,32 @@ function totalPrice(cart,req){
   return total;
 }
 
+/*app.get('/', function(req,res) {
+
+  res.render('pages/GROMAK');
+});*/
+
 app.get('/', function(req,res) {
+
+  res.render('pages/index');
+});
+
+app.post('/open_login_email', function(req,res){
+
+  res.render('pages/login_email');
+});
+
+app.post('/open_new_account', function(req,res){
+
+  res.render('pages/new_account');
+});
+
+app.post('/make_new_account', function(req,res){
+
+  res.render('pages/new_account');
+});
+
+app.post('/continue', function(req,res){
 
   res.render('pages/GROMAK');
 });
